@@ -7,4 +7,5 @@ src/paraglide
 transcript.md
 CV-Falk-Michel.pdf
 bergzeit-cli/
+.tanstack/
 .DS_Store
