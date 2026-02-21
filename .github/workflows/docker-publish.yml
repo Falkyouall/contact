@@ -44,7 +44,7 @@ jobs:
           cache-from: type=gha
           cache-to: type=gha,mode=max
 
-      - name: Trigger Coolify Strapi Deploy
+      - name: Trigger Coolify Deployment
         if: success()
         run: |
           curl -X GET "${{ secrets.COOLIFY_WEBHOOK_URL }}" \
