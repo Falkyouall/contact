@@ -6,4 +6,5 @@ src/paraglide
 .env*
 transcript.md
 CV-Falk-Michel.pdf
+bergzeit-cli/
 .DS_Store
