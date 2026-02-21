@@ -43,3 +43,7 @@ jobs:
           labels: ${{ steps.meta.outputs.labels }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
+
+      - name: Trigger Coolify deployment
+        if: success()
+        run: curl -s "${{ secrets.COOLIFY_WEBHOOK_URL }}"
