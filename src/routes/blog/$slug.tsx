@@ -1,6 +1,7 @@
-import { createFileRoute } from '@tanstack/react-router'
+import { createFileRoute, Link } from '@tanstack/react-router'
 import { createServerFn } from '@tanstack/react-start'
 import parse from 'html-react-parser'
+import * as m from '~/paraglide/messages'
 import { getLocale } from '~/paraglide/runtime'
 import { getPostBySlug } from '~/lib/blog'
 import { ContactForm } from '~/components/ContactForm'
@@ -22,10 +23,14 @@ function BlogPost() {
 
   return (
     <div className="mx-auto max-w-2xl px-4 py-16">
+      <Link to="/blog" className="mb-8 inline-block text-sm text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-100">&larr; {m.nav_blog()}</Link>
       <article>
         <header className="mb-8">
           <h1 className="text-4xl font-bold">{post.title}</h1>
-          <time className="text-sm text-gray-500 dark:text-gray-400">{post.date}</time>
+          {post.description && (
+            <p className="mt-2 text-lg text-gray-600 dark:text-gray-400">{post.description}</p>
+          )}
+          <time className="mt-2 block text-sm text-gray-500 dark:text-gray-400">{post.date}</time>
         </header>
         <div className="prose prose-gray max-w-none dark:prose-invert">{parse(post.html)}</div>
       </article>

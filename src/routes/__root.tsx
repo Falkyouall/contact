@@ -18,7 +18,13 @@ export const Route = createRootRoute({
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: m.site_title() },
     ],
-    links: [{ rel: "stylesheet", href: appCss }],
+    links: [
+      { rel: "stylesheet", href: appCss },
+      { rel: "icon", href: "/favicon.ico", sizes: "48x48" },
+      { rel: "icon", href: "/favicon.svg", type: "image/svg+xml" },
+      { rel: "icon", href: "/favicon-32.png", type: "image/png", sizes: "32x32" },
+      { rel: "apple-touch-icon", href: "/favicon-192.png", sizes: "192x192" },
+    ],
   }),
   shellComponent: RootDocument,
 });
@@ -48,7 +54,9 @@ function RootDocument({ children }: { children: React.ReactNode }) {
             <ThemeSwitcher />
           </div>
         </header>
-        {children}
+        <main className="pt-20">
+          {children}
+        </main>
         <Toaster richColors />
         <Scripts />
       </body>

@@ -7,15 +7,20 @@ export const Route = createFileRoute("/")({
 
 function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center flex-col gap-0">
+    <div className="flex min-h-[calc(100dvh-5rem)] items-center justify-center flex-col gap-0">
       <div
-        className="relative flex flex-col items-center p-12
-        before:absolute before:top-[-50px] before:bottom-[-50px] before:left-0 before:right-0 before:border-l before:border-r before:border-black before:pointer-events-none dark:before:border-white
-        after:absolute after:left-[-50px] after:right-[-50px] after:top-0 after:bottom-0 after:border-t after:border-b after:border-black after:pointer-events-none dark:after:border-white"
+        className="relative flex flex-col items-center p-6 sm:p-12
+        before:absolute before:top-[-40px] before:bottom-[-40px] before:left-0 before:right-0 before:border-l before:border-r before:border-black before:pointer-events-none dark:before:border-white sm:before:top-[-80px] sm:before:bottom-[-80px]
+        after:absolute after:left-[-40px] after:right-[-40px] after:top-0 after:bottom-0 after:border-t after:border-b after:border-black after:pointer-events-none dark:after:border-white sm:after:left-[-80px] sm:after:right-[-80px]"
       >
+        <span className="absolute top-0 left-0 -translate-x-7 -translate-y-7 text-2xl font-bold sm:-translate-x-12.5 sm:-translate-y-12.5 sm:text-4xl">F</span>
+        <span className="absolute top-0 right-0 translate-x-7 -translate-y-7 text-2xl font-bold sm:translate-x-12.5 sm:-translate-y-12.5 sm:text-4xl">A</span>
+        <span className="absolute bottom-0 left-0 -translate-x-7 translate-y-7 text-2xl font-bold sm:-translate-x-12.5 sm:translate-y-12.5 sm:text-4xl">L</span>
+        <span className="absolute bottom-0 right-0 translate-x-7 translate-y-7 text-2xl font-bold sm:translate-x-12.5 sm:translate-y-12.5 sm:text-4xl">K</span>
         <div className="flex flex-col mb-4 gap-2 items-center justify-center">
-          <h1 className="text-4xl font-bold">{m.heading_falk()}</h1>
-          <caption className="caption-bottom text-cyan-800">software developer</caption>
+          {/*<h1 className="text-4xl font-bold">{m.heading_falk()}</h1>*/}
+          <h2 className="text-xl text-cyan-800 dark:text-white">freelance software developer</h2>
+
         </div>
         <Link
           to="/about"
