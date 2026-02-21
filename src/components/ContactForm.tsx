@@ -57,7 +57,6 @@ export function ContactForm({ standalone }: { standalone?: boolean } = {}) {
   async function handleSubmit(e: ChangeEvent<HTMLFormElement>) {
     e.preventDefault();
     if (!validate()) return;
-
     setSubmitting(true);
     try {
       const result = await submitContactForm({
