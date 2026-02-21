@@ -35,7 +35,7 @@ function RootDocument({ children }: { children: React.ReactNode }) {
         <HeadContent />
       </head>
       <body>
-        <header className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-4 py-3">
+        <header className="fixed top-0 left-0 right-0 z-50 flex items-start justify-between p-6">
           <Link
             to="/"
             className="leading-none font-black text-xl tracking-tight"

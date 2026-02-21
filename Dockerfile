@@ -21,4 +21,4 @@ COPY --from=prod-deps /app/node_modules ./node_modules
 COPY --from=build /app/.output ./.output
 COPY --from=build /app/content ./content
 EXPOSE 3000
-CMD ["node", ".output/server/server.js"]
+CMD ["node", ".output/server/index.mjs"]
