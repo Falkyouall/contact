@@ -1,4 +1,4 @@
-import { useState, type FormEvent } from "react";
+import { ChangeEvent, useState, type FormEvent } from "react";
 import { createServerFn } from "@tanstack/react-start";
 import { toast } from "sonner";
 import * as m from "~/paraglide/messages";
@@ -54,7 +54,7 @@ export function ContactForm({ standalone }: { standalone?: boolean } = {}) {
     return false;
   }
 
-  async function handleSubmit(e: FormEvent) {
+  async function handleSubmit(e: ChangeEvent<HTMLFormElement>) {
     e.preventDefault();
     if (!validate()) return;
 
