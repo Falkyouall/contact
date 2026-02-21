@@ -2,15 +2,16 @@
 title: El arte de preguntar
 date: 2026-02-21
 description: La curva de la trampa agéntica, Deep Thought y por qué saber qué preguntar importa más que saber cómo construirlo.
+contactHeading: "¿Quieres mejorar el workflow de IA de tu equipo?"
 ---
 
-En la Guía del autoestopista galáctico, una civilización construye un superordenador llamado Deep Thought para responder a la pregunta definitiva sobre la vida, el universo y todo lo demás. Deep Thought calcula durante 7,5 millones de años y devuelve la respuesta: 42. El problema, claro, es que nadie sabe cuál era la pregunta real. La respuesta es perfecta. La pregunta nunca se definió.
+En la [Guía del autoestopista galáctico](https://en.wikipedia.org/wiki/The_Hitchhiker%27s_Guide_to_the_Galaxy), una civilización construye un superordenador llamado Deep Thought para responder a la pregunta definitiva sobre la vida, el universo y todo lo demás. Deep Thought calcula durante 7,5 millones de años y devuelve la respuesta: 42. El problema, claro, es que nadie sabe cuál era la pregunta real. La respuesta es perfecta. La pregunta nunca se definió.
 
 No dejo de pensar en esa escena cuando veo cómo los desarrolladores interactúan con agentes de IA.
 
 ## La trampa agéntica
 
-Peter Steinberger describió algo en el podcast de Lex Fridman que llama la trampa agéntica. Es una curva. En el lado izquierdo, empiezas con prompts simples. "Please fix this." Después descubres lo potentes que son los agentes y profundizas. Ocho agentes en paralelo, orquestación compleja, multi-checkouts, agentes encadenados, workflows de sub-agentes personalizados, una biblioteca de 18 slash commands diferentes. Estás organizado. Eres sofisticado. Tienes el control total.
+[Peter Steinberger](https://steipete.me/posts/just-talk-to-it) describió algo en el [podcast de Lex Fridman](https://lexfridman.com/peter-steinberger/) que llama la trampa agéntica. Es una curva. En el lado izquierdo, empiezas con prompts simples. "Please fix this." Después descubres lo potentes que son los agentes y profundizas. Ocho agentes en paralelo, orquestación compleja, multi-checkouts, agentes encadenados, workflows de sub-agentes personalizados, una biblioteca de 18 slash commands diferentes. Estás organizado. Eres sofisticado. Tienes el control total.
 
 Y entonces, si sigues avanzando, llegas a un lugar inesperado. De vuelta a prompts cortos. "Hey, mira estos archivos y luego haz estos cambios." El nivel élite, como dice Peter, es zen.
 
@@ -32,7 +33,7 @@ El cambio no está en la complejidad del prompt. Está en lo que el desarrollado
 
 El chiste de la Guía del autoestopista funciona porque es absurdo. Pero el punto subyacente es afilado. Deep Thought no falló. Entregó exactamente lo que se pidió. La civilización falló porque pasó millones de años esperando una respuesta a una pregunta que nunca se molestó en formular bien.
 
-Una versión de esto está ocurriendo ahora mismo en el desarrollo de software. Los agentes son asombrosamente capaces. Claude, Codex, lo que sea que uses — pueden navegar codebases, escribir tests, refactorizar módulos, entregar features. El cuello de botella no es la capacidad de la máquina para producir output. El cuello de botella es la capacidad del humano para definir qué importa.
+Una versión de esto está ocurriendo ahora mismo en el desarrollo de software. Los agentes son asombrosamente capaces. [Claude](https://claude.ai), [Codex](https://openai.com/codex/), lo que sea que uses — pueden navegar codebases, escribir tests, refactorizar módulos, entregar features. El cuello de botella no es la capacidad de la máquina para producir output. El cuello de botella es la capacidad del humano para definir qué importa.
 
 Y definir qué importa no es un skill de prompting. Es un skill de ingeniería. Es una capacidad de pensamiento.
 

@@ -3,6 +3,7 @@ title: Rapid Prototyping
 subtitle: From idea to working prototype, fast
 date: 2026-02-21
 description: From idea to working prototype in days, not months. Fast validation of concepts with production-grade code.
+contactHeading: "Have an idea? Let's prototype it"
 ---
 
 Turn your idea into a functional prototype quickly so you can validate it with real users before committing to a full build.

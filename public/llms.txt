@@ -1,0 +1,33 @@
+# Falk Michel
+
+> Frontend developer and tech lead based in Munich, building modern web applications with TypeScript, React, and AI integration.
+
+## About
+
+Falk Michel is a frontend developer and tech lead based in Munich with over 11 years of experience building web applications. He specializes in TypeScript, React, and modern web tooling, with a focus on clean, maintainable code and practical AI integration.
+
+## Services
+
+- [Web Development](https://falkmichel.com/services/web-development): Modern, performant web applications built with the latest technologies.
+- [Fullstack Development (TS)](https://falkmichel.com/services/fullstack-development-ts): End-to-end TypeScript applications from UI to API, built for maintainability and scale.
+- [AI Integration](https://falkmichel.com/services/ai-integration): Helping teams integrate AI tools into their existing workflows — from selection to productive daily use.
+- [Rapid Prototyping](https://falkmichel.com/services/rapid-prototyping): From idea to working prototype in days, not months. Fast validation of concepts with production-grade code.
+- [Figma Plugin Development](https://falkmichel.com/services/figma-plugin-development): Custom Figma plugins that streamline designer workflows, automate repetitive tasks, and integrate with your existing tools.
+
+## Blog
+
+- [The Art of Asking](https://falkmichel.com/blog/the-art-of-asking): The agentic trap curve, Deep Thought, and why knowing what to ask for matters more than knowing how to build it.
+- [The Case for CLIs in the Agentic Age](https://falkmichel.com/blog/the-case-for-clis-in-the-agentic-age): AI agents are better at Unix commands than at clicking buttons. That has consequences for how we build tools.
+- [Agents Are the Next Browser](https://falkmichel.com/blog/agents-are-the-next-browser): In two years, a third of your comparison traffic will come from AI assistants, not Google. Your website needs an agent-facing interface.
+
+## Contact
+
+- Email: falkmichel3000@gmail.com
+- Twitter/X: https://x.com/falk_approves
+- LinkedIn: https://www.linkedin.com/in/falk-mich%C3%A9l-b48ba753/
+- GitHub: https://github.com/Falkyouall
+
+## Technical
+
+- Built with: TanStack Start, React 19, TypeScript, TailwindCSS, Vite
+- Languages: English, German, Spanish

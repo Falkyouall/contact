@@ -3,6 +3,7 @@ title: Integración de IA
 subtitle: Integra herramientas de IA en tus flujos de trabajo de desarrollo
 date: 2026-02-21
 description: Ayudo a equipos a integrar herramientas de IA en sus flujos de trabajo existentes — desde la selección hasta el uso productivo diario.
+contactHeading: "¿Listo para integrar IA en tu workflow?"
 ---
 
 Ayudo a equipos de desarrollo a adoptar herramientas y flujos de trabajo impulsados por IA para que puedan entregar más rápido y trabajar de manera más efectiva.

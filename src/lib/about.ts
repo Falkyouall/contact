@@ -5,6 +5,7 @@ import { unified } from "unified";
 import remarkParse from "remark-parse";
 import remarkRehype from "remark-rehype";
 import rehypeStringify from "rehype-stringify";
+import rehypeExternalLinks from "rehype-external-links";
 
 export interface AboutPage {
   title: string;
@@ -26,6 +27,7 @@ export async function getAboutPage(
   const result = await unified()
     .use(remarkParse)
     .use(remarkRehype)
+    .use(rehypeExternalLinks, { target: "_blank", rel: ["noopener", "noreferrer"] })
     .use(rehypeStringify)
     .process(content);
 

@@ -3,19 +3,33 @@ import { createServerFn } from '@tanstack/react-start'
 import * as m from '~/paraglide/messages'
 import { getLocale } from '~/paraglide/runtime'
 import { getAllServices } from '~/lib/services'
+import { pageMeta, canonicalLink, hreflangLinks } from '~/lib/seo'
 
 const fetchServices = createServerFn().handler(() => {
   const locale = getLocale()
-  return getAllServices(locale)
+  return { services: getAllServices(locale), locale }
 })
 
 export const Route = createFileRoute('/services/')({
   loader: () => fetchServices(),
+  head: ({ loaderData }) => ({
+    meta: pageMeta({
+      title: 'Services',
+      description:
+        'Web development, AI integration, rapid prototyping, Figma plugin development, and fullstack TypeScript services.',
+      path: '/services',
+      locale: loaderData.locale,
+    }),
+    links: [
+      canonicalLink('/services', loaderData.locale),
+      ...hreflangLinks('/services'),
+    ],
+  }),
   component: ServicesIndex,
 })
 
 function ServicesIndex() {
-  const services = Route.useLoaderData()
+  const { services } = Route.useLoaderData()
 
   return (
     <div className="mx-auto max-w-2xl px-4 py-16">

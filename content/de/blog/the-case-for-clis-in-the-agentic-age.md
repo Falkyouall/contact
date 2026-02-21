@@ -2,6 +2,7 @@
 title: Warum CLIs in der Agentic-Ära zurückkommen
 date: 2026-02-21
 description: AI Agents können besser mit Unix Commands umgehen als mit grafischen Oberflächen. Das hat Konsequenzen für den Toolbau.
+contactHeading: "Hilfe beim Bau von CLI-first Tools?"
 ---
 
 Es passiert gerade eine leise Verschiebung in der Art, wie Developer Tools gebaut werden. Das letzte Jahrzehnt war die Richtung klar: pack alles in ein GUI, bau ein Dashboard, vielleicht ein Web Interface. CLIs waren das, was man widerwillig für CI Pipelines und Power User gewartet hat. Das dreht sich gerade um, und der Grund ist überraschend mechanisch.
@@ -12,21 +13,21 @@ AI Agents sind richtig gut darin, Command-Line Tools zu benutzen. Sie sind schle
 
 Large Language Models verarbeiten Text. Sie produzieren Text. Wenn ein Agent mit einem System interagieren muss, ist das natürlichste Interface eines, bei dem sowohl Input als auch Output Text sind. Das ist ein CLI.
 
-Das ist kein theoretisches Argument. Das Engineering Team von Vercel hat darüber geschrieben, wie sie den Großteil ihres Custom Agent Toolings durch ein Filesystem Tool und ein Bash Tool ersetzt haben. Die Ergebnisse waren konkret: Die Ausführungszeit fiel von 274,8 Sekunden auf 77,4 Sekunden (3,5x schneller), der Token-Verbrauch sank von rund 102k auf 61k Tokens (37% weniger), die Anzahl der Schritte ging von etwa 12 auf 7 runter, und die Erfolgsquote stieg von 80% auf 100%. Sie stellten fest, dass `grep`, `find`, `cat` und `ls` ausreichten, damit Agents komplexe Datenstrukturen navigieren konnten, die vorher eigens gebaute Retrieval-Systeme brauchten.
+Das ist kein theoretisches Argument. Das Engineering Team von [Vercel](https://vercel.com/blog/we-removed-80-percent-of-our-agents-tools) hat darüber geschrieben, wie sie den Großteil ihres Custom Agent Toolings durch ein Filesystem Tool und ein Bash Tool ersetzt haben. Die Ergebnisse waren konkret: Die Ausführungszeit fiel von 274,8 Sekunden auf 77,4 Sekunden (3,5x schneller), der Token-Verbrauch sank von rund 102k auf 61k Tokens (37% weniger), die Anzahl der Schritte ging von etwa 12 auf 7 runter, und die Erfolgsquote stieg von 80% auf 100%. Sie stellten fest, dass `grep`, `find`, `cat` und `ls` ausreichten, damit Agents komplexe Datenstrukturen navigieren konnten, die vorher eigens gebaute Retrieval-Systeme brauchten.
 
 Ihr Fazit war direkt: "Grep is 50 years old and still does exactly what we need. We were building custom tools for what Unix already solves."
 
-Peter Steinberger hat eine ähnliche Beobachtung über seinen eigenen Workflow gemacht. Er schrieb, dass er in seinen Agent Instructions einfach auf ein CLI per Name verweisen kann. Der Agent probiert irgendwas, das CLI zeigt das Help Menü, der Context hat jetzt die vollständige Info wie das Tool funktioniert, und ab da läuft alles. Keine Schema Definitionen, kein Tool Registration Overhead.
+[Peter Steinberger](https://steipete.me/posts/just-talk-to-it) hat eine ähnliche Beobachtung über seinen eigenen Workflow gemacht. Er schrieb, dass er in seinen Agent Instructions einfach auf ein CLI per Name verweisen kann. Der Agent probiert irgendwas, das CLI zeigt das Help Menü, der Context hat jetzt die vollständige Info wie das Tool funktioniert, und ab da läuft alles. Keine Schema Definitionen, kein Tool Registration Overhead.
 
 ## Die Context Window Steuer
 
 Hier wird es praktisch. Jedes Tool, auf das ein Agent Zugriff hat, kostet Tokens. Die Beschreibung des Tools, seine Parameter, sein Schema — all das wird ins Context Window geladen, bevor der Agent überhaupt angefangen hat zu arbeiten.
 
-MCP (Model Context Protocol) Server sind ein gutes Beispiel für diesen Tradeoff. Sie bieten strukturierte, typisierte Interfaces, über die Agents mit externen Services interagieren können. Das ist nützlich. Aber es hat seinen Preis. Der GitHub MCP Server zum Beispiel verbraucht Zehntausende von Tokens allein durch die Registrierung. Ein Entwickler berichtete, dass er in Claude Code von 34k auf 80k Tokens kam, nur durch das Hinzufügen des GitHub MCP. Eine andere Analyse ergab, dass MCP Tools allein 16,3% des verfügbaren Context Windows verbrauchen — bevor eine einzige Nachricht gesendet wurde.
+[MCP (Model Context Protocol)](https://modelcontextprotocol.io) Server sind ein gutes Beispiel für diesen Tradeoff. Sie bieten strukturierte, typisierte Interfaces, über die Agents mit externen Services interagieren können. Das ist nützlich. Aber es hat seinen Preis. Der [GitHub MCP Server](https://github.com/github/github-mcp-server) zum Beispiel verbraucht Zehntausende von Tokens allein durch die Registrierung. Ein Entwickler berichtete, dass er in [Claude Code](https://claude.ai/download) von 34k auf 80k Tokens kam, nur durch das Hinzufügen des GitHub MCP. Eine andere Analyse ergab, dass MCP Tools allein 16,3% des verfügbaren Context Windows verbrauchen — bevor eine einzige Nachricht gesendet wurde.
 
 Peter Steinberger hat es direkt formuliert: "I don't have to pay a price for any tools, unlike MCPs which are a constant cost and garbage in my context. Use GitHub's MCP and see 23k tokens gone. Or use the `gh` cli which has basically the same feature set, models already know how to use it, and pay zero context tax."
 
-Das `gh` CLI und der GitHub MCP Server machen ungefähr das Gleiche. Eins kostet null Tokens. Das andere verbrennt Context allein durch seine Existenz.
+Das [`gh` CLI](https://cli.github.com) und der GitHub MCP Server machen ungefähr das Gleiche. Eins kostet null Tokens. Das andere verbrennt Context allein durch seine Existenz.
 
 ## Warum das wirtschaftlich relevant ist
 

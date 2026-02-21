@@ -3,6 +3,7 @@ title: Prototipado Rápido
 subtitle: De la idea al prototipo funcional, rápidamente
 date: 2026-02-21
 description: De la idea al prototipo funcional en días, no meses. Validación rápida de conceptos con código de calidad de producción.
+contactHeading: "¿Tienes una idea? Hagamos un prototipo"
 ---
 
 Convierte tu idea en un prototipo funcional rápidamente para que puedas validarla con usuarios reales antes de comprometerte con un desarrollo completo.

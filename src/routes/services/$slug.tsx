@@ -5,16 +5,50 @@ import * as m from '~/paraglide/messages'
 import { getLocale } from '~/paraglide/runtime'
 import { getServiceBySlug } from '~/lib/services'
 import { ContactForm } from '~/components/ContactForm'
+import { siteConfig, pageMeta, canonicalLink, hreflangLinks } from '~/lib/seo'
 
 const fetchService = createServerFn()
   .inputValidator((slug: string) => slug)
   .handler(({ data: slug }) => {
     const locale = getLocale()
-    return getServiceBySlug(slug, locale)
+    return getServiceBySlug(slug, locale).then((service) => ({
+      ...service,
+      locale,
+    }))
   })
 
 export const Route = createFileRoute('/services/$slug')({
   loader: ({ params }) => fetchService({ data: params.slug }),
+  head: ({ loaderData }) => {
+    const path = `/services/${loaderData.slug}`
+    return {
+      meta: [
+        ...pageMeta({
+          title: loaderData.title,
+          description: loaderData.description,
+          path,
+          locale: loaderData.locale,
+        }),
+        {
+          'script:ld+json': {
+            '@context': 'https://schema.org',
+            '@type': 'Service',
+            name: loaderData.title,
+            description: loaderData.description,
+            provider: {
+              '@type': 'Person',
+              name: siteConfig.author,
+              url: siteConfig.domain,
+            },
+          },
+        },
+      ],
+      links: [
+        canonicalLink(path, loaderData.locale),
+        ...hreflangLinks(path),
+      ],
+    }
+  },
   component: ServicePage,
 })
 
@@ -31,7 +65,7 @@ function ServicePage() {
         </header>
         <div className="prose prose-gray max-w-none dark:prose-invert">{parse(service.html)}</div>
       </article>
-      <ContactForm />
+      <ContactForm heading={service.contactHeading} />
     </div>
   )
 }

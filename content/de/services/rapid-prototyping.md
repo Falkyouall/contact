@@ -3,6 +3,7 @@ title: Rapid Prototyping
 subtitle: Von der Idee zum funktionierenden Prototyp, schnell
 date: 2026-02-21
 description: Von der Idee zum funktionierenden Prototyp in Tagen, nicht Monaten. Schnelle Validierung von Konzepten mit produktionsreifem Code.
+contactHeading: "Eine Idee? Lass uns einen Prototypen bauen"
 ---
 
 Verwandle deine Idee schnell in einen funktionalen Prototyp, damit du sie mit echten Nutzern validieren kannst, bevor du dich für einen vollständigen Ausbau entscheidest.

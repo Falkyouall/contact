@@ -3,6 +3,7 @@ title: Figma-Plugin-Entwicklung
 subtitle: Individuelle Plugins, die zum Workflow deines Design-Teams passen
 date: 2026-02-21
 description: Individuelle Figma-Plugins, die Designer-Workflows optimieren, repetitive Aufgaben automatisieren und sich in bestehende Tools integrieren.
+contactHeading: "Ein eigenes Figma Plugin gebraucht?"
 ---
 
 Ich entwickle individuelle Figma-Plugins, die Reibung aus Design-Workflows entfernen und Figma mit dem Rest eurer Toolchain verbinden.

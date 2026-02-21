@@ -3,6 +3,7 @@ title: Figma Plugin Development
 subtitle: Custom plugins that fit your design team's workflow
 date: 2026-02-21
 description: Custom Figma plugins that streamline designer workflows, automate repetitive tasks, and integrate with your existing tools.
+contactHeading: "Need a custom Figma plugin?"
 ---
 
 I build custom Figma plugins that remove friction from design workflows and connect Figma to the rest of your toolchain.

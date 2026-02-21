@@ -2,15 +2,16 @@
 title: The Art of Asking
 date: 2026-02-21
 description: The agentic trap curve, Deep Thought, and why knowing what to ask for matters more than knowing how to build it.
+contactHeading: "Want to level up your team's AI workflow?"
 ---
 
-In The Hitchhiker's Guide to the Galaxy, a civilization builds a supercomputer called Deep Thought to answer the ultimate question of life, the universe, and everything. Deep Thought computes for 7.5 million years and returns the answer: 42. The problem, of course, is that nobody knows what the actual question was. The answer is perfect. The question was never defined.
+In [The Hitchhiker's Guide to the Galaxy](https://en.wikipedia.org/wiki/The_Hitchhiker%27s_Guide_to_the_Galaxy), a civilization builds a supercomputer called Deep Thought to answer the ultimate question of life, the universe, and everything. Deep Thought computes for 7.5 million years and returns the answer: 42. The problem, of course, is that nobody knows what the actual question was. The answer is perfect. The question was never defined.
 
 I keep thinking about that scene when I watch how developers interact with AI agents.
 
 ## The agentic trap
 
-Peter Steinberger described something on the Lex Fridman podcast that he calls the agentic trap. It's a curve. On the left side, you start with simple prompts. "Please fix this." Then you discover how powerful agents are and you go deep. Eight parallel agents, complex orchestration, multi-checkouts, chaining agents together, custom sub-agent workflows, a library of 18 different slash commands. You're organized. You're sophisticated. You're in full control.
+[Peter Steinberger](https://steipete.me/posts/just-talk-to-it) described something on the [Lex Fridman podcast](https://lexfridman.com/peter-steinberger/) that he calls the agentic trap. It's a curve. On the left side, you start with simple prompts. "Please fix this." Then you discover how powerful agents are and you go deep. Eight parallel agents, complex orchestration, multi-checkouts, chaining agents together, custom sub-agent workflows, a library of 18 different slash commands. You're organized. You're sophisticated. You're in full control.
 
 And then, if you keep going, you arrive somewhere unexpected. Back at short prompts. "Hey, look at these files and then do these changes." The elite level, as Peter puts it, is zen.
 
@@ -32,7 +33,7 @@ The shift isn't in prompt complexity. It's in what the developer considers their
 
 The joke in Hitchhiker's Guide works because it's absurd. But the underlying point is sharp. Deep Thought didn't fail. It delivered exactly what was asked. The civilization failed because they spent millions of years waiting for an answer to a question they never bothered to formulate clearly.
 
-There's a version of this playing out in software development right now. Agents are staggeringly capable. Claude, Codex, whatever you're using — they can navigate codebases, write tests, refactor modules, ship features. The bottleneck isn't the machine's ability to produce output. The bottleneck is the human's ability to define what matters.
+There's a version of this playing out in software development right now. Agents are staggeringly capable. [Claude](https://claude.ai), [Codex](https://openai.com/codex/), whatever you're using — they can navigate codebases, write tests, refactor modules, ship features. The bottleneck isn't the machine's ability to produce output. The bottleneck is the human's ability to define what matters.
 
 And defining what matters is not a prompting skill. It's an engineering skill. It's a thinking skill.
 

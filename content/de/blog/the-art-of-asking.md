@@ -2,15 +2,16 @@
 title: Die Kunst des Fragens
 date: 2026-02-21
 description: Die Agentic Trap Curve, Deep Thought und warum es wichtiger ist zu wissen was man fragt, als zu wissen wie man es baut.
+contactHeading: "AI-Workflow deines Teams verbessern?"
 ---
 
-In Per Anhalter durch die Galaxis baut eine Zivilisation einen Supercomputer namens Deep Thought, um die ultimative Frage nach dem Leben, dem Universum und dem ganzen Rest zu beantworten. Deep Thought rechnet 7,5 Millionen Jahre und liefert die Antwort: 42. Das Problem ist natürlich, dass niemand weiß, was die eigentliche Frage war. Die Antwort ist perfekt. Die Frage wurde nie definiert.
+In [Per Anhalter durch die Galaxis](https://en.wikipedia.org/wiki/The_Hitchhiker%27s_Guide_to_the_Galaxy) baut eine Zivilisation einen Supercomputer namens Deep Thought, um die ultimative Frage nach dem Leben, dem Universum und dem ganzen Rest zu beantworten. Deep Thought rechnet 7,5 Millionen Jahre und liefert die Antwort: 42. Das Problem ist natürlich, dass niemand weiß, was die eigentliche Frage war. Die Antwort ist perfekt. Die Frage wurde nie definiert.
 
 Ich muss ständig an diese Szene denken, wenn ich beobachte, wie Entwickler mit AI Agents interagieren.
 
 ## Die Agentic Trap
 
-Peter Steinberger hat im Lex Fridman Podcast etwas beschrieben, das er die Agentic Trap nennt. Es ist eine Kurve. Auf der linken Seite fängt man mit einfachen Prompts an. "Please fix this." Dann entdeckt man, wie mächtig Agents sind und geht in die Tiefe. Acht parallele Agents, komplexe Orchestrierung, Multi-Checkouts, verkettete Agents, eigene Sub-Agent Workflows, eine Bibliothek von 18 verschiedenen Slash Commands. Man ist organisiert. Man ist ausgeklügelt. Man hat die volle Kontrolle.
+[Peter Steinberger](https://steipete.me/posts/just-talk-to-it) hat im [Lex Fridman Podcast](https://lexfridman.com/peter-steinberger/) etwas beschrieben, das er die Agentic Trap nennt. Es ist eine Kurve. Auf der linken Seite fängt man mit einfachen Prompts an. "Please fix this." Dann entdeckt man, wie mächtig Agents sind und geht in die Tiefe. Acht parallele Agents, komplexe Orchestrierung, Multi-Checkouts, verkettete Agents, eigene Sub-Agent Workflows, eine Bibliothek von 18 verschiedenen Slash Commands. Man ist organisiert. Man ist ausgeklügelt. Man hat die volle Kontrolle.
 
 Und dann, wenn man weitermacht, landet man irgendwo Unerwartetes. Wieder bei kurzen Prompts. "Hey, schau dir diese Dateien an und mach dann diese Änderungen." Das Elite-Level, wie Peter es nennt, ist Zen.
 
@@ -32,7 +33,7 @@ Der Wandel liegt nicht in der Prompt-Komplexität. Er liegt darin, was der Entwi
 
 Der Witz im Anhalter funktioniert, weil er absurd ist. Aber der Punkt dahinter ist scharf. Deep Thought hat nicht versagt. Er hat exakt das geliefert, was verlangt wurde. Die Zivilisation hat versagt, weil sie Millionen von Jahren auf eine Antwort gewartet hat, deren Frage sie nie sauber formuliert hatte.
 
-Eine Version davon spielt sich gerade in der Softwareentwicklung ab. Agents sind unfassbar fähig. Claude, Codex, was auch immer du benutzt — sie können Codebases navigieren, Tests schreiben, Module refactoren, Features shippen. Der Engpass ist nicht die Fähigkeit der Maschine, Output zu produzieren. Der Engpass ist die Fähigkeit des Menschen zu definieren, was wichtig ist.
+Eine Version davon spielt sich gerade in der Softwareentwicklung ab. Agents sind unfassbar fähig. [Claude](https://claude.ai), [Codex](https://openai.com/codex/), was auch immer du benutzt — sie können Codebases navigieren, Tests schreiben, Module refactoren, Features shippen. Der Engpass ist nicht die Fähigkeit der Maschine, Output zu produzieren. Der Engpass ist die Fähigkeit des Menschen zu definieren, was wichtig ist.
 
 Und zu definieren was wichtig ist, ist kein Prompting Skill. Es ist ein Engineering Skill. Es ist eine Denkfähigkeit.
 

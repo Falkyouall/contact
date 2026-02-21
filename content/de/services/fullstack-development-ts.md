@@ -3,6 +3,7 @@ title: Fullstack-Entwicklung (TS)
 subtitle: Eine Sprache, der gesamte Stack
 date: 2026-02-21
 description: End-to-End TypeScript-Anwendungen von der UI bis zur API, gebaut für Wartbarkeit und Skalierbarkeit.
+contactHeading: "Fullstack TypeScript Projekt gesucht?"
 ---
 
 Ich entwickle vollständige Webanwendungen in TypeScript über den gesamten Stack hinweg — von interaktiven Frontends über serverseitige APIs bis hin zur Cloud-Infrastruktur.

@@ -11,7 +11,7 @@ const submitContactForm = createServerFn({ method: "POST" })
     return handleContactSubmission(data);
   });
 
-export function ContactForm({ standalone }: { standalone?: boolean } = {}) {
+export function ContactForm({ standalone, heading }: { standalone?: boolean; heading?: string } = {}) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -91,7 +91,7 @@ export function ContactForm({ standalone }: { standalone?: boolean } = {}) {
       {standalone ? (
         <h1 className="mb-8 text-4xl font-bold">{m.heading_contact()}</h1>
       ) : (
-        <h2 className="mb-8 text-2xl font-bold">{m.heading_contact()}</h2>
+        <h2 className="mb-8 text-2xl font-bold">{heading || m.heading_contact()}</h2>
       )}
       <form onSubmit={handleSubmit} className="space-y-6" noValidate>
         {/* Honeypot */}

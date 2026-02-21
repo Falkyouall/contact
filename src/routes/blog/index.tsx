@@ -3,19 +3,33 @@ import { createServerFn } from '@tanstack/react-start'
 import * as m from '~/paraglide/messages'
 import { getLocale } from '~/paraglide/runtime'
 import { getAllPosts } from '~/lib/blog'
+import { pageMeta, canonicalLink, hreflangLinks } from '~/lib/seo'
 
 const fetchPosts = createServerFn().handler(() => {
   const locale = getLocale()
-  return getAllPosts(locale)
+  return { posts: getAllPosts(locale), locale }
 })
 
 export const Route = createFileRoute('/blog/')({
   loader: () => fetchPosts(),
+  head: ({ loaderData }) => ({
+    meta: pageMeta({
+      title: 'Blog',
+      description:
+        'Thoughts on software development, AI agents, developer tools, and building for the web.',
+      path: '/blog',
+      locale: loaderData.locale,
+    }),
+    links: [
+      canonicalLink('/blog', loaderData.locale),
+      ...hreflangLinks('/blog'),
+    ],
+  }),
   component: BlogIndex,
 })
 
 function BlogIndex() {
-  const posts = Route.useLoaderData()
+  const { posts } = Route.useLoaderData()
 
   return (
     <div className="mx-auto max-w-2xl px-4 py-16">

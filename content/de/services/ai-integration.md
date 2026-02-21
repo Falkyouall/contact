@@ -3,6 +3,7 @@ title: KI-Integration
 subtitle: KI-Tools nahtlos in eure Entwicklungsabläufe einbinden
 date: 2026-02-21
 description: Ich helfe Teams, KI-Tools in ihre bestehenden Workflows zu integrieren — von der Auswahl bis zur produktiven Nutzung.
+contactHeading: "Bereit für AI in deinem Workflow?"
 ---
 
 Ich helfe Entwicklungsteams dabei, KI-gestützte Tools und Workflows einzuführen, damit sie schneller liefern und effektiver arbeiten können.

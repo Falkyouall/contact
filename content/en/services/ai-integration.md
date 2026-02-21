@@ -3,6 +3,7 @@ title: AI Integration
 subtitle: Seamlessly embed AI tools into your development workflows
 date: 2026-02-21
 description: Helping teams integrate AI tools into their existing workflows — from selection to productive daily use.
+contactHeading: "Ready to bring AI into your workflow?"
 ---
 
 I help development teams adopt AI-powered tools and workflows so they can ship faster and work more effectively.

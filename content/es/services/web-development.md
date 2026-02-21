@@ -3,6 +3,7 @@ title: Desarrollo Web
 subtitle: Aplicaciones modernas construidas con las herramientas que importan
 date: 2026-02-21
 description: Aplicaciones web modernas y de alto rendimiento construidas con las últimas tecnologías.
+contactHeading: "Construyamos tu aplicación web"
 ---
 
 Desarrollo aplicaciones web modernas y de alto rendimiento utilizando las últimas tecnologías y mejores prácticas.

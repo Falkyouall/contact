@@ -3,6 +3,7 @@ title: Desarrollo Fullstack (TS)
 subtitle: Un solo lenguaje, todo el stack
 date: 2026-02-21
 description: Aplicaciones TypeScript de extremo a extremo, desde la interfaz hasta la API, diseñadas para mantenibilidad y escalabilidad.
+contactHeading: "¿Necesitas un proyecto fullstack en TypeScript?"
 ---
 
 Desarrollo aplicaciones web completas en TypeScript a lo largo de todo el stack — desde frontends interactivos hasta APIs del lado del servidor e infraestructura en la nube.

@@ -5,16 +5,51 @@ import * as m from '~/paraglide/messages'
 import { getLocale } from '~/paraglide/runtime'
 import { getPostBySlug } from '~/lib/blog'
 import { ContactForm } from '~/components/ContactForm'
+import { siteConfig, pageMeta, canonicalLink, hreflangLinks } from '~/lib/seo'
 
 const fetchPost = createServerFn()
   .inputValidator((slug: string) => slug)
   .handler(({ data: slug }) => {
     const locale = getLocale()
-    return getPostBySlug(slug, locale)
+    return getPostBySlug(slug, locale).then((post) => ({ ...post, locale }))
   })
 
 export const Route = createFileRoute('/blog/$slug')({
   loader: ({ params }) => fetchPost({ data: params.slug }),
+  head: ({ loaderData }) => {
+    const path = `/blog/${loaderData.slug}`
+    return {
+      meta: [
+        ...pageMeta({
+          title: loaderData.title,
+          description: loaderData.description,
+          path,
+          locale: loaderData.locale,
+          type: 'article',
+          publishedTime: loaderData.date,
+        }),
+        {
+          'script:ld+json': {
+            '@context': 'https://schema.org',
+            '@type': 'BlogPosting',
+            headline: loaderData.title,
+            description: loaderData.description,
+            datePublished: loaderData.date,
+            author: {
+              '@type': 'Person',
+              name: siteConfig.author,
+              url: siteConfig.domain,
+            },
+            inLanguage: loaderData.locale,
+          },
+        },
+      ],
+      links: [
+        canonicalLink(path, loaderData.locale),
+        ...hreflangLinks(path),
+      ],
+    }
+  },
   component: BlogPost,
 })
 
@@ -34,7 +69,7 @@ function BlogPost() {
         </header>
         <div className="prose prose-gray max-w-none dark:prose-invert">{parse(post.html)}</div>
       </article>
-      <ContactForm />
+      <ContactForm heading={post.contactHeading} />
     </div>
   )
 }

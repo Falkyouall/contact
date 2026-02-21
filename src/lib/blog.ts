@@ -5,6 +5,7 @@ import { unified } from 'unified'
 import remarkParse from 'remark-parse'
 import remarkRehype from 'remark-rehype'
 import rehypeStringify from 'rehype-stringify'
+import rehypeExternalLinks from 'rehype-external-links'
 
 function getContentDir(locale: string) {
   return path.join(process.cwd(), 'content', locale, 'blog')
@@ -19,6 +20,7 @@ export interface PostMeta {
 
 export interface Post extends PostMeta {
   html: string
+  contactHeading?: string
 }
 
 export function getAllPosts(locale: string = 'en'): PostMeta[] {
@@ -58,6 +60,7 @@ export async function getPostBySlug(slug: string, locale: string = 'en'): Promis
   const result = await unified()
     .use(remarkParse)
     .use(remarkRehype)
+    .use(rehypeExternalLinks, { target: '_blank', rel: ['noopener', 'noreferrer'] })
     .use(rehypeStringify)
     .process(content)
 
@@ -67,5 +70,6 @@ export async function getPostBySlug(slug: string, locale: string = 'en'): Promis
     date: data.date instanceof Date ? data.date.toISOString().split('T')[0] : String(data.date),
     description: data.description,
     html: String(result),
+    contactHeading: data.contactHeading,
   }
 }

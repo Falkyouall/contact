@@ -5,6 +5,7 @@ import { unified } from 'unified'
 import remarkParse from 'remark-parse'
 import remarkRehype from 'remark-rehype'
 import rehypeStringify from 'rehype-stringify'
+import rehypeExternalLinks from 'rehype-external-links'
 
 function getContentDir(locale: string) {
   return path.join(process.cwd(), 'content', locale, 'services')
@@ -20,6 +21,7 @@ export interface ServiceMeta {
 
 export interface Service extends ServiceMeta {
   html: string
+  contactHeading?: string
 }
 
 export function getAllServices(locale: string = 'en'): ServiceMeta[] {
@@ -60,6 +62,7 @@ export async function getServiceBySlug(slug: string, locale: string = 'en'): Pro
   const result = await unified()
     .use(remarkParse)
     .use(remarkRehype)
+    .use(rehypeExternalLinks, { target: '_blank', rel: ['noopener', 'noreferrer'] })
     .use(rehypeStringify)
     .process(content)
 
@@ -70,5 +73,6 @@ export async function getServiceBySlug(slug: string, locale: string = 'en'): Pro
     date: data.date instanceof Date ? data.date.toISOString().split('T')[0] : String(data.date),
     description: data.description,
     html: String(result),
+    contactHeading: data.contactHeading,
   }
 }

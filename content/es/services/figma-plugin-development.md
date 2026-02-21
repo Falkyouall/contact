@@ -3,6 +3,7 @@ title: Desarrollo de Plugins para Figma
 subtitle: Plugins personalizados que se adaptan al flujo de trabajo de tu equipo de diseño
 date: 2026-02-21
 description: Plugins personalizados para Figma que optimizan los flujos de trabajo de los diseñadores, automatizan tareas repetitivas y se integran con tus herramientas existentes.
+contactHeading: "¿Necesitas un plugin de Figma personalizado?"
 ---
 
 Desarrollo plugins personalizados para Figma que eliminan la fricción de los flujos de trabajo de diseño y conectan Figma con el resto de tu cadena de herramientas.
