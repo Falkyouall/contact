@@ -5,7 +5,7 @@ import * as m from '~/paraglide/messages'
 import { getLocale } from '~/paraglide/runtime'
 import { getServiceBySlug } from '~/lib/services'
 import { ContactForm } from '~/components/ContactForm'
-import { siteConfig, pageMeta, canonicalLink, hreflangLinks } from '~/lib/seo'
+import { siteConfig, pageMeta, canonicalLink } from '~/lib/seo'
 
 const fetchService = createServerFn()
   .inputValidator((slug: string) => slug)
@@ -44,8 +44,7 @@ export const Route = createFileRoute('/services/$slug')({
         },
       ],
       links: [
-        canonicalLink(path, loaderData.locale),
-        ...hreflangLinks(path),
+        canonicalLink(path),
       ],
     }
   },

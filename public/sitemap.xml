@@ -1,113 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- Homepage -->
   <url>
     <loc>https://falkmichel.com/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://falkmichel.com/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://falkmichel.com/de/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://falkmichel.com/es/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://falkmichel.com/"/>
   </url>
 
-  <!-- About -->
   <url>
     <loc>https://falkmichel.com/about</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://falkmichel.com/about"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://falkmichel.com/de/about"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://falkmichel.com/es/about"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://falkmichel.com/about"/>
   </url>
 
-  <!-- Contact -->
   <url>
     <loc>https://falkmichel.com/contact</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://falkmichel.com/contact"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://falkmichel.com/de/contact"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://falkmichel.com/es/contact"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://falkmichel.com/contact"/>
   </url>
 
-  <!-- Blog listing -->
   <url>
     <loc>https://falkmichel.com/blog</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://falkmichel.com/blog"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://falkmichel.com/de/blog"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://falkmichel.com/es/blog"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://falkmichel.com/blog"/>
   </url>
 
-  <!-- Services listing -->
   <url>
     <loc>https://falkmichel.com/services</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://falkmichel.com/services"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://falkmichel.com/de/services"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://falkmichel.com/es/services"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://falkmichel.com/services"/>
   </url>
 
-  <!-- Blog posts -->
   <url>
     <loc>https://falkmichel.com/blog/the-art-of-asking</loc>
     <lastmod>2026-02-21</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://falkmichel.com/blog/the-art-of-asking"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://falkmichel.com/de/blog/the-art-of-asking"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://falkmichel.com/es/blog/the-art-of-asking"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://falkmichel.com/blog/the-art-of-asking"/>
   </url>
+
   <url>
     <loc>https://falkmichel.com/blog/the-case-for-clis-in-the-agentic-age</loc>
     <lastmod>2026-02-21</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://falkmichel.com/blog/the-case-for-clis-in-the-agentic-age"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://falkmichel.com/de/blog/the-case-for-clis-in-the-agentic-age"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://falkmichel.com/es/blog/the-case-for-clis-in-the-agentic-age"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://falkmichel.com/blog/the-case-for-clis-in-the-agentic-age"/>
   </url>
+
   <url>
     <loc>https://falkmichel.com/blog/agents-are-the-next-browser</loc>
     <lastmod>2026-02-21</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://falkmichel.com/blog/agents-are-the-next-browser"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://falkmichel.com/de/blog/agents-are-the-next-browser"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://falkmichel.com/es/blog/agents-are-the-next-browser"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://falkmichel.com/blog/agents-are-the-next-browser"/>
   </url>
 
-  <!-- Services -->
   <url>
     <loc>https://falkmichel.com/services/web-development</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://falkmichel.com/services/web-development"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://falkmichel.com/de/services/web-development"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://falkmichel.com/es/services/web-development"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://falkmichel.com/services/web-development"/>
   </url>
+
   <url>
     <loc>https://falkmichel.com/services/fullstack-development-ts</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://falkmichel.com/services/fullstack-development-ts"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://falkmichel.com/de/services/fullstack-development-ts"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://falkmichel.com/es/services/fullstack-development-ts"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://falkmichel.com/services/fullstack-development-ts"/>
   </url>
+
   <url>
     <loc>https://falkmichel.com/services/ai-integration</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://falkmichel.com/services/ai-integration"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://falkmichel.com/de/services/ai-integration"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://falkmichel.com/es/services/ai-integration"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://falkmichel.com/services/ai-integration"/>
   </url>
+
   <url>
     <loc>https://falkmichel.com/services/rapid-prototyping</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://falkmichel.com/services/rapid-prototyping"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://falkmichel.com/de/services/rapid-prototyping"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://falkmichel.com/es/services/rapid-prototyping"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://falkmichel.com/services/rapid-prototyping"/>
   </url>
+
   <url>
     <loc>https://falkmichel.com/services/figma-plugin-development</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://falkmichel.com/services/figma-plugin-development"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://falkmichel.com/de/services/figma-plugin-development"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://falkmichel.com/es/services/figma-plugin-development"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://falkmichel.com/services/figma-plugin-development"/>
   </url>
 
 </urlset>

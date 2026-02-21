@@ -5,7 +5,7 @@ import * as m from '~/paraglide/messages'
 import { getLocale } from '~/paraglide/runtime'
 import { getPostBySlug } from '~/lib/blog'
 import { ContactForm } from '~/components/ContactForm'
-import { siteConfig, pageMeta, canonicalLink, hreflangLinks } from '~/lib/seo'
+import { siteConfig, pageMeta, canonicalLink } from '~/lib/seo'
 
 const fetchPost = createServerFn()
   .inputValidator((slug: string) => slug)
@@ -45,8 +45,7 @@ export const Route = createFileRoute('/blog/$slug')({
         },
       ],
       links: [
-        canonicalLink(path, loaderData.locale),
-        ...hreflangLinks(path),
+        canonicalLink(path),
       ],
     }
   },

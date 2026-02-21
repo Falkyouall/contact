@@ -3,7 +3,7 @@ import { createServerFn } from '@tanstack/react-start'
 import * as m from '~/paraglide/messages'
 import { getLocale } from '~/paraglide/runtime'
 import { getAllPosts } from '~/lib/blog'
-import { pageMeta, canonicalLink, hreflangLinks } from '~/lib/seo'
+import { pageMeta, canonicalLink } from '~/lib/seo'
 
 const fetchPosts = createServerFn().handler(() => {
   const locale = getLocale()
@@ -21,8 +21,7 @@ export const Route = createFileRoute('/blog/')({
       locale: loaderData.locale,
     }),
     links: [
-      canonicalLink('/blog', loaderData.locale),
-      ...hreflangLinks('/blog'),
+      canonicalLink('/blog'),
     ],
   }),
   component: BlogIndex,

@@ -3,7 +3,7 @@ import { createServerFn } from "@tanstack/react-start";
 import * as m from "~/paraglide/messages";
 import { getLocale } from "~/paraglide/runtime";
 import { ContactForm } from "~/components/ContactForm";
-import { pageMeta, canonicalLink, hreflangLinks } from "~/lib/seo";
+import { pageMeta, canonicalLink } from "~/lib/seo";
 
 const fetchLocale = createServerFn().handler(() => getLocale());
 
@@ -17,7 +17,7 @@ export const Route = createFileRoute("/contact")({
       path: "/contact",
       locale,
     }),
-    links: [canonicalLink("/contact", locale), ...hreflangLinks("/contact")],
+    links: [canonicalLink("/contact")],
   }),
   component: Contact,
 });

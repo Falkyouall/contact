@@ -15,15 +15,8 @@ const localeMap: Record<string, string> = {
   es: 'es_ES',
 }
 
-const localePrefixes: Record<string, string> = {
-  en: '',
-  de: '/de',
-  es: '/es',
-}
-
-export function buildUrl(path: string, locale: string = 'en'): string {
-  const prefix = localePrefixes[locale] ?? ''
-  return `${siteConfig.domain}${prefix}${path}`
+export function buildUrl(path: string): string {
+  return `${siteConfig.domain}${path}`
 }
 
 export function pageMeta({
@@ -43,7 +36,7 @@ export function pageMeta({
   publishedTime?: string
   image?: string
 }) {
-  const url = buildUrl(path, locale)
+  const url = buildUrl(path)
   const ogLocale = localeMap[locale] ?? 'en_US'
   const allLocales = ['en', 'de', 'es']
   const fullTitle = `${title} | ${siteConfig.siteName}`
@@ -89,21 +82,6 @@ export function pageMeta({
   return meta
 }
 
-export function canonicalLink(path: string, locale: string) {
-  return { rel: 'canonical', href: buildUrl(path, locale) }
-}
-
-export function hreflangLinks(path: string) {
-  const locales = ['en', 'de', 'es'] as const
-  const links = locales.map((loc) => ({
-    rel: 'alternate',
-    hreflang: loc,
-    href: buildUrl(path, loc),
-  }))
-  links.push({
-    rel: 'alternate',
-    hreflang: 'x-default',
-    href: buildUrl(path, 'en'),
-  })
-  return links
+export function canonicalLink(path: string) {
+  return { rel: 'canonical', href: buildUrl(path) }
 }

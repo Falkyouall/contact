@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { createServerFn } from "@tanstack/react-start";
 import * as m from "~/paraglide/messages";
 import { getLocale } from "~/paraglide/runtime";
-import { siteConfig, pageMeta, canonicalLink, hreflangLinks } from "~/lib/seo";
+import { siteConfig, pageMeta, canonicalLink } from "~/lib/seo";
 
 const fetchLocale = createServerFn().handler(() => getLocale());
 
@@ -31,7 +31,7 @@ export const Route = createFileRoute("/")({
         },
       },
     ],
-    links: [canonicalLink("/", locale), ...hreflangLinks("/")],
+    links: [canonicalLink("/")],
   }),
   component: Home,
 });
