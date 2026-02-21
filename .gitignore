@@ -4,3 +4,6 @@ dist
 *.local
 src/paraglide
 .env*
+transcript.md
+CV-Falk-Michel.pdf
+.DS_Store
