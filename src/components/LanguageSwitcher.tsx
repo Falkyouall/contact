@@ -1,9 +1,16 @@
 import { locales, getLocale, setLocale } from '~/paraglide/runtime'
+import * as m from '~/paraglide/messages'
 
 const labels: Record<string, string> = {
-  en: 'EN',
-  de: 'DE',
-  es: 'ES',
+  en: '🇬🇧',
+  de: '🇩🇪',
+  es: '🇪🇸',
+}
+
+const ariaLabels: Record<string, () => string> = {
+  en: () => m.lang_en(),
+  de: () => m.lang_de(),
+  es: () => m.lang_es(),
 }
 
 export function LanguageSwitcher() {
@@ -15,6 +22,8 @@ export function LanguageSwitcher() {
         <button
           key={locale}
           onClick={() => setLocale(locale)}
+          aria-label={ariaLabels[locale]?.() ?? locale}
+          aria-pressed={locale === currentLocale}
           className={`rounded cursor-pointer px-2 py-1 text-sm font-medium transition-colors ${
             locale === currentLocale
               ? 'bg-black text-white dark:bg-white dark:text-black'

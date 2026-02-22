@@ -117,9 +117,12 @@ export function ContactForm({ standalone, heading }: { standalone?: boolean; hea
             onChange={(e) => setName(e.target.value)}
             placeholder={m.contact_name_placeholder()}
             className={errors.name ? errorInputClasses : inputClasses}
+            aria-required="true"
+            aria-invalid={!!errors.name}
+            aria-describedby={errors.name ? "contact-name-error" : undefined}
           />
           {errors.name && (
-            <p className="mt-1 text-sm text-red-500">{errors.name}</p>
+            <p id="contact-name-error" role="alert" className="mt-1 text-sm text-red-500">{errors.name}</p>
           )}
         </div>
 
@@ -134,9 +137,12 @@ export function ContactForm({ standalone, heading }: { standalone?: boolean; hea
             onChange={(e) => setEmail(e.target.value)}
             placeholder={m.contact_email_placeholder()}
             className={errors.email ? errorInputClasses : inputClasses}
+            aria-required="true"
+            aria-invalid={!!errors.email}
+            aria-describedby={errors.email ? "contact-email-error" : undefined}
           />
           {errors.email && (
-            <p className="mt-1 text-sm text-red-500">{errors.email}</p>
+            <p id="contact-email-error" role="alert" className="mt-1 text-sm text-red-500">{errors.email}</p>
           )}
         </div>
 
@@ -151,9 +157,12 @@ export function ContactForm({ standalone, heading }: { standalone?: boolean; hea
             onChange={(e) => setMessage(e.target.value)}
             placeholder={m.contact_message_placeholder()}
             className={errors.message ? errorInputClasses : inputClasses}
+            aria-required="true"
+            aria-invalid={!!errors.message}
+            aria-describedby={errors.message ? "contact-message-error" : undefined}
           />
           {errors.message && (
-            <p className="mt-1 text-sm text-red-500">{errors.message}</p>
+            <p id="contact-message-error" role="alert" className="mt-1 text-sm text-red-500">{errors.message}</p>
           )}
         </div>
 

@@ -26,5 +26,12 @@
   "contact_email_invalid": "Please enter a valid email address.",
   "contact_message_required": "Message is required.",
   "contact_message_min": "Message must be at least 10 characters.",
-  "contact_message_max": "Message must be 5000 characters or less."
+  "contact_message_max": "Message must be 5000 characters or less.",
+  "skip_to_content": "Skip to content",
+  "theme_light": "Light mode",
+  "theme_dark": "Dark mode",
+  "lang_en": "English",
+  "lang_de": "Deutsch",
+  "lang_es": "Español",
+  "opens_new_tab": "(opens in new tab)"
 }

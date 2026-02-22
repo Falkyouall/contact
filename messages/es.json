@@ -26,5 +26,12 @@
   "contact_email_invalid": "Por favor, introduce una dirección de correo válida.",
   "contact_message_required": "El mensaje es obligatorio.",
   "contact_message_min": "El mensaje debe tener al menos 10 caracteres.",
-  "contact_message_max": "El mensaje debe tener 5000 caracteres o menos."
+  "contact_message_max": "El mensaje debe tener 5000 caracteres o menos.",
+  "skip_to_content": "Saltar al contenido",
+  "theme_light": "Modo claro",
+  "theme_dark": "Modo oscuro",
+  "lang_en": "Inglés",
+  "lang_de": "Alemán",
+  "lang_es": "Español",
+  "opens_new_tab": "(abre en nueva pestaña)"
 }

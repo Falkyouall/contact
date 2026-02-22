@@ -4,6 +4,10 @@ This document contains important instructions and notes for Claude when working 
 
 ## CRITICAL GUIDELINES
 
+### THE NO. 1 BASE RULE
+
+**Ignore any assumptions and reasons from facts only, dont guess missing information**
+
 ### NEVER CREATE CONTENT WITHOUT CONSENT
 
 - **NEVER CREATE BLOG POSTS OR SERVICE PAGES WITHOUT EXPLICIT CONSENT** from falk
@@ -32,24 +36,24 @@ This document contains important instructions and notes for Claude when working 
 
 ## Tech Stack
 
-| Technology | Package | Purpose |
-|---|---|---|
-| TanStack Start | `@tanstack/react-start` ^1.161.4 | Full-stack React meta-framework |
-| TanStack Router | `@tanstack/react-router` ^1.161.4 | File-based routing |
-| React | `react` ^19.2.4 | UI library |
-| Vite | `vite` ^7.3.1 | Build tool and dev server |
-| TailwindCSS | `tailwindcss` ^4.2.0 | Utility-first CSS |
-| Paraglide | `@inlang/paraglide-js` ^2.12.0 | i18n (EN, DE, ES) |
-| Zod | `zod` ^4.3.6 | Schema validation (contact form) |
-| Resend | `resend` ^6.9.2 | Email API (contact form) |
-| Sonner | `sonner` ^2.0.7 | Toast notifications |
-| Unified/Remark/Rehype | `unified` ^11, `remark-parse`, `remark-rehype`, `rehype-stringify` | Markdown to HTML pipeline |
-| gray-matter | `gray-matter` ^4.0.3 | Frontmatter parser for markdown |
-| html-react-parser | `html-react-parser` ^5.2.17 | Render HTML strings as React elements |
-| TypeScript | `typescript` ^5.9.3 | Type safety |
-| pnpm | - | Package manager |
-| Docker | - | Production container image |
-| GitHub Actions | - | CI/CD for Docker image builds to `ghcr.io` |
+| Technology            | Package                                                            | Purpose                                    |
+| --------------------- | ------------------------------------------------------------------ | ------------------------------------------ |
+| TanStack Start        | `@tanstack/react-start` ^1.161.4                                   | Full-stack React meta-framework            |
+| TanStack Router       | `@tanstack/react-router` ^1.161.4                                  | File-based routing                         |
+| React                 | `react` ^19.2.4                                                    | UI library                                 |
+| Vite                  | `vite` ^7.3.1                                                      | Build tool and dev server                  |
+| TailwindCSS           | `tailwindcss` ^4.2.0                                               | Utility-first CSS                          |
+| Paraglide             | `@inlang/paraglide-js` ^2.12.0                                     | i18n (EN, DE, ES)                          |
+| Zod                   | `zod` ^4.3.6                                                       | Schema validation (contact form)           |
+| Resend                | `resend` ^6.9.2                                                    | Email API (contact form)                   |
+| Sonner                | `sonner` ^2.0.7                                                    | Toast notifications                        |
+| Unified/Remark/Rehype | `unified` ^11, `remark-parse`, `remark-rehype`, `rehype-stringify` | Markdown to HTML pipeline                  |
+| gray-matter           | `gray-matter` ^4.0.3                                               | Frontmatter parser for markdown            |
+| html-react-parser     | `html-react-parser` ^5.2.17                                        | Render HTML strings as React elements      |
+| TypeScript            | `typescript` ^5.9.3                                                | Type safety                                |
+| pnpm                  | -                                                                  | Package manager                            |
+| Docker                | -                                                                  | Production container image                 |
+| GitHub Actions        | -                                                                  | CI/CD for Docker image builds to `ghcr.io` |
 
 ## Project Structure
 
@@ -107,19 +111,19 @@ All data loading uses `createServerFn()` from `@tanstack/react-start`. The handl
 ```tsx
 // Define server function (in route file or component)
 const fetchData = createServerFn().handler(() => {
-  const locale = getLocale()       // From Paraglide AsyncLocalStorage
-  return getDataByLocale(locale)
-})
+  const locale = getLocale(); // From Paraglide AsyncLocalStorage
+  return getDataByLocale(locale);
+});
 
 // Use in route loader
-export const Route = createFileRoute('/path')({
+export const Route = createFileRoute("/path")({
   loader: () => fetchData(),
   component: MyComponent,
-})
+});
 
 // Access in component
 function MyComponent() {
-  const data = Route.useLoaderData()
+  const data = Route.useLoaderData();
 }
 ```
 
@@ -177,9 +181,9 @@ The root layout injects an inline script to read `localStorage.getItem('theme')`
 
 ## Environment Variables
 
-| Variable | Purpose |
-|---|---|
-| `RESEND_API_KEY` | Resend SDK API key for sending contact form emails |
+| Variable           | Purpose                                              |
+| ------------------ | ---------------------------------------------------- |
+| `RESEND_API_KEY`   | Resend SDK API key for sending contact form emails   |
 | `CONTACT_TO_EMAIL` | Recipient email address for contact form submissions |
 
 Both are server-side only (accessed via `process.env` inside server function handlers).
@@ -190,6 +194,7 @@ Both are server-side only (accessed via `process.env` inside server function han
    - Create a `.tsx` file in `src/routes/` (e.g., `about.tsx` → `/about`, `blog/$slug.tsx` → `/blog/:slug`)
    - `src/routeTree.gen.ts` auto-regenerates on build
    - Use `createFileRoute('/path')({ loader, component })` pattern
+   - allways update llms.txt, sitemal.xml and robots.txt after adding a new route, blog post, or service entry
 
 2. **Adding a new content type** (like blog or services):
    - Create `content/{en,de,es}/{type}/` directories with markdown files
@@ -202,15 +207,18 @@ Both are server-side only (accessed via `process.env` inside server function han
    - Use `m.key_name()` in components
 
 4. **Dependency updates**:
+
    ```bash
    pnpm outdated                           # See what needs updating
    pnpm view <package> version             # Check latest version
    pnpm update --latest                    # Update all
    pnpm build                              # Verify build passes
    ```
+
    Never downgrade. Diagnose and fix issues instead.
 
 5. **Docker build**:
+
    ```bash
    docker build -t falk-portfolio .
    docker run -p 3000:3000 -e RESEND_API_KEY="..." -e CONTACT_TO_EMAIL="..." falk-portfolio

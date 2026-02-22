@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import * as m from '~/paraglide/messages'
 
 type Theme = 'system' | 'light' | 'dark'
 
@@ -40,9 +41,9 @@ export function ThemeSwitcher() {
     applyTheme(next)
   }
 
-  const options: { value: Theme; label: string }[] = [
-    { value: 'light', label: '☀' },
-    { value: 'dark', label: '☾' },
+  const options: { value: Theme; label: string; ariaLabel: () => string }[] = [
+    { value: 'light', label: '☀️', ariaLabel: () => m.theme_light() },
+    { value: 'dark', label: '🌙', ariaLabel: () => m.theme_dark() },
   ]
 
   return (
@@ -51,6 +52,8 @@ export function ThemeSwitcher() {
         <button
           key={opt.value}
           onClick={() => selectTheme(opt.value)}
+          aria-label={opt.ariaLabel()}
+          aria-pressed={theme === opt.value}
           className={`rounded cursor-pointer px-2 py-1 text-sm font-medium transition-colors ${
             theme === opt.value
               ? 'bg-black text-white dark:bg-white dark:text-black'

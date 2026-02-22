@@ -20,21 +20,21 @@ const fetchService = createServerFn()
 export const Route = createFileRoute('/services/$slug')({
   loader: ({ params }) => fetchService({ data: params.slug }),
   head: ({ loaderData }) => {
-    const path = `/services/${loaderData.slug}`
+    const path = `/services/${loaderData!.slug}`
     return {
       meta: [
         ...pageMeta({
-          title: loaderData.title,
-          description: loaderData.description,
+          title: loaderData!.title,
+          description: loaderData!.description,
           path,
-          locale: loaderData.locale,
+          locale: loaderData?.locale,
         }),
         {
           'script:ld+json': {
             '@context': 'https://schema.org',
             '@type': 'Service',
-            name: loaderData.title,
-            description: loaderData.description,
+            name: loaderData!.title,
+            description: loaderData!.description,
             provider: {
               '@type': 'Person',
               name: siteConfig.author,
@@ -55,7 +55,7 @@ function ServicePage() {
   const service = Route.useLoaderData()
 
   return (
-    <div className="mx-auto max-w-2xl px-4 py-16">
+    <div className="mx-auto max-w-2xl px-4 pb-16">
       <Link to="/services" className="mb-8 inline-block text-sm text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-100">&larr; {m.nav_services()}</Link>
       <article>
         <header className="mb-8">

@@ -18,7 +18,7 @@ export const Route = createFileRoute('/blog/')({
       description:
         'Thoughts on software development, AI agents, developer tools, and building for the web.',
       path: '/blog',
-      locale: loaderData.locale,
+      locale: loaderData?.locale,
     }),
     links: [
       canonicalLink('/blog'),
@@ -31,7 +31,7 @@ function BlogIndex() {
   const { posts } = Route.useLoaderData()
 
   return (
-    <div className="mx-auto max-w-2xl px-4 py-16">
+    <div className="mx-auto max-w-2xl px-4 pb-16">
       <Link to="/" className="mb-8 inline-block text-sm text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-100">&larr; {m.nav_home()}</Link>
       <h1 className="mb-8 text-4xl font-bold">{m.heading_blog()}</h1>
       <ul className="space-y-6">

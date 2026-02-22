@@ -26,5 +26,12 @@
   "contact_email_invalid": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
   "contact_message_required": "Nachricht ist erforderlich.",
   "contact_message_min": "Nachricht muss mindestens 10 Zeichen lang sein.",
-  "contact_message_max": "Nachricht darf maximal 5000 Zeichen lang sein."
+  "contact_message_max": "Nachricht darf maximal 5000 Zeichen lang sein.",
+  "skip_to_content": "Zum Inhalt springen",
+  "theme_light": "Heller Modus",
+  "theme_dark": "Dunkler Modus",
+  "lang_en": "Englisch",
+  "lang_de": "Deutsch",
+  "lang_es": "Spanisch",
+  "opens_new_tab": "(öffnet in neuem Tab)"
 }
