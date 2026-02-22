@@ -4,8 +4,12 @@ import {
   Link,
   Scripts,
 } from "@tanstack/react-router";
-import { Toaster } from "sonner";
+import { lazy, Suspense } from "react";
 import * as m from "~/paraglide/messages";
+
+const LazyToaster = lazy(() =>
+  import("sonner").then((mod) => ({ default: mod.Toaster }))
+);
 import { getLocale } from "~/paraglide/runtime";
 import { LanguageSwitcher } from "~/components/LanguageSwitcher";
 import { ThemeSwitcher } from "~/components/ThemeSwitcher";
@@ -51,7 +55,7 @@ function RootDocument({ children }: { children: React.ReactNode }) {
       <body className="flex min-h-dvh flex-col">
         <a
           href="#main-content"
-          className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:rounded focus:bg-black focus:px-4 focus:py-2 focus:text-white dark:focus:bg-white dark:focus:text-black"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-100 focus:rounded focus:bg-black focus:px-4 focus:py-2 focus:text-white dark:focus:bg-white dark:focus:text-black"
         >
           {m.skip_to_content()}
         </a>
@@ -89,7 +93,9 @@ function RootDocument({ children }: { children: React.ReactNode }) {
             </div>
           </div>
         </footer>
-        <Toaster richColors />
+        <Suspense fallback={null}>
+          <LazyToaster richColors />
+        </Suspense>
         <Scripts />
       </body>
     </html>
