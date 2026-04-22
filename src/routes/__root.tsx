@@ -12,6 +12,7 @@ const LazyToaster = lazy(() =>
 );
 import { getLocale } from "~/paraglide/runtime";
 import { LanguageSwitcher } from "~/components/LanguageSwitcher";
+import { LiquidGlassBox } from "~/components/LiquidGlassBox";
 import { ThemeSwitcher } from "~/components/ThemeSwitcher";
 import { siteConfig } from "~/lib/seo";
 import appCss from "../styles/app.css?url";
@@ -59,22 +60,24 @@ function RootDocument({ children }: { children: React.ReactNode }) {
         >
           {m.skip_to_content()}
         </a>
-        <header className="fixed top-0 left-0 right-0 z-50 flex items-start justify-between p-6">
-          <Link
-            to="/"
-            className="leading-none font-black text-5xl tracking-tight"
-          >
-            <span className="block tracking-widest">FA</span>
-            <span className="block tracking-widest">LK</span>
-          </Link>
-          <nav aria-label={m.nav_home()}>
+        <header className="pointer-events-none fixed top-0 left-0 right-0 flex items-start justify-between p-6" style={{ zIndex: 2147483647 }}>
+          <LiquidGlassBox className="pointer-events-auto bg-white/10 dark:bg-white/[0.06] px-4 py-3">
+            <Link
+              to="/"
+              className="leading-none font-black text-5xl tracking-tight block"
+            >
+              <span className="block tracking-widest">FA</span>
+              <span className="block tracking-widest">LK</span>
+            </Link>
+          </LiquidGlassBox>
+          <nav aria-label={m.nav_home()} className="pointer-events-auto">
             <div className="flex flex-col items-end gap-2">
               <LanguageSwitcher />
               <ThemeSwitcher />
             </div>
           </nav>
         </header>
-        <main id="main-content" className="flex flex-1 pt-36">
+        <main id="main-content" className="flex flex-1 pt-48">
           {children}
         </main>
         <footer className="border-t border-gray-200 dark:border-gray-800 py-8 px-6">

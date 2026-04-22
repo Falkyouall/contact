@@ -1,11 +1,11 @@
 ---
-title: La era agéntica arreglará la privacidad
+title: La era agéntica podría arreglar la privacidad
 date: 2026-02-22
 description: Las VPNs transfieren confianza de tu ISP a una empresa VPN. Los agentes de IA eliminan la necesidad de confiar — la web nunca te ve.
 contactHeading: "¿Quieres construir integraciones de agentes con privacidad?"
 ---
 
-Las VPNs iban a resolver la privacidad online. Enrutas tu tráfico a través de un servidor VPN, tu ISP no ve lo que haces, y la web de destino ve la IP de la VPN en vez de la tuya. Ese es el pitch. La realidad es más desordenada, y está emergiendo un modelo diferente que hace obsoleto todo el enfoque.
+Las VPNs iban a resolver la privacidad online. Enrutas tu tráfico a través de un servidor VPN, tu ISP no ve lo que haces, y la web de destino ve la IP de la VPN en vez de la tuya. Ese es el pitch. La realidad es más desordenada, y está emergiendo un modelo diferente que podría hacer obsoleto todo el enfoque.
 
 ## El problema de confianza de las VPNs
 
@@ -41,7 +41,7 @@ Cuando un agente de IA navega la web en tu nombre, la web nunca ve tu navegador.
 
 Esto no es un feature de privacidad diseñado intencionalmente. Es un efecto secundario arquitectónico. El agente ejecuta su propio entorno de navegador en el servidor. Cuando [ChatGPT agent](https://help.openai.com/en/articles/11752874-chatgpt-agent) visita una web para investigar algo para ti, usa su propia computadora virtual. [Perplexity](https://www.perplexity.ai/hub/blog/agents-or-bots-making-sense-of-ai-on-the-open-web) describe sus peticiones como "targeted, one-off requests to retrieve current information" — la web ve la infraestructura de Perplexity, no a ti.
 
-El tracking cross-site vía fingerprinting pierde sentido cuando el fingerprint pertenece a un agente compartido por millones de usuarios. No hay individuo que rastrear.
+El tracking cross-site vía fingerprinting podría perder gran parte de su sentido cuando el fingerprint pertenece a un agente compartido por millones de usuarios. No hay individuo que rastrear.
 
 ## De sesiones de navegador a queries estructurados
 

@@ -1,11 +1,11 @@
 ---
-title: The Agentic Age Will Fix Privacy
+title: The Agentic Age Could Fix Privacy
 date: 2026-02-22
 description: VPNs shift trust from your ISP to a VPN company. AI agents eliminate the need for trust altogether — the website never sees you.
 contactHeading: "Want to build privacy-first agent integrations?"
 ---
 
-VPNs were supposed to solve online privacy. You route your traffic through a VPN server, your ISP can't see what you're doing, and the destination website sees the VPN's IP instead of yours. That's the pitch. The reality is messier, and a different model is emerging that makes the whole thing obsolete.
+VPNs were supposed to solve online privacy. You route your traffic through a VPN server, your ISP can't see what you're doing, and the destination website sees the VPN's IP instead of yours. That's the pitch. The reality is messier, and a different model is emerging that could make the whole thing obsolete.
 
 ## The VPN trust problem
 
@@ -41,7 +41,7 @@ When an AI agent browses the web on your behalf, the website never sees your bro
 
 This isn't a privacy feature that was designed in. It's an architectural side effect. The agent runs its own browser environment server-side. When [ChatGPT agent](https://help.openai.com/en/articles/11752874-chatgpt-agent) visits a website to research something for you, it uses its own virtual computer. [Perplexity](https://www.perplexity.ai/hub/blog/agents-or-bots-making-sense-of-ai-on-the-open-web) describes its requests as "targeted, one-off requests to retrieve current information" — the website sees Perplexity's infrastructure, not you.
 
-Cross-site tracking via fingerprinting becomes meaningless when the fingerprint belongs to an agent shared by millions of users. There's no individual to track.
+Cross-site tracking via fingerprinting could lose most of its value when the fingerprint belongs to an agent shared by millions of users. There's no individual to track.
 
 ## From browser sessions to structured queries
 

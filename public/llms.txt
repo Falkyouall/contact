@@ -17,6 +17,7 @@ Falk Michel is a frontend developer and tech lead based in Munich with over 11 y
 ## Blog
 
 - [The Art of Asking](https://falkmichel.com/blog/the-art-of-asking): The agentic trap curve, Deep Thought, and why knowing what to ask for matters more than knowing how to build it.
+- [The Art of Asking Pt. 2](https://falkmichel.com/blog/the-art-of-asking-pt-2): Complex tickets, fading shame, and why asking AI to explain a problem is the same skill as asking it to solve one.
 - [The Case for CLIs in the Agentic Age](https://falkmichel.com/blog/the-case-for-clis-in-the-agentic-age): AI agents are better at Unix commands than at clicking buttons. That has consequences for how we build tools.
 - [Agents Are the Next Browser](https://falkmichel.com/blog/agents-are-the-next-browser): In two years, a third of your comparison traffic will come from AI assistants, not Google. Your website needs an agent-facing interface.
 

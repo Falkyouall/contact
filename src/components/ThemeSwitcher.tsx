@@ -1,68 +1,42 @@
-import { useState, useEffect } from 'react'
+import { useLayoutEffect, useState } from 'react'
 import * as m from '~/paraglide/messages'
 
-type Theme = 'system' | 'light' | 'dark'
-
-function applyTheme(theme: Theme) {
-  const isDark =
-    theme === 'dark' ||
-    (theme === 'system' &&
-      window.matchMedia('(prefers-color-scheme: dark)').matches)
-
-  document.documentElement.classList.toggle('dark', isDark)
-}
-
 export function ThemeSwitcher() {
-  const [theme, setTheme] = useState<Theme>('system')
+  const [isDark, setIsDark] = useState(false)
+  const [mounted, setMounted] = useState(false)
 
-  useEffect(() => {
-    const stored = localStorage.getItem('theme') as Theme | null
-    if (stored === 'light' || stored === 'dark') {
-      setTheme(stored)
-    }
-  }, [])
+  useLayoutEffect(() => {
+    setIsDark(document.documentElement.classList.contains('dark'))
+    setMounted(true)
 
-  useEffect(() => {
     const mq = window.matchMedia('(prefers-color-scheme: dark)')
     const handler = () => {
-      if (theme === 'system') applyTheme('system')
+      const stored = localStorage.getItem('theme')
+      if (stored !== 'light' && stored !== 'dark') {
+        const dark = mq.matches
+        document.documentElement.classList.toggle('dark', dark)
+        setIsDark(dark)
+      }
     }
     mq.addEventListener('change', handler)
     return () => mq.removeEventListener('change', handler)
-  }, [theme])
+  }, [])
 
-  function selectTheme(next: Theme) {
-    setTheme(next)
-    if (next === 'system') {
-      localStorage.removeItem('theme')
-    } else {
-      localStorage.setItem('theme', next)
-    }
-    applyTheme(next)
+  function toggle() {
+    const next = !isDark
+    setIsDark(next)
+    localStorage.setItem('theme', next ? 'dark' : 'light')
+    document.documentElement.classList.toggle('dark', next)
   }
 
-  const options: { value: Theme; label: string; ariaLabel: () => string }[] = [
-    { value: 'light', label: '☀️', ariaLabel: () => m.theme_light() },
-    { value: 'dark', label: '🌙', ariaLabel: () => m.theme_dark() },
-  ]
-
   return (
-    <div className="flex flex-col gap-1">
-      {options.map((opt) => (
-        <button
-          key={opt.value}
-          onClick={() => selectTheme(opt.value)}
-          aria-label={opt.ariaLabel()}
-          aria-pressed={theme === opt.value}
-          className={`rounded cursor-pointer px-2 py-1 text-sm font-medium transition-colors ${
-            theme === opt.value
-              ? 'bg-black text-white dark:bg-white dark:text-black'
-              : 'bg-gray-100 text-gray-600 hover:bg-gray-200 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600'
-          }`}
-        >
-          {opt.label}
-        </button>
-      ))}
-    </div>
+    <button
+      onClick={toggle}
+      aria-label={isDark ? m.theme_light() : m.theme_dark()}
+      className="rounded cursor-pointer px-2 py-1 text-sm font-medium bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 transition-colors"
+      style={{ visibility: mounted ? 'visible' : 'hidden' }}
+    >
+      {isDark ? '☀️' : '🌚'}
+    </button>
   )
 }

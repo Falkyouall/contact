@@ -1,5 +1,5 @@
 ---
-title: Wie das agentische Zeitalter unsere Privatsphäre retten wird.
+title: Wie das agentische Zeitalter unsere Privatsphäre retten könnte.
 date: 2026-02-22
 description: VPNs verschieben Vertrauen von deinem ISP zu einer VPN-Firma. AI Agents machen Vertrauen überflüssig, denn die Website wird dich nicht mehr persönlich begrüßen.
 contactHeading: "Privacy-first Agent-Integrationen bauen?"
@@ -41,7 +41,7 @@ Wenn ein AI Agent in deinem Auftrag im Web surft, sieht die Website nie deinen B
 
 Das ist kein Privacy-Feature das absichtlich eingebaut wurde. Es ist ein architektureller Nebeneffekt. Der Agent betreibt seine eigene Browser-Umgebung serverseitig. Wenn [ChatGPT agent](https://help.openai.com/en/articles/11752874-chatgpt-agent) eine Website besucht um etwas für dich zu recherchieren, nutzt er seinen eigenen virtuellen Computer. [Perplexity](https://www.perplexity.ai/hub/blog/agents-or-bots-making-sense-of-ai-on-the-open-web) beschreibt seine Anfragen als "targeted, one-off requests to retrieve current information" — die Website sieht Perplexitys Infrastruktur, nicht dich.
 
-Cross-Site Tracking via Fingerprinting wird bedeutungslos wenn der Fingerprint einem Agent gehört, der von Millionen Nutzern geteilt wird. Es gibt keine Einzelperson die man tracken könnte.
+Cross-Site Tracking via Fingerprinting könnte weitgehend bedeutungslos werden wenn der Fingerprint einem Agent gehört, der von Millionen Nutzern geteilt wird. Es gibt keine Einzelperson die man tracken könnte.
 
 ## Von Browser-Sessions zu strukturierten Queries
 

@@ -3,6 +3,7 @@ import { createServerFn } from "@tanstack/react-start";
 import * as m from "~/paraglide/messages";
 import { getLocale } from "~/paraglide/runtime";
 import { siteConfig, pageMeta, canonicalLink } from "~/lib/seo";
+import { LogoCarousel } from "~/components/LogoCarousel";
 
 const fetchLocale = createServerFn().handler(() => getLocale());
 
@@ -38,7 +39,7 @@ export const Route = createFileRoute("/")({
 
 function Home() {
   return (
-    <div className="flex flex-1 items-center justify-center flex-col gap-0 ">
+    <div className="flex flex-1 items-center justify-center flex-col gap-12 sm:gap-32 pb-12 w-full mt-12">
       <div
         className="relative flex flex-col items-center p-6 sm:p-12
         before:absolute before:top-10 before:bottom-10 before:left-0 before:right-0 before:border-l before:border-r before:border-black before:pointer-events-none dark:before:border-white sm:before:top-[-80px] sm:before:bottom-[-80px]
@@ -88,6 +89,7 @@ function Home() {
           </a>
         </div>
       </div>
+      <LogoCarousel />
     </div>
   );
 }
