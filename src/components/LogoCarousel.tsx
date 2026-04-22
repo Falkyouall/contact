@@ -198,9 +198,10 @@ export function LogoCarousel() {
             aria-hidden="true"
             className={`pointer-events-none absolute z-10 h-24 w-5 bg-white/5 dark:bg-white/[0.03] ${horizontal} ${vertical}`}
             style={{
-              backdropFilter: "blur(1px) saturate(110%)",
-              WebkitBackdropFilter: "blur(1px) saturate(110%)",
-              boxShadow: "inset 0 0 4px rgba(255,255,255,0.35)",
+              backdropFilter: "blur(12px) saturate(180%) brightness(1.05)",
+              WebkitBackdropFilter: "blur(12px) saturate(180%) brightness(1.05)",
+              boxShadow:
+                "inset 0 1px 0 rgba(255,255,255,0.5), inset 0 0 6px rgba(255,255,255,0.25)",
               maskImage: mask,
               WebkitMaskImage: mask,
             }}
