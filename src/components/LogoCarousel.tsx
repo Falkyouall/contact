@@ -1,4 +1,9 @@
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
+import * as m from "~/paraglide/messages";
+import {
+  getDisplacementFilter,
+  supportsBackdropFilterUrl,
+} from "~/lib/liquidGlass";
 
 type Logo = { src: string; alt: string };
 
@@ -33,24 +38,54 @@ const BUFFER = CARD_W + GAP;
 const MIN_SPACING = CARD_W + GAP;
 const SPEED = 25;
 
-const STRENGTH = 14;
-const CA = 2;
-const FILTER_ID = "lg-displace";
-
-const strips = [
-  { key: "lt", side: "left", row: "top" },
-  { key: "lb", side: "left", row: "bottom" },
-  { key: "rt", side: "right", row: "top" },
-  { key: "rb", side: "right", row: "bottom" },
-] as const;
+const GLASS = {
+  depth: 8,
+  strength: 20,
+  chromaticAberration: 1,
+  blur: 0,
+  brightness: 1.02,
+  saturate: 1.1,
+};
 
 export function LogoCarousel() {
   const containerRef = useRef<HTMLDivElement>(null);
   const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
-  const mirrorRefs = useRef<(HTMLDivElement | null)[][]>([[], [], [], []]);
+  const edgeRefs = useRef<(HTMLDivElement | null)[]>([]);
   const progressRef = useRef(0);
   const pausedRef = useRef(false);
   const [width, setWidth] = useState(0);
+
+  useLayoutEffect(() => {
+    if (!supportsBackdropFilterUrl()) return;
+
+    const applyGlass = (el: HTMLDivElement | null) => {
+      if (!el) return;
+      const rect = el.getBoundingClientRect();
+      const w = Math.round(rect.width);
+      const h = Math.round(rect.height);
+      if (w === 0 || h === 0) return;
+      const url = getDisplacementFilter({
+        width: w,
+        height: h,
+        radius: 0,
+        depth: GLASS.depth,
+        strength: GLASS.strength,
+        chromaticAberration: GLASS.chromaticAberration,
+      });
+      const filter = `blur(${GLASS.blur / 2}px) url('${url}') blur(${GLASS.blur}px) brightness(${GLASS.brightness}) saturate(${GLASS.saturate})`;
+      el.style.backdropFilter = filter;
+      (
+        el.style as CSSStyleDeclaration & { webkitBackdropFilter: string }
+      ).webkitBackdropFilter = filter;
+    };
+
+    const update = () => edgeRefs.current.forEach(applyGlass);
+    update();
+
+    const ro = new ResizeObserver(update);
+    edgeRefs.current.forEach((el) => el && ro.observe(el));
+    return () => ro.disconnect();
+  }, []);
 
   useLayoutEffect(() => {
     const el = containerRef.current;
@@ -72,17 +107,13 @@ export function LogoCarousel() {
 
     const place = () => {
       for (let i = 0; i < n; i++) {
+        const el = cardRefs.current[i];
+        if (!el) continue;
         const p = (progressRef.current + (i / n) * P) % P;
-        const x = p < L ? p - BUFFER : 2 * L - p - BUFFER;
-        const y = p < L ? 0 : bottomY;
-        const transform = `translate(${x}px, ${y}px)`;
-
-        const main = cardRefs.current[i];
-        if (main) main.style.transform = transform;
-
-        for (let si = 0; si < 4; si++) {
-          const mirror = mirrorRefs.current[si][i];
-          if (mirror) mirror.style.transform = transform;
+        if (p < L) {
+          el.style.transform = `translate(${p - BUFFER}px, 0)`;
+        } else {
+          el.style.transform = `translate(${2 * L - p - BUFFER}px, ${bottomY}px)`;
         }
       }
     };
@@ -111,73 +142,13 @@ export function LogoCarousel() {
 
   return (
     <section
-      className="relative w-full md:w-5xl py-8 overflow-hidden"
+      className="relative w-full md:w-5xl py-8"
       aria-label="Companies I have worked with"
     >
-      <svg
-        width="0"
-        height="0"
-        aria-hidden="true"
-        style={{ position: "absolute" }}
-      >
-        <defs>
-          <filter
-            id={FILTER_ID}
-            x="0"
-            y="0"
-            width="100%"
-            height="100%"
-            colorInterpolationFilters="sRGB"
-          >
-            <feTurbulence
-              type="fractalNoise"
-              baseFrequency="0.012 0.03"
-              numOctaves="2"
-              seed="7"
-              result="noise"
-            />
-            <feDisplacementMap
-              in="SourceGraphic"
-              in2="noise"
-              scale={STRENGTH + CA * 2}
-              xChannelSelector="R"
-              yChannelSelector="G"
-            />
-            <feColorMatrix
-              type="matrix"
-              values="1 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 0"
-              result="dR"
-            />
-            <feDisplacementMap
-              in="SourceGraphic"
-              in2="noise"
-              scale={STRENGTH + CA}
-              xChannelSelector="R"
-              yChannelSelector="G"
-            />
-            <feColorMatrix
-              type="matrix"
-              values="0 0 0 0 0  0 1 0 0 0  0 0 0 0 0  0 0 0 1 0"
-              result="dG"
-            />
-            <feDisplacementMap
-              in="SourceGraphic"
-              in2="noise"
-              scale={STRENGTH}
-              xChannelSelector="R"
-              yChannelSelector="G"
-            />
-            <feColorMatrix
-              type="matrix"
-              values="0 0 0 0 0  0 0 0 0 0  0 0 1 0 0  0 0 0 1 0"
-              result="dB"
-            />
-            <feBlend in="dR" in2="dG" mode="screen" result="dRG" />
-            <feBlend in="dRG" in2="dB" mode="screen" />
-          </filter>
-        </defs>
-      </svg>
-
+      <h2 className="mb-6 text-center text-xs uppercase tracking-widest text-gray-500 dark:text-gray-400">
+        {m.heading_references()}
+      </h2>
+      <div className="relative overflow-hidden">
       <ul className="sr-only">
         {logos.map((logo) => (
           <li key={logo.alt}>{logo.alt}</li>
@@ -201,80 +172,45 @@ export function LogoCarousel() {
             ref={(el) => {
               cardRefs.current[i] = el;
             }}
-            className="absolute left-0 top-0 flex h-24 w-44 items-center justify-center rounded-xl bg-white p-5 shadow-sm ring-1 ring-black/5 dark:ring-white/10 will-change-transform"
+            className="absolute left-0 top-0 flex h-24 w-44 items-center justify-center rounded-xl bg-white p-3 shadow-sm ring-1 ring-black/5 dark:bg-gray-800 dark:ring-white/10 will-change-transform"
             style={{ transform: "translate(-9999px, 0)" }}
           >
-            <img
-              src={logo.src}
-              alt={logo.alt}
-              className="max-h-full max-w-full object-contain"
-              loading="eager"
-              decoding="async"
-            />
+            <span className="text-center text-sm font-semibold leading-tight text-balance text-black dark:text-white">
+              {logo.alt}
+            </span>
           </div>
         ))}
       </div>
-
-      {strips.map((strip, si) => {
-        const outerHorizontal = strip.side === "left" ? "left-0" : "right-0";
-        const outerVertical = strip.row === "top" ? "top-8" : "bottom-8";
-        const innerHorizontal = strip.side === "left" ? "left-0" : "right-0";
-        const innerTop = strip.row === "top" ? 0 : -(CARD_H + GAP);
-        const filter = `url(#${FILTER_ID})`;
-        return (
-          <div
-            key={strip.key}
-            aria-hidden="true"
-            className={`pointer-events-none absolute h-24 w-5 overflow-hidden ${outerHorizontal} ${outerVertical}`}
-            style={{ filter, WebkitFilter: filter }}
-          >
-            <div
-              className={`absolute ${innerHorizontal} bg-white dark:bg-gray-900`}
-              style={{
-                top: `${innerTop}px`,
-                width: `${width}px`,
-                height: `${2 * CARD_H + GAP}px`,
-              }}
-            >
-              {logos.map((logo, li) => (
-                <div
-                  key={logo.alt}
-                  ref={(el) => {
-                    mirrorRefs.current[si][li] = el;
-                  }}
-                  className="absolute left-0 top-0 flex h-24 w-44 items-center justify-center rounded-xl bg-white p-5 shadow-sm ring-1 ring-black/5 dark:ring-white/10 will-change-transform"
-                  style={{ transform: "translate(-9999px, 0)" }}
-                >
-                  <img
-                    src={logo.src}
-                    alt=""
-                    aria-hidden="true"
-                    className="max-h-full max-w-full object-contain"
-                    loading="eager"
-                    decoding="async"
-                  />
-                </div>
-              ))}
-            </div>
-          </div>
-        );
-      })}
-
-      {strips.map((strip) => {
-        const outerHorizontal = strip.side === "left" ? "left-0" : "right-0";
-        const outerVertical = strip.row === "top" ? "top-8" : "bottom-8";
-        const fadeDir = strip.side === "left" ? "to right" : "to left";
+      {(
+        [
+          { side: "left", row: "top" },
+          { side: "left", row: "bottom" },
+          { side: "right", row: "top" },
+          { side: "right", row: "bottom" },
+        ] as const
+      ).map(({ side, row }, i) => {
+        const horizontal = side === "left" ? "left-0" : "right-0";
+        const vertical = row === "top" ? "top-8" : "bottom-8";
+        const fadeDir = side === "left" ? "to right" : "to left";
         const mask = `linear-gradient(${fadeDir}, black 0%, black 70%, transparent 100%)`;
         return (
           <div
-            key={`glass-${strip.key}`}
+            key={`${side}-${row}`}
             aria-hidden="true"
-            className={`pointer-events-none absolute z-10 h-24 w-5 ${outerHorizontal} ${outerVertical}`}
-            style={{ maskImage: mask, WebkitMaskImage: mask }}
+            className={`pointer-events-none absolute z-10 h-24 w-5 ${horizontal} ${vertical}`}
+            style={{
+              maskImage: mask,
+              WebkitMaskImage: mask,
+            }}
           >
             <div
+              ref={(el) => {
+                edgeRefs.current[i] = el;
+              }}
               className="absolute inset-0 bg-white/10 dark:bg-white/[0.06]"
               style={{
+                backdropFilter: "blur(12px) saturate(180%) brightness(1.05)",
+                WebkitBackdropFilter: "blur(12px) saturate(180%) brightness(1.05)",
                 boxShadow:
                   "inset 0 1px 0 rgba(255,255,255,0.5), inset 0 0 6px rgba(255,255,255,0.25)",
               }}
@@ -282,6 +218,7 @@ export function LogoCarousel() {
           </div>
         );
       })}
+      </div>
     </section>
   );
 }
