@@ -142,13 +142,13 @@ export function LogoCarousel() {
 
   return (
     <section
-      className="relative w-full md:w-5xl py-8"
+      className="relative w-full md:w-5xl"
       aria-label="Companies I have worked with"
     >
       <h2 className="mb-6 text-center text-xs uppercase tracking-widest text-gray-500 dark:text-gray-400">
         {m.heading_references()}
       </h2>
-      <div className="relative overflow-hidden">
+      <div className="relative py-8 overflow-hidden">
       <ul className="sr-only">
         {logos.map((logo) => (
           <li key={logo.alt}>{logo.alt}</li>
