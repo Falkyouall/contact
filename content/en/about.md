@@ -8,7 +8,7 @@ I'm a frontend developer and tech lead based in Munich. I've been building web a
 
 ## What I do
 
-I currently work as a JavaScript Tech Lead at Appsfactory, where I lead a small team of developers. My day to day involves a mix of hands on coding, architecture decisions, code reviews, mentoring, and shaping how we hire. I've worked on projects across different industries, from financial platforms and automotive configurators to internal tooling and custom Figma plugins.
+I currently work as a JavaScript Tech Lead at an international full-service agency, where I lead a small team of developers. My day to day involves a mix of hands on coding, architecture decisions, code reviews, mentoring, and shaping how we hire. I've worked on projects across different industries, from financial platforms and automotive configurators to internal tooling and custom Figma plugins.
 
 Some highlights from recent years:
 

@@ -8,7 +8,7 @@ Soy desarrollador frontend y tech lead en Múnich. Llevo más de 11 años constr
 
 ## Qué hago
 
-Actualmente trabajo como JavaScript Tech Lead en Appsfactory, donde lidero un pequeño equipo de desarrolladores. Mi día a día es una mezcla de programación activa, decisiones de arquitectura, revisiones de código, mentoría y diseño de nuestros procesos de contratación. He trabajado en proyectos de distintas industrias, desde plataformas financieras y configuradores de vehículos hasta herramientas internas y plugins personalizados de Figma.
+Actualmente trabajo como JavaScript Tech Lead en una agencia internacional full-service, donde lidero un pequeño equipo de desarrolladores. Mi día a día es una mezcla de programación activa, decisiones de arquitectura, revisiones de código, mentoría y diseño de nuestros procesos de contratación. He trabajado en proyectos de distintas industrias, desde plataformas financieras y configuradores de vehículos hasta herramientas internas y plugins personalizados de Figma.
 
 Algunos proyectos destacados de los últimos años:
 

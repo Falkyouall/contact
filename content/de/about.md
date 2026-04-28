@@ -8,7 +8,7 @@ Ich bin Frontend Entwickler und Tech Lead aus München. Seit über 11 Jahren bau
 
 ## Was ich mache
 
-Aktuell arbeite ich als JavaScript Tech Lead bei Appsfactory, wo ich ein kleines Team von Entwicklern leite. Mein Alltag besteht aus einer Mischung aus aktivem Coden, Architekturentscheidungen, Code Reviews, Mentoring und der Gestaltung unserer Einstellungsprozesse. Ich habe an Projekten in verschiedenen Branchen gearbeitet, von Finanzplattformen und Fahrzeugkonfiguratoren bis hin zu internem Tooling und eigenen Figma Plugins.
+Aktuell arbeite ich als JavaScript Tech Lead bei einer internationalen Full-Service-Agentur, wo ich ein kleines Team von Entwicklern leite. Mein Alltag besteht aus einer Mischung aus aktivem Coden, Architekturentscheidungen, Code Reviews, Mentoring und der Gestaltung unserer Einstellungsprozesse. Ich habe an Projekten in verschiedenen Branchen gearbeitet, von Finanzplattformen und Fahrzeugkonfiguratoren bis hin zu internem Tooling und eigenen Figma Plugins.
 
 Ein paar Highlights der letzten Jahre:
 
