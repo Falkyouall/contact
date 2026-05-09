@@ -2,6 +2,7 @@
   "name": "falk-portfolio",
   "private": true,
   "type": "module",
+  "packageManager": "pnpm@10.32.1",
   "scripts": {
     "dev": "vite dev",
     "build": "vite build",
@@ -24,12 +25,6 @@
     "sonner": "^2.0.7",
     "unified": "^11.0.5",
     "zod": "^4.3.6"
-  },
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "esbuild",
-      "sharp"
-    ]
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.19",
