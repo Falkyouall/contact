@@ -14,6 +14,7 @@ Falk Michel is a fullstack TypeScript tech lead based in Munich with over 11 yea
 - [AI Integration](https://falkmichel.com/services/ai-integration): Hands-on AI adoption for development teams — in your real codebase, not in slides. Guidelines, habits, and the judgement of when not to use AI.
 - [Rapid Prototyping](https://falkmichel.com/services/rapid-prototyping): From idea to clickable, working prototype in days. Built with production-grade tools, so the idea that survives doesn't have to start over.
 - [Figma Plugin Development](https://falkmichel.com/services/figma-plugin-development): Custom Figma plugins that remove repetitive manual work, keep design tokens in sync with code, and bridge Figma to your internal systems.
+- [Payment Integrations](https://falkmichel.com/services/payment-integrations): Stripe, LemonSqueezy, PayPal, and Shopify done right — for online shops that can't afford a broken checkout or a 3-week debug session over webhook signatures.
 
 ## Blog
 
