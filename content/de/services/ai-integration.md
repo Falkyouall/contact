@@ -1,32 +1,33 @@
 ---
 title: KI-Integration
-subtitle: KI-Tools nahtlos in eure Entwicklungsabläufe einbinden
+subtitle: Damit dein Team die KI-Tools wirklich nutzt, für die du schon zahlst
 date: 2026-02-21
-description: Ich helfe Teams, KI-Tools in ihre bestehenden Workflows zu integrieren — von der Auswahl bis zur produktiven Nutzung.
-contactHeading: "Bereit für AI in deinem Workflow?"
+description: Praxisnahe KI-Einführung für Entwicklungsteams — in eurer echten Codebasis, nicht in Folien. Richtlinien, Gewohnheiten, und das Urteilsvermögen, wann KI *nicht* einzusetzen ist.
+contactHeading: "Bereit für KI in deinem Workflow?"
 ---
 
-Ich helfe Entwicklungsteams dabei, KI-gestützte Tools und Workflows einzuführen, damit sie schneller liefern und effektiver arbeiten können.
+Die meisten Teams, die ich sehe, fallen in eines von drei Mustern: Sie haben Copilot-Lizenzen gekauft und drei Leute nutzen sie. Sie haben Angst davor, "die KI den Code schreiben zu lassen". Oder sie lassen die KI alles schreiben und haben jetzt eine Codebasis, die sie jeden Montag aufs Neue überrascht.
 
-## Was ich anbiete
+Es gibt einen Mittelweg — und der erfordert mehr als eine Slack-Ankündigung.
 
-- Praxisnahe Workshops zur Einführung von KI-Coding-Assistenten in bestehende Entwicklungsabläufe
-- Einrichtung und Konfiguration von KI-Tools, abgestimmt auf den Tech-Stack und die Prozesse deines Teams
-- Erarbeitung praktischer Richtlinien, wann und wie KI im Entwicklungsalltag eingesetzt wird
-- Bewertung, welche KI-Tools zu den Anforderungen deines Teams passen — und welche nicht
+## Kennst du das?
 
-## Für wen das gedacht ist
+- Ihr habt KI-Tool-Lizenzen gekauft, und die Adoption liegt irgendwo zwischen "niemand" und "der eine motivierte Junior"
+- Eure Seniors trauen der KI nicht, eure Juniors trauen ihr zu sehr
+- Wenn jemand fragt "soll ich dafür KI nehmen?", habt ihr keine klare Antwort
 
-- Entwicklungsteams, die KI-Tools einsetzen wollen, aber nicht wissen, wo sie anfangen sollen
-- Tech Leads, die KI-Nutzungsrichtlinien für ihre Teams aufstellen möchten
-- Unternehmen, die KI-Tool-Lizenzen gekauft haben, aber eine geringe Nutzung feststellen
+## Was sich ändert
 
-## Was du bekommst
+- Ein Team, das KI-Tools tatsächlich produktiv in eurer echten Codebasis einsetzt
+- Interne Richtlinien dazu, *wann* man zur KI greift und wann nicht — in der Sprache eures Teams formuliert
+- Hands-on-Praxis, kein Foliensatz, den eine Woche später keiner mehr findet
 
-- Ein Team, das KI-Tools effektiv in der eigenen Codebasis einsetzen kann
-- Klare interne Richtlinien für KI-gestützte Entwicklung
-- Reduzierte Einstiegshürden bei neuen Tools, damit die Einführung nachhaltig gelingt
+## Wie ich arbeite
 
-## Format
+Ich tauche in eurer Codebasis auf, nicht in eurem Konferenzraum. Wir nehmen echte Tickets und arbeiten sie gemeinsam durch: wo die KI hilft, wo sie lügt, wo der Mensch schneller ist, wo das Modell bessere Prompts braucht.
 
-Die Sessions sind praxisnah und hands-on — direkt in eurer Codebasis, nicht mit Folien. Das Ziel ist, dass euer Team am Ende des Engagements eigenständig mit KI-Tools arbeiten kann.
+Ich bin selbst Tech Lead, ich denke das von innen: was bleibt, wenn ich weg bin, was wird zur Gewohnheit, was war nur Hype.
+
+---
+
+*Das ist kein "Future of Work"-Vortrag. Das ist Onboarding für Tools, die euer Team eh schon hat.*

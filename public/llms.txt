@@ -1,18 +1,19 @@
 # Falk Michel
 
-> Frontend developer and tech lead based in Munich, building modern web applications with TypeScript, React, and AI integration.
+> Fullstack TypeScript tech lead based in Munich, building software and supporting infrastructure for the mobility industry. AI-assisted, but with 11+ years of pre-AI experience and a focus on user-centric solutions.
 
 ## About
 
-Falk Michel is a frontend developer and tech lead based in Munich with over 11 years of experience building web applications. He specializes in TypeScript, React, and modern web tooling, with a focus on clean, maintainable code and practical AI integration.
+Falk Michel is a fullstack TypeScript tech lead based in Munich with over 11 years of experience building software. He works at an international full-service agency in their Mobility and Professional Services department, building products for some of the biggest names in the German automotive and mobility industry. He focuses on industry best practice, structural thinking, and solutions that stay user-centric — because they're built for humans.
 
 ## Services
 
-- [Web Development](https://falkmichel.com/services/web-development): Modern, performant web applications built with the latest technologies.
-- [Fullstack Development (TS)](https://falkmichel.com/services/fullstack-development-ts): End-to-end TypeScript applications from UI to API, built for maintainability and scale.
-- [AI Integration](https://falkmichel.com/services/ai-integration): Helping teams integrate AI tools into their existing workflows — from selection to productive daily use.
-- [Rapid Prototyping](https://falkmichel.com/services/rapid-prototyping): From idea to working prototype in days, not months. Fast validation of concepts with production-grade code.
-- [Figma Plugin Development](https://falkmichel.com/services/figma-plugin-development): Custom Figma plugins that streamline designer workflows, automate repetitive tasks, and integrate with your existing tools.
+- [Web Development](https://falkmichel.com/services/web-development): Custom web applications that solve a real problem — configurators, dashboards, internal tools, customer portals.
+- [Fullstack Development (TS)](https://falkmichel.com/services/fullstack-development-ts): End-to-end product engineering — UI, API, database, deployment — owned by one person so the pieces actually agree with each other.
+- [CMS Websites](https://falkmichel.com/services/cms-websites): Websites where marketing and editors update content themselves — fast, accessible, SEO-solid. Headless CMS, modern frontend, sane content model.
+- [AI Integration](https://falkmichel.com/services/ai-integration): Hands-on AI adoption for development teams — in your real codebase, not in slides. Guidelines, habits, and the judgement of when not to use AI.
+- [Rapid Prototyping](https://falkmichel.com/services/rapid-prototyping): From idea to clickable, working prototype in days. Built with production-grade tools, so the idea that survives doesn't have to start over.
+- [Figma Plugin Development](https://falkmichel.com/services/figma-plugin-development): Custom Figma plugins that remove repetitive manual work, keep design tokens in sync with code, and bridge Figma to your internal systems.
 
 ## Blog
 

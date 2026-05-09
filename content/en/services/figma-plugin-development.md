@@ -1,32 +1,31 @@
 ---
 title: Figma Plugin Development
-subtitle: Custom plugins that fit your design team's workflow
+subtitle: Make the boring designer work go away
 date: 2026-02-21
-description: Custom Figma plugins that streamline designer workflows, automate repetitive tasks, and integrate with your existing tools.
+description: Custom Figma plugins that remove repetitive manual work, keep design tokens in sync with code, and bridge Figma to your internal systems.
 contactHeading: "Need a custom Figma plugin?"
 ---
 
-I build custom Figma plugins that remove friction from design workflows and connect Figma to the rest of your toolchain.
+Designers don't lose their day to "designing". They lose it to exporting assets in four sizes, syncing tokens, hunting down which component is *actually* in the design system, and copy-pasting copy from a translation sheet.
 
-## What I offer
+A good plugin makes that pain go away.
 
-- Custom Figma plugins tailored to your design team's specific needs
-- OAuth integrations connecting Figma to internal systems and third-party services
-- Automation of repetitive design tasks like asset export, token syncing, or component auditing
-- Maintenance and iteration on existing plugins
+## Sounds familiar?
 
-## Track record
+- Your designers do the same 5-click ritual a hundred times a week
+- Design tokens in Figma and tokens in code stop matching every quarter
+- You need Figma to talk to a CMS, an internal API, or a content source — and there's no off-the-shelf bridge
 
-- Developed 5 custom Figma plugins for the automotive industry, enhancing UI designer workflows with OAuth integration
+## What you get
 
-## Who this is for
+- A plugin that fits your team's specific workflow — not a generic tool retrofitted
+- Hours per designer, per week, given back — on the boring stuff
+- Optional: an OAuth integration to your internal systems, so Figma sees what your product sees
 
-- Design teams with repetitive manual steps in their workflow
-- Companies that need Figma connected to internal tools or APIs
-- Teams managing design systems at scale who need automated checks and syncing
+## How I work
 
-## Technologies
+I shadow the workflow first. Most plugin requests start as "we want a button that does X" — and end up being a different problem once I've watched the team for a day. So I watch first, build second.
 
-- Figma Plugin API
-- TypeScript
-- OAuth, REST APIs
+---
+
+*I've shipped 5 production plugins for design teams in the automotive space, including OAuth-integrated ones connecting Figma to internal services.*

@@ -1,38 +1,33 @@
 ---
 title: Fullstack Development (TS)
-subtitle: One language, the entire stack
+subtitle: One person who actually owns the whole thing
 date: 2026-02-21
-description: End-to-end TypeScript applications from UI to API, built for maintainability and scale.
+description: End-to-end product engineering — UI, API, database, deployment — owned by one person so the pieces actually agree with each other.
 contactHeading: "Need a fullstack TypeScript project?"
 ---
 
-I build complete web applications in TypeScript across the entire stack — from interactive frontends to server-side APIs and cloud infrastructure.
+There's a reason "fullstack" became a buzzword. Real software needs the frontend, backend, infrastructure, and the connections between them to actually agree with each other. When those are split across three contractors who never talk, things drift.
 
-## What I offer
+I take ownership of the whole thing.
 
-- End-to-end TypeScript applications with shared types between frontend and backend
-- Frontend architecture using React or Vue with state management (Redux, Pinia)
-- Backend services with Node.js, NestJS, and API layers (REST, GraphQL, gRPC)
-- Cloud deployment on GCP, AWS, or Azure with infrastructure as code (Pulumi, Terraform)
-- Database design and integration with PostgreSQL and Firebase
+## Sounds familiar?
 
-## Industry experience
+- The frontend team blames the API team, the API team blames the database, nothing ships
+- You need a small, focused product built end-to-end, not a six-person committee
+- Your existing team is great but missing the "tie-it-all-together" person
 
-- **Financial services**: Accessible, WCAG-compliant product pages deployed on container-based cloud infrastructure
-- **Automotive**: Vehicle configurator frontends using module federation and domain-driven architecture; fleet management tools processing vehicle data from mobile inputs
-- **Logistics**: Complete web application for AI-supported route planning with test-driven development
-- **Design tooling**: Custom Figma plugins with OAuth integration to streamline UI designer workflows
-- **Content platforms**: Headless CMS solutions for editorial teams using Strapi and DatoCMS
+## What you get
+
+- One person responsible for the whole stack — UI, API, database, deployment
+- Shared types from frontend to backend, so refactors don't silently break things
+- A product that ships and stays maintainable, not a clever architecture nobody else can touch
 
 ## How I work
 
-Clean, maintainable, and extensible code is the baseline. I follow test-driven development practices and set up CI/CD pipelines so that deployments are reliable from day one.
+I scope tightly. Most "fullstack" projects fail because they tried to build everything before validating anything. We pick the riskiest piece, prove it, then fan out.
 
-## Technologies
+What matters more than the stack is choosing the right *amount* of stack. I'd rather ship a boring monolith that works than impress you with infrastructure you'll have to maintain.
 
-- React, Vue, TypeScript
-- Node.js, NestJS, Next.js, TanStack Start
-- PostgreSQL, Firebase
-- GraphQL, REST, gRPC
-- GCP, AWS, Azure
-- Pulumi, Terraform, Docker
+---
+
+*Where I've done this: financial product platforms, vehicle configurators, fleet management interfaces, logistics planning apps. Comfortable across React/Vue, Node/NestJS, Postgres/Firebase, GCP/AWS/Azure, Pulumi/Terraform.*

@@ -1,32 +1,33 @@
 ---
 title: Integración de IA
-subtitle: Integra herramientas de IA en tus flujos de trabajo de desarrollo
+subtitle: Que tu equipo use de verdad las herramientas de IA que ya estás pagando
 date: 2026-02-21
-description: Ayudo a equipos a integrar herramientas de IA en sus flujos de trabajo existentes — desde la selección hasta el uso productivo diario.
+description: Adopción práctica de IA para equipos de desarrollo — en vuestro código real, no en diapositivas. Directrices, hábitos, y el criterio de cuándo *no* usar IA.
 contactHeading: "¿Listo para integrar IA en tu workflow?"
 ---
 
-Ayudo a equipos de desarrollo a adoptar herramientas y flujos de trabajo impulsados por IA para que puedan entregar más rápido y trabajar de manera más efectiva.
+La mayoría de los equipos que veo caen en uno de tres patrones: compraron licencias de Copilot y las usan tres personas; tienen miedo de "dejar que la IA escriba el código"; o dejan que la IA lo escriba todo y ahora tienen un código que los sorprende cada lunes.
 
-## Qué ofrezco
+Hay un camino intermedio — y requiere más que un anuncio en Slack.
 
-- Talleres prácticos para introducir asistentes de código con IA en los flujos de trabajo de desarrollo existentes
-- Configuración e instalación de herramientas de IA adaptadas al stack y los procesos de tu equipo
-- Establecimiento de directrices prácticas sobre cuándo y cómo usar IA en el trabajo de ingeniería del día a día
-- Evaluación de qué herramientas de IA se adaptan a las necesidades de tu equipo y cuáles no
+## ¿Te suena familiar?
 
-## Para quién es esto
+- Compraron licencias de IA y la adopción está entre "nadie" y "el junior entusiasta"
+- Tus seniors no confían en la IA, tus juniors confían demasiado
+- Cuando alguien pregunta "¿uso IA para esto?", no tenéis una respuesta clara
 
-- Equipos de ingeniería que quieren empezar a usar herramientas de IA pero no saben por dónde empezar
-- Líderes técnicos que buscan establecer directrices de uso de IA para sus equipos
-- Empresas que han comprado licencias de herramientas de IA pero ven una baja adopción
+## Qué cambia
 
-## Qué obtienes
+- Un equipo que usa de verdad las herramientas de IA, productivamente, en vuestro código real
+- Directrices internas sobre *cuándo* recurrir a la IA y cuándo no — escritas en el lenguaje de tu equipo
+- Práctica directa, no un PowerPoint que nadie recuerda al día siguiente
 
-- Un equipo que sabe cómo usar herramientas de IA de manera efectiva en su propio código
-- Directrices internas claras sobre desarrollo asistido por IA
-- Reducción de la fricción en la incorporación de nuevas herramientas para que la adopción perdure
+## Cómo trabajo
 
-## Formato
+Me presento en vuestro código, no en vuestra sala de reuniones. Cogemos tickets reales y los resolvemos juntos: dónde ayuda la IA, dónde miente, dónde el humano es más rápido, dónde el modelo necesita mejores prompts.
 
-Las sesiones son prácticas y directas — trabajando directamente en tu código, no con diapositivas. El objetivo es que tu equipo sea autosuficiente con las herramientas de IA al final del compromiso.
+Yo mismo soy tech lead, así que pienso esto desde dentro: qué sobrevive cuando ya no estoy, qué se convierte en hábito, qué era solo hype.
+
+---
+
+*Esto no es una charla sobre el "futuro del trabajo". Es onboarding para las herramientas que tu equipo ya tiene.*

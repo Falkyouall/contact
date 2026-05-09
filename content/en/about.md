@@ -4,20 +4,22 @@ title: About
 
 # Hey, I'm Falk
 
-I'm a frontend developer and tech lead based in Munich. I've been building web applications for over 11 years now, and I still genuinely enjoy it. I care about writing clean, maintainable code and creating things that actually work well for the people using them.
+I'm a fullstack TypeScript tech lead based in Munich. I build software and the supporting infrastructure for some of the big players in the mobility industry. Of course I work AI-assisted these days, but with 11+ years of experience I come from a less comfortable time, and I offer my expertise of industry best practice software development and structural thinking. I keep things user centric, because the solutions I build are for humans after all.
+
+I'm a try and error personality, ready to accept failure, adapt and go again.
 
 ## What I do
 
-I currently work as a JavaScript Tech Lead at an international full-service agency, where I lead a small team of developers. My day to day involves a mix of hands on coding, architecture decisions, code reviews, mentoring, and shaping how we hire. I've worked on projects across different industries, from financial platforms and automotive configurators to internal tooling and custom Figma plugins.
+I work as a TypeScript Tech Lead at an international full-service agency, in their Mobility and Professional Services department. My day to day is a mix of hands on coding, architecture decisions, code reviews, mentoring, and helping the company grow by interviewing new applicants and sharing my knowledge across colleagues. I've worked on great projects with some of the biggest names in the German automotive and mobility industry.
 
 Some highlights from recent years:
 
-- Built an accessible, WCAG compliant financial product page for Targobank using React, TypeScript, and Azure Container Apps
-- Led the technical pitch and frontend architecture for the Škoda vehicle configurator, using module federation and domain driven development
-- Developed a vehicle inventory management interface for VW, processing VINs extracted from photos and displaying their stati in a Vue.js web view
-- Created 5 custom Figma plugins for Daimler that improved UI designer workflows with OAuth integration
+- Built an accessible, WCAG compliant financial product landing page in React, TypeScript, and Azure Container Apps
+- Led the technical pitch and frontend architecture for a vehicle configurator, using module federation and domain driven development
+- Developed a vehicle inventory management interface that processed identifiers extracted from photos and displayed their status in a Vue.js web view
+- Built custom Figma plugins that streamlined UI designer workflows with OAuth integration
 
-Before that, I was Lead Engineer at Smartlane, where I built a complete logistics planning web app in TypeScript and React with Redux and test driven development. On the side, I've been freelancing since 2016, mostly building CMS websites with Next.js, Strapi, and Netlify CMS.
+Before that, I led engineering on a complete logistics planning web app in TypeScript and React with Redux and test driven development. On the side, I've been freelancing since 2016, mostly building CMS websites with Next.js, Strapi, and Netlify CMS.
 
 ## Tech I work with
 
@@ -25,8 +27,8 @@ On the frontend I mainly use React, Vue, and TypeScript. On the backend it's Nod
 
 ## Education
 
-I studied Media Informatics at LMU Munich (B.A., 2014 to 2017) and Media Management at Media Design Highschool Munich (B.A., 2009 to 2013).
+I studied Media Management at Mediadesign Highschool Munich (B.A., 2009 to 2013), followed by Media Informatics at LMU Munich (B.A., 2014 to 2017). I've been actively working and growing as a developer since 2014.
 
 ## Outside of work
 
-When I'm not coding, you'll probably find me bouldering. I've been climbing for over 16 years and it's my favourite way to clear my head. I also love cooking and I'm currently learning Spanish.
+When I'm not coding, you'll probably find me bouldering. I started 15+ years ago and it resembles my try and error mentality perfectly: fall off, figure out what didn't work, go again. I'm happily engaged and have a fantastic base of friends and family here in Munich, where I grew up and still live. I also love cooking and I'm currently learning Spanish.

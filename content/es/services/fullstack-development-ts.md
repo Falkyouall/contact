@@ -1,38 +1,33 @@
 ---
 title: Desarrollo Fullstack (TS)
-subtitle: Un solo lenguaje, todo el stack
+subtitle: Una persona que se hace cargo del conjunto entero
 date: 2026-02-21
-description: Aplicaciones TypeScript de extremo a extremo, desde la interfaz hasta la API, diseñadas para mantenibilidad y escalabilidad.
+description: Ingeniería de producto end-to-end — UI, API, base de datos, despliegue — bajo una sola responsabilidad, para que las piezas encajen de verdad.
 contactHeading: "¿Necesitas un proyecto fullstack en TypeScript?"
 ---
 
-Desarrollo aplicaciones web completas en TypeScript a lo largo de todo el stack — desde frontends interactivos hasta APIs del lado del servidor e infraestructura en la nube.
+Hay una razón por la que "fullstack" se volvió un buzzword. El software real necesita que el frontend, el backend, la infraestructura y todo lo que hay entre medio se pongan de acuerdo. Cuando eso se reparte entre tres proveedores que no hablan entre sí, todo se desalinea.
 
-## Qué ofrezco
+Yo me hago cargo del conjunto entero.
 
-- Aplicaciones TypeScript de extremo a extremo con tipos compartidos entre frontend y backend
-- Arquitectura frontend con React o Vue con gestión de estado (Redux, Pinia)
-- Servicios backend con Node.js, NestJS y capas de API (REST, GraphQL, gRPC)
-- Despliegue en la nube en GCP, AWS o Azure con infraestructura como código (Pulumi, Terraform)
-- Diseño e integración de bases de datos con PostgreSQL y Firebase
+## ¿Te suena familiar?
 
-## Experiencia en la industria
+- El frontend culpa al backend, el backend culpa a la base de datos, y al final no se entrega nada
+- Necesitas un producto pequeño y enfocado, construido end-to-end, no un comité de seis personas
+- Tu equipo es excelente, pero te falta la persona que conecte todas las piezas
 
-- **Servicios financieros**: Páginas de producto accesibles y conformes con WCAG desplegadas en infraestructura en la nube basada en contenedores
-- **Automotriz**: Frontends de configuradores de vehículos utilizando module federation y arquitectura orientada a dominios; herramientas de gestión de flotas que procesan datos de vehículos desde entradas móviles
-- **Logística**: Aplicación web completa para planificación de rutas asistida por IA con desarrollo guiado por pruebas
-- **Herramientas de diseño**: Plugins personalizados para Figma con integración OAuth para optimizar los flujos de trabajo de diseñadores de UI
-- **Plataformas de contenido**: Soluciones headless CMS para equipos editoriales usando Strapi y DatoCMS
+## Qué cambia
+
+- Una persona responsable de todo el stack — UI, API, base de datos, despliegue
+- Tipos compartidos entre frontend y backend, para que los refactors no rompan cosas en silencio
+- Un producto que se entrega y se mantiene — no una arquitectura ingeniosa que nadie más puede tocar
 
 ## Cómo trabajo
 
-Código limpio, mantenible y extensible es la base. Sigo prácticas de desarrollo guiado por pruebas y configuro pipelines de CI/CD para que los despliegues sean confiables desde el primer día.
+Acoto fuerte. La mayoría de los proyectos "fullstack" fracasan porque intentaron construir todo antes de validar nada. Tomamos la pieza más arriesgada, la probamos, y desde ahí ampliamos.
 
-## Tecnologías
+Más importante que el stack es elegir la *cantidad* correcta de stack. Prefiero entregar un monolito aburrido que funciona, antes que impresionarte con infraestructura que tú vas a tener que mantener después.
 
-- React, Vue, TypeScript
-- Node.js, NestJS, Next.js, TanStack Start
-- PostgreSQL, Firebase
-- GraphQL, REST, gRPC
-- GCP, AWS, Azure
-- Pulumi, Terraform, Docker
+---
+
+*Donde lo he hecho: plataformas de producto financiero, configuradores de vehículos, interfaces de gestión de flotas, apps de planificación logística. Cómodo con React/Vue, Node/NestJS, Postgres/Firebase, GCP/AWS/Azure, Pulumi/Terraform.*

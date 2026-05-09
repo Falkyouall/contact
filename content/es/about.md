@@ -4,20 +4,22 @@ title: Sobre mí
 
 # Hola, soy Falk
 
-Soy desarrollador frontend y tech lead en Múnich. Llevo más de 11 años construyendo aplicaciones web y sigo disfrutándolo de verdad. Me importa escribir código limpio y mantenible, y crear cosas que realmente funcionen bien para las personas que las usan.
+Soy fullstack TypeScript tech lead en Múnich. Construyo software y la infraestructura que lo acompaña para algunos de los grandes jugadores de la industria de la movilidad. Claro que hoy en día trabajo asistido por IA, pero con más de 11 años de experiencia vengo de una época menos cómoda, y aporto mi experiencia en buenas prácticas de la industria y pensamiento estructural. Mantengo las cosas centradas en el usuario, porque al final las soluciones que construyo son para personas.
+
+Soy una persona de prueba y error, listo para aceptar el fallo, adaptarme y volver a intentarlo.
 
 ## Qué hago
 
-Actualmente trabajo como JavaScript Tech Lead en una agencia internacional full-service, donde lidero un pequeño equipo de desarrolladores. Mi día a día es una mezcla de programación activa, decisiones de arquitectura, revisiones de código, mentoría y diseño de nuestros procesos de contratación. He trabajado en proyectos de distintas industrias, desde plataformas financieras y configuradores de vehículos hasta herramientas internas y plugins personalizados de Figma.
+Trabajo como TypeScript Tech Lead en una agencia internacional full-service, en su departamento de Mobility y Professional Services. Mi día a día es una mezcla de programación activa, decisiones de arquitectura, revisiones de código, mentoría y ayudar a la empresa a crecer entrevistando a nuevos candidatos y compartiendo mi conocimiento con los compañeros. He tenido la suerte de trabajar en grandes proyectos con algunos de los nombres más importantes de la industria automotriz y de movilidad alemana.
 
 Algunos proyectos destacados de los últimos años:
 
-- Página de producto financiero accesible y conforme con WCAG para Targobank, construida con React, TypeScript y Azure Container Apps
-- Lideré el pitch técnico y la arquitectura frontend del configurador de vehículos de Škoda, usando module federation y desarrollo orientado a dominios
-- Desarrollé una interfaz de gestión de inventario de vehículos para VW, procesando VINs extraídos de fotos y mostrando sus estados en una web view con Vue.js
-- Creé 5 plugins personalizados de Figma para Daimler que mejoraron los flujos de trabajo de los diseñadores UI con integración OAuth
+- Página de aterrizaje de producto financiero accesible y conforme con WCAG, construida con React, TypeScript y Azure Container Apps
+- Lideré el pitch técnico y la arquitectura frontend de un configurador de vehículos, usando module federation y desarrollo orientado a dominios
+- Desarrollé una interfaz de gestión de inventario de vehículos que procesaba identificadores extraídos de fotos y mostraba sus estados en una web view con Vue.js
+- Plugins personalizados de Figma que mejoraron los flujos de trabajo de los diseñadores UI con integración OAuth
 
-Antes de eso, fui Lead Engineer en Smartlane, donde construí una aplicación web completa para planificación logística en TypeScript y React con Redux y desarrollo guiado por tests. Paralelamente, trabajo como freelance desde 2016, principalmente construyendo sitios CMS con Next.js, Strapi y Netlify CMS.
+Antes de eso, lideré la ingeniería de una aplicación web completa para planificación logística en TypeScript y React con Redux y desarrollo guiado por tests. Paralelamente, trabajo como freelance desde 2016, principalmente construyendo sitios CMS con Next.js, Strapi y Netlify CMS.
 
 ## Tecnologías
 
@@ -25,8 +27,8 @@ En el frontend trabajo principalmente con React, Vue y TypeScript. En el backend
 
 ## Formación
 
-Estudié Informática de Medios en la LMU de Múnich (B.A., 2014 a 2017) y Gestión de Medios en la Media Design Highschool de Múnich (B.A., 2009 a 2013).
+Estudié Gestión de Medios en la Mediadesign Highschool de Múnich (B.A., 2009 a 2013), seguido de Informática de Medios en la LMU de Múnich (B.A., 2014 a 2017). Trabajo y crezco activamente como desarrollador desde 2014.
 
 ## Fuera del trabajo
 
-Cuando no estoy programando, probablemente me encuentres escalando. Llevo más de 16 años haciendo boulder y es mi forma favorita de despejarme. También me encanta cocinar y actualmente estoy aprendiendo español.
+Cuando no estoy programando, probablemente me encuentres escalando boulder. Empecé hace más de 15 años y encaja perfectamente con mi mentalidad de prueba y error: caerse, entender qué no funcionó y volver a intentarlo. Estoy felizmente comprometido y tengo una base fantástica de amigos y familia aquí en Múnich, donde crecí y sigo viviendo. También me encanta cocinar y actualmente estoy aprendiendo español.

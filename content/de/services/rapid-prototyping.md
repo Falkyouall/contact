@@ -1,32 +1,33 @@
 ---
 title: Rapid Prototyping
-subtitle: Von der Idee zum funktionierenden Prototyp, schnell
+subtitle: Ein funktionierender Prototyp verändert das Gespräch über Nacht
 date: 2026-02-21
-description: Von der Idee zum funktionierenden Prototyp in Tagen, nicht Monaten. Schnelle Validierung von Konzepten mit produktionsreifem Code.
+description: Von der Idee zum klickbaren, funktionierenden Prototyp in Tagen. Gebaut mit produktionsreifen Tools, damit die Idee, die besteht, nicht von vorn anfangen muss.
 contactHeading: "Eine Idee? Lass uns einen Prototypen bauen"
 ---
 
-Verwandle deine Idee schnell in einen funktionalen Prototyp, damit du sie mit echten Nutzern validieren kannst, bevor du dich für einen vollständigen Ausbau entscheidest.
+Die meisten Produktideen sterben in Folien. Entweder kann sie sich niemand bildlich vorstellen, oder das Team verzettelt sich an den falschen Details, bevor jemand etwas Echtes geklickt hat.
 
-## Was ich anbiete
+Ein funktionierender Prototyp verändert das Gespräch über Nacht.
 
-- Interaktive Prototypen, gebaut mit produktionsreifen Technologien
-- Schnelle Iterationszyklen, um Annahmen frühzeitig zu testen
-- CMS-gestützte Content-Prototypen für Redaktions- und Marketing-Teams
-- Landing Pages und Produktseiten mit echten Datenintegrationen
+## Kennst du das?
 
-## Referenzen
+- Du musst Stakeholdern etwas *Echtes* zeigen, bevor sie freigeben
+- Eine Idee schwirrt seit Monaten herum und du kannst nicht sagen, ob sie gut oder schlecht ist
+- Ein reines Design-Mockup erzeugt immer wieder Diskussionen, die nur funktionierender Code beenden kann
 
-- Entwicklung barrierefreier Finanzprodukt-Landing-Pages im Bankensektor mit React, TypeScript und container-basierten Cloud-Deployments
-- Auslieferung von CMS-basierten Websites für mehrere Kunden mit Headless-Content-Management-Systemen wie Strapi und DatoCMS
-- Erstellung von Dokumentenautomatisierungs-Workflows für die Finanzdienstleistungsbranche
+## Was sich ändert
 
-## Warum es funktioniert
+- Ein klickbarer, echter Prototyp in Tagen — gebaut mit produktionsreifen Tools, kein Wegwerf-Code
+- Echte Datenintegrationen, wo es zählt, Fakes, wo nicht
+- Eine klare Ja/Nein-Antwort darauf, ob die Idee dem Kontakt mit Nutzern standhält
 
-Prototypen werden mit denselben Tools und Patterns gebaut, die auch in der Produktion verwendet werden. Das bedeutet, dass validierte Ideen sich zu vollständigen Produkten weiterentwickeln können, ohne von vorne anzufangen. Kein Wegwerf-Code, kein Neuschreiben.
+## Wie ich arbeite
 
-## Technologien
+Ich kürze brutal. Ein Prototyp ist kein kleines Produkt — er ist eine fokussierte Antwort auf eine Frage. Wir suchen zuerst die Frage, dann bauen wir nur das, was sie beantwortet.
 
-- React, TypeScript, Next.js, TanStack Start
-- Strapi, DatoCMS, Netlify CMS
-- Node.js, Docker
+Wenn die Idee trägt, wächst der Prototyp weiter. Wenn nicht, hast du Tage investiert, nicht Monate.
+
+---
+
+*Beispiele: Finanzprodukt-Landingpages mit echter Backend-Integration, Content-Prototypen für Redaktionsteams, Dokumenten-Automatisierungs-Flows für die Finanzdienstleistungsbranche.*

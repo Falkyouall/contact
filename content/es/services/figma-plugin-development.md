@@ -1,32 +1,31 @@
 ---
 title: Desarrollo de Plugins para Figma
-subtitle: Plugins personalizados que se adaptan al flujo de trabajo de tu equipo de diseño
+subtitle: Hacer que desaparezca el trabajo aburrido del diseñador
 date: 2026-02-21
-description: Plugins personalizados para Figma que optimizan los flujos de trabajo de los diseñadores, automatizan tareas repetitivas y se integran con tus herramientas existentes.
+description: Plugins personalizados para Figma que eliminan trabajo manual repetitivo, mantienen los design tokens sincronizados con el código, y conectan Figma con vuestros sistemas internos.
 contactHeading: "¿Necesitas un plugin de Figma personalizado?"
 ---
 
-Desarrollo plugins personalizados para Figma que eliminan la fricción de los flujos de trabajo de diseño y conectan Figma con el resto de tu cadena de herramientas.
+Los diseñadores no pierden el día "diseñando". Lo pierden exportando assets en cuatro tamaños, sincronizando tokens, buscando qué componente *realmente* está en el design system, y copiando textos desde una hoja de traducciones.
 
-## Qué ofrezco
+Un buen plugin hace que ese dolor desaparezca.
 
-- Plugins personalizados para Figma adaptados a las necesidades específicas de tu equipo de diseño
-- Integraciones OAuth que conectan Figma con sistemas internos y servicios de terceros
-- Automatización de tareas de diseño repetitivas como exportación de recursos, sincronización de tokens o auditoría de componentes
-- Mantenimiento e iteración de plugins existentes
+## ¿Te suena familiar?
 
-## Trayectoria
+- Tus diseñadores hacen el mismo ritual de 5 clics cien veces a la semana
+- Los design tokens en Figma y los del código se desincronizan cada trimestre
+- Necesitas que Figma hable con un CMS, una API interna o una fuente de contenido — y no existe ningún puente listo para usar
 
-- Desarrollé 5 plugins personalizados para Figma en la industria automotriz, mejorando los flujos de trabajo de diseñadores de UI con integración OAuth
+## Qué cambia
 
-## Para quién es esto
+- Un plugin que encaja con el flujo específico de tu equipo — no una herramienta genérica forzada a hacerlo
+- Horas por diseñador, por semana, recuperadas — en lo aburrido
+- Opcional: una integración OAuth con vuestros sistemas internos, para que Figma vea lo mismo que ve vuestro producto
 
-- Equipos de diseño con pasos manuales repetitivos en su flujo de trabajo
-- Empresas que necesitan conectar Figma con herramientas internas o APIs
-- Equipos que gestionan sistemas de diseño a gran escala que necesitan verificaciones y sincronización automatizadas
+## Cómo trabajo
 
-## Tecnologías
+Primero observo el flujo de trabajo. La mayoría de las peticiones de plugin empiezan como "queremos un botón que haga X" — y, después de un día mirando, resulta que el problema era otro. Así que primero miro, después construyo.
 
-- Figma Plugin API
-- TypeScript
-- OAuth, REST APIs
+---
+
+*He entregado 5 plugins en producción para equipos de diseño del sector automotriz, incluyendo plugins integrados con OAuth que conectan Figma con servicios internos.*

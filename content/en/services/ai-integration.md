@@ -1,32 +1,33 @@
 ---
 title: AI Integration
-subtitle: Seamlessly embed AI tools into your development workflows
+subtitle: Get your team actually using the AI tools you already pay for
 date: 2026-02-21
-description: Helping teams integrate AI tools into their existing workflows — from selection to productive daily use.
+description: Hands-on AI adoption for development teams — in your real codebase, not in slides. Guidelines, habits, and the judgement of when *not* to use AI.
 contactHeading: "Ready to bring AI into your workflow?"
 ---
 
-I help development teams adopt AI-powered tools and workflows so they can ship faster and work more effectively.
+Most teams I see fall into one of three buckets: they bought Copilot licenses and three people use them; they're scared of "letting AI write the code"; or they let AI write everything and now have a codebase that surprises them every Monday.
 
-## What I offer
+There's a middle path — and it takes more than a Slack announcement.
 
-- Hands-on workshops introducing AI coding assistants into existing development workflows
-- Setup and configuration of AI tools tailored to your team's stack and processes
-- Establishing practical guidelines for when and how to use AI in day-to-day engineering work
-- Evaluating which AI tools fit your team's needs and which ones don't
+## Sounds familiar?
 
-## Who this is for
-
-- Engineering teams that want to start using AI tools but don't know where to begin
-- Tech leads looking to establish AI usage guidelines for their teams
-- Companies that have purchased AI tool licenses but see low adoption
+- You bought AI tool licenses and adoption is somewhere between "nobody" and "the one keen junior"
+- Your seniors don't trust AI, your juniors trust it too much
+- You don't have an answer when someone asks "should I use AI for this?"
 
 ## What you get
 
-- A team that knows how to use AI tools effectively in their actual codebase
-- Clear internal guidelines on AI-assisted development
-- Reduced onboarding friction for new tools so adoption sticks
+- A team that actually uses AI tools, productively, in your real codebase
+- Internal guidelines for *when* to reach for AI and when not to — written in your team's language
+- Hands-on practice, not a slide deck someone forgets the next day
 
-## Format
+## How I work
 
-Sessions are practical and hands-on — working directly in your codebase, not slides. The goal is that your team is self-sufficient with AI tools by the end of the engagement.
+I show up in your codebase, not your conference room. We pick real tickets and work through them together: where AI helps, where it lies, where the human is faster, where the model needs better prompts.
+
+I'm a tech lead myself, so I think about this from the inside: what survives once I'm gone, what becomes habit, what was just hype.
+
+---
+
+*This isn't a "future of work" talk. It's onboarding for tools your team already has.*

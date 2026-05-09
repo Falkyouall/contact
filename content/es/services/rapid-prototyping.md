@@ -1,32 +1,33 @@
 ---
 title: Prototipado Rápido
-subtitle: De la idea al prototipo funcional, rápidamente
+subtitle: Un prototipo que funciona cambia la conversación de un día para otro
 date: 2026-02-21
-description: De la idea al prototipo funcional en días, no meses. Validación rápida de conceptos con código de calidad de producción.
+description: De la idea al prototipo funcional y clicable en días. Construido con herramientas listas para producción, para que la idea que sobreviva no tenga que empezar de cero.
 contactHeading: "¿Tienes una idea? Hagamos un prototipo"
 ---
 
-Convierte tu idea en un prototipo funcional rápidamente para que puedas validarla con usuarios reales antes de comprometerte con un desarrollo completo.
+La mayoría de las ideas de producto mueren en presentaciones. O nadie las puede imaginar, o el equipo se obsesiona con los detalles equivocados antes de que nadie haya clicado en algo real.
 
-## Qué ofrezco
+Un prototipo que funciona cambia la conversación de un día para otro.
 
-- Prototipos interactivos construidos con tecnologías listas para producción
-- Ciclos de iteración rápidos para probar suposiciones tempranamente
-- Prototipos de contenido respaldados por CMS para equipos editoriales y de marketing
-- Landing pages y páginas de producto con integraciones de datos reales
+## ¿Te suena familiar?
 
-## Trayectoria
+- Necesitas mostrar a stakeholders algo *real* antes de que firmen
+- Una idea lleva meses dando vueltas y no sabes si es buena o mala
+- Un mockup "solo de diseño" sigue generando debate que solo código funcionando puede resolver
 
-- Construí landing pages accesibles de productos financieros en el sector bancario usando React, TypeScript y despliegues en la nube basados en contenedores
-- Entregué sitios web impulsados por CMS para múltiples clientes usando sistemas de gestión de contenido headless como Strapi y DatoCMS
-- Creé flujos de trabajo de automatización de documentos para la industria de servicios financieros
+## Qué cambia
 
-## Por qué funciona
+- Un prototipo clicable y real en días — construido con herramientas de producción, no con código desechable
+- Integraciones reales de datos donde importan, fakes donde no
+- Un sí/no claro sobre si la idea sobrevive al contacto con usuarios reales
 
-Los prototipos se construyen con las mismas herramientas y patrones utilizados en producción. Esto significa que las ideas validadas pueden evolucionar hacia productos completos sin empezar de cero. Sin código desechable, sin reescrituras.
+## Cómo trabajo
 
-## Tecnologías
+Acoto sin piedad. Un prototipo no es un producto pequeño — es una respuesta enfocada a una sola pregunta. Primero buscamos la pregunta, después construimos solo lo necesario para responderla.
 
-- React, TypeScript, Next.js, TanStack Start
-- Strapi, DatoCMS, Netlify CMS
-- Node.js, Docker
+Si la idea funciona, el prototipo sigue creciendo. Si no, has invertido días, no meses.
+
+---
+
+*Ejemplos: landing pages de producto financiero con integración real de backend, prototipos de contenido para equipos editoriales, flujos de automatización documental para servicios financieros.*
