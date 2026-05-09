@@ -1,10 +1,10 @@
 # Falk Michel
 
-> Fullstack TypeScript tech lead based in Munich, building software and supporting infrastructure for the mobility industry. AI-assisted, but with 11+ years of pre-AI experience and a focus on user-centric solutions.
+> Fullstack TypeScript tech lead based in Munich, building software and supporting infrastructure for the mobility industry. AI-assisted, but with 12+ years of pre-AI experience and a focus on user-centric solutions.
 
 ## About
 
-Falk Michel is a fullstack TypeScript tech lead based in Munich with over 11 years of experience building software. He works at an international full-service agency in their Mobility and Professional Services department, building products for some of the biggest names in the German automotive and mobility industry. He focuses on industry best practice, structural thinking, and solutions that stay user-centric — because they're built for humans.
+Falk Michel is a fullstack TypeScript tech lead based in Munich with over 12 years of experience building software. He works at an international full-service agency in their Mobility and Professional Services department, building products for some of the biggest names in the German automotive and mobility industry. He focuses on industry best practice, structural thinking, and solutions that stay user-centric — because they're built for humans.
 
 ## Services
 

@@ -1,6 +1,6 @@
 ---
 title: Los agentes son el próximo navegador
-date: 2026-02-21
+date: 2026-03-10
 description: En dos años, un tercio del tráfico de comparación vendrá de asistentes de IA, no de Google. Tu web necesita una interfaz pensada para agentes.
 contactHeading: "¿Quieres preparar tu web para agentes?"
 ---

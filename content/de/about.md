@@ -4,7 +4,7 @@ title: Über mich
 
 # Hey, ich bin Falk
 
-Ich bin Fullstack TypeScript Tech Lead aus München. Ich baue Software und die zugehörige Infrastruktur für einige der großen Player der Mobilitätsbranche. Klar arbeite ich heutzutage KI-gestützt, aber mit 11+ Jahren Erfahrung komme ich aus einer weniger komfortablen Zeit und bringe meine Expertise in Industrie Best Practices und strukturellem Denken mit. Ich halte die Dinge user-zentriert, denn am Ende sind die Lösungen, die ich baue, eben doch für Menschen.
+Ich bin Fullstack TypeScript Tech Lead aus München. Ich baue Software und die zugehörige Infrastruktur für einige der großen Player der Mobilitätsbranche. Klar arbeite ich heutzutage KI-gestützt, aber mit 12+ Jahren Erfahrung komme ich aus einer weniger komfortablen Zeit und bringe meine Expertise in Industrie Best Practices und strukturellem Denken mit. Ich halte die Dinge user-zentriert, denn am Ende sind die Lösungen, die ich baue, eben doch für Menschen.
 
 Ich bin eine Trial-and-Error-Persönlichkeit, bereit Fehler zu akzeptieren, mich anzupassen und es noch mal zu probieren.
 

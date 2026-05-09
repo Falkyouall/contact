@@ -1,6 +1,6 @@
 ---
 title: Warum CLIs in der Agentic-Ära zurückkommen
-date: 2026-02-21
+date: 2026-04-02
 description: AI Agents können besser mit Unix Commands umgehen als mit grafischen Oberflächen. Das hat Konsequenzen für den Toolbau.
 contactHeading: "Hilfe beim Bau von CLI-first Tools?"
 ---

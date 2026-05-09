@@ -4,7 +4,7 @@ title: About
 
 # Hey, I'm Falk
 
-I'm a fullstack TypeScript tech lead based in Munich. I build software and the supporting infrastructure for some of the big players in the mobility industry. Of course I work AI-assisted these days, but with 11+ years of experience I come from a less comfortable time, and I offer my expertise of industry best practice software development and structural thinking. I keep things user centric, because the solutions I build are for humans after all.
+I'm a fullstack TypeScript tech lead based in Munich. I build software and the supporting infrastructure for some of the big players in the mobility industry. Of course I work AI-assisted these days, but with 12+ years of experience I come from a less comfortable time, and I offer my expertise of industry best practice software development and structural thinking. I keep things user centric, because the solutions I build are for humans after all.
 
 I'm a try and error personality, ready to accept failure, adapt and go again.
 

@@ -4,7 +4,7 @@ title: Sobre mí
 
 # Hola, soy Falk
 
-Soy fullstack TypeScript tech lead en Múnich. Construyo software y la infraestructura que lo acompaña para algunos de los grandes jugadores de la industria de la movilidad. Claro que hoy en día trabajo asistido por IA, pero con más de 11 años de experiencia vengo de una época menos cómoda, y aporto mi experiencia en buenas prácticas de la industria y pensamiento estructural. Mantengo las cosas centradas en el usuario, porque al final las soluciones que construyo son para personas.
+Soy fullstack TypeScript tech lead en Múnich. Construyo software y la infraestructura que lo acompaña para algunos de los grandes jugadores de la industria de la movilidad. Claro que hoy en día trabajo asistido por IA, pero con más de 12 años de experiencia vengo de una época menos cómoda, y aporto mi experiencia en buenas prácticas de la industria y pensamiento estructural. Mantengo las cosas centradas en el usuario, porque al final las soluciones que construyo son para personas.
 
 Soy una persona de prueba y error, listo para aceptar el fallo, adaptarme y volver a intentarlo.
 

@@ -1,6 +1,6 @@
 ---
 title: The Case for CLIs in the Agentic Age
-date: 2026-02-21
+date: 2026-04-02
 description: AI agents are better at Unix commands than at clicking buttons. That has consequences for how we build tools.
 contactHeading: "Need help building CLI-first tools?"
 ---

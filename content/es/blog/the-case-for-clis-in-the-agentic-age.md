@@ -1,6 +1,6 @@
 ---
 title: El caso de los CLIs en la era de los agentes
-date: 2026-02-21
+date: 2026-04-02
 description: Los agentes de IA manejan mejor los comandos Unix que las interfaces gráficas. Eso tiene consecuencias para cómo construimos herramientas.
 contactHeading: "¿Necesitas ayuda con herramientas CLI-first?"
 ---

@@ -1,6 +1,6 @@
 ---
 title: Agents sind der nächste Browser
-date: 2026-02-21
+date: 2026-03-10
 description: In zwei Jahren kommt ein Drittel des Vergleichs-Traffics von AI Assistenten, nicht von Google. Deine Website braucht ein agent-facing Interface.
 contactHeading: "Deine Website agent-ready machen?"
 ---
