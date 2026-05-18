@@ -10,14 +10,14 @@ I'm a try and error personality, ready to accept failure, adapt and go again.
 
 ## What I do
 
-I work as a TypeScript Tech Lead at an international full-service agency, in their Mobility and Professional Services department. My day to day is a mix of hands on coding, architecture decisions, code reviews, mentoring, and helping the company grow by interviewing new applicants and sharing my knowledge across colleagues. I've worked on great projects with some of the biggest names in the German automotive and mobility industry.
+I work as a TypeScript Tech Lead at an international full-service agency, in their Mobility and Professional Services department. My day to day is a mix of hands on coding, architecture decisions, code reviews, mentoring, and helping the company grow by interviewing new applicants and sharing my knowledge across colleagues. I've worked on great projects with some of the biggest names in automotive and mobility, both German and international manufacturers, and beyond that with banks, newspaper publishers, and real estate companies too.
 
 Some highlights from recent years:
 
 - Built an accessible, WCAG compliant financial product landing page in React, TypeScript, and Azure Container Apps
 - Led the technical pitch and frontend architecture for a vehicle configurator, using module federation and domain driven development
 - Developed a vehicle inventory management interface that processed identifiers extracted from photos and displayed their status in a Vue.js web view
-- Built custom Figma plugins that streamlined UI designer workflows with OAuth integration
+- Built a custom Figma plugin suite that automates design generation, enriches designs with bespoke metadata persisted in an OAuth-secured remote database, and brings release workflows to Figma through a tailored version control system
 
 Before that, I led engineering on a complete logistics planning web app in TypeScript and React with Redux and test driven development. On the side, I've been freelancing since 2016, mostly building CMS websites with Next.js, Strapi, and Netlify CMS.
 
@@ -27,7 +27,7 @@ On the frontend I mainly use React, Vue, and TypeScript. On the backend it's Nod
 
 ## Education
 
-I studied Media Management at Mediadesign Highschool Munich (B.A., 2009 to 2013), followed by Media Informatics at LMU Munich (B.A., 2014 to 2017). I've been actively working and growing as a developer since 2014.
+I studied Media Management at Mediadesign Highschool Munich (B.A., 2009 to 2013), followed by Media Informatics at LMU Munich (2014 to 2017). I've been actively working and growing as a developer since 2014.
 
 ## Outside of work
 

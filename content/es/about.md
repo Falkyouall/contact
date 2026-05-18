@@ -10,14 +10,14 @@ Soy una persona de prueba y error, listo para aceptar el fallo, adaptarme y volv
 
 ## Qué hago
 
-Trabajo como TypeScript Tech Lead en una agencia internacional full-service, en su departamento de Mobility y Professional Services. Mi día a día es una mezcla de programación activa, decisiones de arquitectura, revisiones de código, mentoría y ayudar a la empresa a crecer entrevistando a nuevos candidatos y compartiendo mi conocimiento con los compañeros. He tenido la suerte de trabajar en grandes proyectos con algunos de los nombres más importantes de la industria automotriz y de movilidad alemana.
+Trabajo como TypeScript Tech Lead en una agencia internacional full-service, en su departamento de Mobility y Professional Services. Mi día a día es una mezcla de programación activa, decisiones de arquitectura, revisiones de código, mentoría y ayudar a la empresa a crecer entrevistando a nuevos candidatos y compartiendo mi conocimiento con los compañeros. He tenido la suerte de trabajar en grandes proyectos con algunos de los nombres más importantes de la industria automotriz y de movilidad, tanto fabricantes alemanes como internacionales, y además con bancos, editoriales de periódicos e inmobiliarias.
 
 Algunos proyectos destacados de los últimos años:
 
 - Página de aterrizaje de producto financiero accesible y conforme con WCAG, construida con React, TypeScript y Azure Container Apps
 - Lideré el pitch técnico y la arquitectura frontend de un configurador de vehículos, usando module federation y desarrollo orientado a dominios
 - Desarrollé una interfaz de gestión de inventario de vehículos que procesaba identificadores extraídos de fotos y mostraba sus estados en una web view con Vue.js
-- Plugins personalizados de Figma que mejoraron los flujos de trabajo de los diseñadores UI con integración OAuth
+- Desarrollé una suite propia de plugins de Figma que automatiza la generación de diseños, enriquece los diseños con metadatos personalizados persistidos en una base de datos remota protegida con OAuth y habilita flujos de release en Figma mediante un sistema de control de versiones a medida
 
 Antes de eso, lideré la ingeniería de una aplicación web completa para planificación logística en TypeScript y React con Redux y desarrollo guiado por tests. Paralelamente, trabajo como freelance desde 2016, principalmente construyendo sitios CMS con Next.js, Strapi y Netlify CMS.
 
@@ -27,7 +27,7 @@ En el frontend trabajo principalmente con React, Vue y TypeScript. En el backend
 
 ## Formación
 
-Estudié Gestión de Medios en la Mediadesign Highschool de Múnich (B.A., 2009 a 2013), seguido de Informática de Medios en la LMU de Múnich (B.A., 2014 a 2017). Trabajo y crezco activamente como desarrollador desde 2014.
+Estudié Gestión de Medios en la Mediadesign Highschool de Múnich (B.A., 2009 a 2013), seguido de Informática de Medios en la LMU de Múnich (2014 a 2017). Trabajo y crezco activamente como desarrollador desde 2014.
 
 ## Fuera del trabajo
 

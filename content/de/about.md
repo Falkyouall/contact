@@ -10,14 +10,14 @@ Ich bin eine Trial-and-Error-Persönlichkeit, bereit Fehler zu akzeptieren, mich
 
 ## Was ich mache
 
-Ich arbeite als TypeScript Tech Lead bei einer internationalen Full-Service-Agentur, in deren Mobility und Professional Services Abteilung. Mein Alltag ist eine Mischung aus aktivem Coden, Architekturentscheidungen, Code Reviews, Mentoring und dem Helfen beim Unternehmenswachstum durch Interviews mit neuen Bewerbern und Wissensaustausch im Team. Ich durfte an tollen Projekten mit einigen der größten Namen der deutschen Automobil- und Mobilitätsbranche arbeiten.
+Ich arbeite als TypeScript Tech Lead bei einer internationalen Full-Service-Agentur, in deren Mobility und Professional Services Abteilung. Mein Alltag ist eine Mischung aus aktivem Coden, Architekturentscheidungen, Code Reviews, Mentoring und dem Helfen beim Unternehmenswachstum durch Interviews mit neuen Bewerbern und Wissensaustausch im Team. Ich durfte an tollen Projekten mit einigen der größten Namen aus Automobil und Mobilität arbeiten, sowohl deutsche als auch internationale Hersteller, und darüber hinaus auch mit Banken, Zeitungsverlagen und Unternehmen aus der Immobilienbranche.
 
 Ein paar Highlights der letzten Jahre:
 
 - Barrierefreie, WCAG konforme Finanzprodukt Landingpage gebaut mit React, TypeScript und Azure Container Apps
 - Technischen Pitch und Frontend Architektur für einen Fahrzeugkonfigurator geleitet, mit Module Federation und Domain Driven Development
 - Fahrzeugbestandsverwaltung entwickelt, bei der Identifikatoren aus Fotos extrahiert und deren Status in einer Vue.js Web View angezeigt und verarbeitet wurden
-- Eigene Figma Plugins erstellt, die UI Designer Workflows mit OAuth Integration verbessert haben
+- Eigene Figma-Plugin-Suite gebaut, die Design-Generierung automatisiert, Designs um individuelle Metadaten in einer OAuth-gesicherten Remote-Datenbank erweitert und über ein maßgeschneidertes Versionierungssystem Release-Workflows nach Figma bringt
 
 Davor habe ich die Entwicklung einer kompletten Web App für Logistikplanung in TypeScript und React mit Redux und testgetriebener Entwicklung geleitet. Nebenbei bin ich seit 2016 als Freelancer unterwegs und baue hauptsächlich CMS Websites mit Next.js, Strapi und Netlify CMS.
 
@@ -27,7 +27,7 @@ Im Frontend arbeite ich hauptsächlich mit React, Vue und TypeScript. Im Backend
 
 ## Ausbildung
 
-Ich habe Medienmanagement an der Mediadesign Hochschule München studiert (B.A., 2009 bis 2013), gefolgt von Medieninformatik an der LMU München (B.A., 2014 bis 2017). Aktiv arbeite und wachse ich als Entwickler seit 2014.
+Ich habe Medienmanagement an der Mediadesign Hochschule München studiert (B.A., 2009 bis 2013), gefolgt von Medieninformatik an der LMU München (2014 bis 2017). Aktiv arbeite und wachse ich als Entwickler seit 2014.
 
 ## Abseits der Arbeit
 
