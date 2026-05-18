@@ -9,34 +9,33 @@
     "start": "node .output/server/index.mjs"
   },
   "dependencies": {
-    "@inlang/paraglide-js": "^2.12.0",
-    "@tanstack/react-router": "^1.161.4",
-    "@tanstack/react-start": "^1.161.4",
+    "@inlang/paraglide-js": "^2.18.0",
+    "@tanstack/react-router": "^1.170.4",
+    "@tanstack/react-start": "^1.168.6",
     "gray-matter": "^4.0.3",
-    "html-react-parser": "^5.2.17",
-    "nitro": "npm:nitro-nightly@3.0.1-20260219-081345-4df7aab2",
-    "react": "^19.2.4",
-    "react-dom": "^19.2.4",
+    "html-react-parser": "^6.1.1",
+    "nitro": "npm:nitro-nightly@3.0.1-20260518-130639-31265391",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6",
     "rehype-external-links": "^3.0.0",
     "rehype-stringify": "^10.0.1",
     "remark-parse": "^11.0.0",
     "remark-rehype": "^11.1.2",
-    "resend": "^6.9.2",
+    "resend": "^6.12.3",
     "sonner": "^2.0.7",
     "unified": "^11.0.5",
-    "zod": "^4.3.6"
+    "zod": "^4.4.3"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.19",
-    "@tailwindcss/vite": "^4.2.0",
-    "@types/node": "^25.3.0",
+    "@tailwindcss/vite": "^4.3.0",
+    "@types/node": "^25.9.0",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
-    "@vitejs/plugin-react": "^5.1.4",
+    "@vitejs/plugin-react": "^6.0.2",
     "sharp": "^0.34.5",
-    "tailwindcss": "^4.2.0",
-    "typescript": "^5.9.3",
-    "vite": "^7.3.1",
-    "vite-tsconfig-paths": "^6.1.1"
+    "tailwindcss": "^4.3.0",
+    "typescript": "^6.0.3",
+    "vite": "^8.0.13"
   }
 }
