@@ -34,5 +34,13 @@
   "lang_en": "Englisch",
   "lang_de": "Deutsch",
   "lang_es": "Spanisch",
-  "opens_new_tab": "(öffnet in neuem Tab)"
+  "opens_new_tab": "(öffnet in neuem Tab)",
+  "not_found_title": "Seite nicht gefunden",
+  "not_found_body": "Die gesuchte Seite existiert nicht oder wurde verschoben.",
+  "error_title": "Etwas ist schiefgelaufen",
+  "error_body": "Ein unerwarteter Fehler ist aufgetreten. Bitte versuchen Sie es erneut.",
+  "back_home": "Zurück zur Startseite",
+  "seo_home_title": "Falk Michel — Softwareentwickler",
+  "seo_home_description": "Falk Michel — Frontend-Entwickler und Tech Lead aus München. Moderne Webanwendungen mit TypeScript, React und KI-Integration.",
+  "seo_contact_description": "Kontaktieren Sie Falk Michel für Webentwicklung, KI-Integration oder Freelance-Projekte."
 }

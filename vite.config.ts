@@ -18,7 +18,10 @@ export default defineConfig({
       outdir: './src/paraglide',
       outputStructure: 'message-modules',
       cookieName: 'PARAGLIDE_LOCALE',
-      strategy: ['cookie', 'preferredLanguage', 'baseLocale'],
+      // 'url' first: the path prefix (/de, /es) is the authoritative locale and
+      // is crawlable. No auto-redirect from "/" (it resolves to the base locale),
+      // so this does not trip the "avoid auto language redirects" anti-pattern.
+      strategy: ['url', 'cookie', 'preferredLanguage', 'baseLocale'],
     }),
     tanstackStart(),
     nitro(),

@@ -30,6 +30,15 @@ Falk Michel is a fullstack TypeScript tech lead based in Munich with over 12 yea
 - LinkedIn: https://www.linkedin.com/in/falk-mich%C3%A9l-b48ba753/
 - GitHub: https://github.com/Falkyouall
 
+## For agents (MCP)
+
+This site exposes a Model Context Protocol (MCP) endpoint over JSON-RPC for AI agents:
+
+- Endpoint: https://falkmichel.com/mcp (Streamable HTTP, POST JSON-RPC 2.0)
+- Tools: `list_services`, `get_service`, `list_blog_posts`, `get_blog_post`, `send_contact_message`
+- Content locales: en (default), de, es
+- Use `send_contact_message` (name, email, message) to reach Falk directly.
+
 ## Technical
 
 - Built with: TanStack Start, React 19, TypeScript, TailwindCSS, Vite
