@@ -3,12 +3,20 @@ import { getRequestIP } from "@tanstack/react-start/server";
 import type { ContactFormData, ContactResult } from "./contact-schema";
 import { checkRateLimit } from "./rate-limit";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+// Lazily constructed so importing this module never throws when
+// RESEND_API_KEY is absent (e.g. during the MCP module's import chain).
+let resendClient: Resend | undefined;
+function getResend(): Resend {
+  return (resendClient ??= new Resend(process.env.RESEND_API_KEY));
+}
 
 export async function handleContactSubmission(
   data: ContactFormData,
+  ipOverride?: string,
 ): Promise<ContactResult> {
-  const ip = getRequestIP({ xForwardedFor: true }) ?? "unknown";
+  // ipOverride lets callers outside the TanStack request context (e.g. the MCP
+  // endpoint) supply the IP; the contact route relies on the getRequestIP fallback.
+  const ip = ipOverride ?? getRequestIP({ xForwardedFor: true }) ?? "unknown";
   const timestamp = new Date().toISOString();
 
   // Honeypot check — silent rejection
@@ -28,7 +36,7 @@ export async function handleContactSubmission(
   }
 
   try {
-    await resend.emails.send({
+    await getResend().emails.send({
       from: "Contact Form <onboarding@resend.dev>",
       to: process.env.CONTACT_TO_EMAIL!,
       subject: `Contact from ${data.name}`,
