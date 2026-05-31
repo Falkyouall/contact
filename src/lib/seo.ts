@@ -1,3 +1,5 @@
+import { localizeHref, locales, baseLocale } from '~/paraglide/runtime'
+
 export const siteConfig = {
   domain: 'https://falkmichel.com',
   siteName: 'Falk Michel',
@@ -7,6 +9,9 @@ export const siteConfig = {
   twitter: '@falk_approves',
   linkedin: 'https://www.linkedin.com/in/falk-mich%C3%A9l-b48ba753/',
   github: 'https://github.com/Falkyouall',
+  // Default social-share image. Square brand mark; replace with a dedicated
+  // 1200×630 image for richer large-card previews.
+  defaultImage: '/favicon-192.png',
 }
 
 const localeMap: Record<string, string> = {
@@ -17,6 +22,12 @@ const localeMap: Record<string, string> = {
 
 export function buildUrl(path: string): string {
   return `${siteConfig.domain}${path}`
+}
+
+// Absolute, locale-prefixed URL for a canonical (de-localized) path.
+// e.g. localizedUrl('/about', 'de') -> 'https://falkmichel.com/de/about'
+export function localizedUrl(path: string, locale: string): string {
+  return buildUrl(localizeHref(path, { locale }))
 }
 
 export function pageMeta({
@@ -36,10 +47,16 @@ export function pageMeta({
   publishedTime?: string
   image?: string
 }) {
-  const url = buildUrl(path)
-  const ogLocale = localeMap[locale] ?? 'en_US'
-  const allLocales = ['en', 'de', 'es']
+  const loc = locale || baseLocale
+  const url = localizedUrl(path, loc)
+  const ogLocale = localeMap[loc] ?? 'en_US'
+  const allLocales = locales
   const fullTitle = `${title} | ${siteConfig.siteName}`
+  const ogImage = image
+    ? image.startsWith('http')
+      ? image
+      : buildUrl(image)
+    : buildUrl(siteConfig.defaultImage)
 
   const meta: Array<Record<string, unknown>> = [
     { title: fullTitle },
@@ -61,17 +78,15 @@ export function pageMeta({
   ]
 
   // OG locale alternates
-  for (const loc of allLocales) {
-    if (loc !== locale) {
-      meta.push({ property: 'og:locale:alternate', content: localeMap[loc] })
+  for (const altLoc of allLocales) {
+    if (altLoc !== loc) {
+      meta.push({ property: 'og:locale:alternate', content: localeMap[altLoc] })
     }
   }
 
-  // OG image
-  if (image) {
-    meta.push({ property: 'og:image', content: image })
-    meta.push({ name: 'twitter:image', content: image })
-  }
+  // OG image (always present so shares never render blank)
+  meta.push({ property: 'og:image', content: ogImage })
+  meta.push({ name: 'twitter:image', content: ogImage })
 
   // Article published time
   if (type === 'article' && publishedTime) {
@@ -82,6 +97,27 @@ export function pageMeta({
   return meta
 }
 
-export function canonicalLink(path: string) {
-  return { rel: 'canonical', href: buildUrl(path) }
+// Self-referencing canonical for the current locale's URL.
+export function canonicalLink(path: string, locale: string) {
+  return { rel: 'canonical', href: localizedUrl(path, locale || baseLocale) }
+}
+
+// Reciprocal hreflang alternates for every locale, plus x-default (base locale).
+// `path` is the de-localized path (e.g. '/about'); BCP 47 tags match our locales.
+export function alternateLinks(path: string) {
+  // React's canonical camelCase prop. React DOM renders the real attribute as
+  // lowercase `hreflang`; HTML attribute names are case-insensitive, so the SSR
+  // string (`hrefLang`) is parsed identically by crawlers. Using lowercase here
+  // instead triggers React's "Invalid DOM property" warning on the client.
+  const links = locales.map((loc) => ({
+    rel: 'alternate',
+    hrefLang: loc,
+    href: localizedUrl(path, loc),
+  }))
+  links.push({
+    rel: 'alternate',
+    hrefLang: 'x-default',
+    href: localizedUrl(path, baseLocale),
+  })
+  return links
 }

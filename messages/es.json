@@ -34,5 +34,13 @@
   "lang_en": "Inglés",
   "lang_de": "Alemán",
   "lang_es": "Español",
-  "opens_new_tab": "(abre en nueva pestaña)"
+  "opens_new_tab": "(abre en nueva pestaña)",
+  "not_found_title": "Página no encontrada",
+  "not_found_body": "La página que buscas no existe o se ha movido.",
+  "error_title": "Algo salió mal",
+  "error_body": "Ocurrió un error inesperado. Por favor, inténtalo de nuevo.",
+  "back_home": "Volver al inicio",
+  "seo_home_title": "Falk Michel — Desarrollador de Software",
+  "seo_home_description": "Falk Michel — Desarrollador frontend y tech lead en Múnich. Creando aplicaciones web modernas con TypeScript, React e integración de IA.",
+  "seo_contact_description": "Ponte en contacto con Falk Michel para desarrollo web, integración de IA o proyectos freelance."
 }

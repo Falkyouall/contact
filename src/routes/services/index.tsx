@@ -3,7 +3,7 @@ import { createServerFn } from '@tanstack/react-start'
 import * as m from '~/paraglide/messages'
 import { getLocale } from '~/paraglide/runtime'
 import { getAllServices } from '~/lib/services'
-import { pageMeta, canonicalLink } from '~/lib/seo'
+import { pageMeta, canonicalLink, alternateLinks } from '~/lib/seo'
 
 const fetchServices = createServerFn().handler(() => {
   const locale = getLocale()
@@ -21,7 +21,8 @@ export const Route = createFileRoute('/services/')({
       locale: loaderData!.locale,
     }),
     links: [
-      canonicalLink('/services'),
+      canonicalLink('/services', loaderData!.locale),
+      ...alternateLinks('/services'),
     ],
   }),
   component: ServicesIndex,

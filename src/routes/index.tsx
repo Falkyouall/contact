@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { createServerFn } from "@tanstack/react-start";
 import * as m from "~/paraglide/messages";
 import { getLocale } from "~/paraglide/runtime";
-import { siteConfig, pageMeta, canonicalLink } from "~/lib/seo";
+import { siteConfig, pageMeta, canonicalLink, alternateLinks } from "~/lib/seo";
 import { LogoCarousel } from "~/components/LogoCarousel";
 
 const fetchLocale = createServerFn().handler(() => getLocale());
@@ -12,8 +12,8 @@ export const Route = createFileRoute("/")({
   head: ({ loaderData: locale }) => ({
     meta: [
       ...pageMeta({
-        title: "Falk Michel — Software Developer",
-        description: siteConfig.defaultDescription,
+        title: m.seo_home_title(),
+        description: m.seo_home_description(),
         path: "/",
         locale,
       }),
@@ -32,7 +32,7 @@ export const Route = createFileRoute("/")({
         },
       },
     ],
-    links: [canonicalLink("/")],
+    links: [canonicalLink("/", locale), ...alternateLinks("/")],
   }),
   component: Home,
 });

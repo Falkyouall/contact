@@ -34,5 +34,13 @@
   "lang_en": "English",
   "lang_de": "Deutsch",
   "lang_es": "Español",
-  "opens_new_tab": "(opens in new tab)"
+  "opens_new_tab": "(opens in new tab)",
+  "not_found_title": "Page not found",
+  "not_found_body": "The page you're looking for doesn't exist or has moved.",
+  "error_title": "Something went wrong",
+  "error_body": "An unexpected error occurred. Please try again.",
+  "back_home": "Back to home",
+  "seo_home_title": "Falk Michel — Software Developer",
+  "seo_home_description": "Falk Michel — Frontend developer and tech lead based in Munich. Building modern web applications with TypeScript, React, and AI integration.",
+  "seo_contact_description": "Get in touch with Falk Michel for web development, AI integration, or freelance projects."
 }

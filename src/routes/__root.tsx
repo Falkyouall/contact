@@ -22,6 +22,7 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
+      { name: "color-scheme", content: "light dark" },
       { title: `${m.site_title()} | ${siteConfig.siteName}` },
       { name: "description", content: siteConfig.defaultDescription },
       { name: "author", content: siteConfig.author },
@@ -39,13 +40,49 @@ export const Route = createRootRoute({
       { rel: "apple-touch-icon", href: "/favicon-192.png", sizes: "192x192" },
     ],
   }),
+  notFoundComponent: NotFound,
+  errorComponent: ErrorPage,
   shellComponent: RootDocument,
 });
+
+function CenteredMessage({ title, body }: { title: string; body: string }) {
+  return (
+    <div className="mx-auto flex max-w-2xl flex-1 flex-col items-center justify-center gap-4 px-4 py-16 text-center">
+      <h1 className="text-3xl font-bold">{title}</h1>
+      <p className="text-gray-600 dark:text-gray-400">{body}</p>
+      <Link to="/" className="text-blue-600 hover:underline dark:text-blue-400">
+        {m.back_home()}
+      </Link>
+    </div>
+  );
+}
+
+function NotFound() {
+  return (
+    <CenteredMessage title={m.not_found_title()} body={m.not_found_body()} />
+  );
+}
+
+function ErrorPage() {
+  return <CenteredMessage title={m.error_title()} body={m.error_body()} />;
+}
 
 function RootDocument({ children }: { children: React.ReactNode }) {
   return (
     <html lang={getLocale()} suppressHydrationWarning>
       <head>
+        {/* Rendered directly (not via head meta) so both media-scoped
+            theme-color tags survive — the head manager dedupes by name. */}
+        <meta
+          name="theme-color"
+          content="#ffffff"
+          media="(prefers-color-scheme: light)"
+        />
+        <meta
+          name="theme-color"
+          content="#000000"
+          media="(prefers-color-scheme: dark)"
+        />
         <script
           dangerouslySetInnerHTML={{
             __html: `(function(){try{var t=localStorage.getItem('theme');var d=t==='dark'||(t!=='light'&&window.matchMedia('(prefers-color-scheme:dark)').matches);if(d)document.documentElement.classList.add('dark')}catch(e){}})()`,

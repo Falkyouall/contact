@@ -2,7 +2,7 @@ import { createFileRoute } from '@tanstack/react-router'
 import { createServerFn } from '@tanstack/react-start'
 import { getLocale } from '~/paraglide/runtime'
 import { getServiceBySlug } from '~/lib/services'
-import { siteConfig, pageMeta, canonicalLink } from '~/lib/seo'
+import { siteConfig, pageMeta, canonicalLink, alternateLinks } from '~/lib/seo'
 
 const fetchService = createServerFn()
   .inputValidator((slug: string) => slug)
@@ -41,7 +41,8 @@ export const Route = createFileRoute('/services/$slug')({
         },
       ],
       links: [
-        canonicalLink(path),
+        canonicalLink(path, loaderData?.locale ?? 'en'),
+        ...alternateLinks(path),
       ],
     }
   },

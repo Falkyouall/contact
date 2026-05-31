@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { createServerFn } from "@tanstack/react-start";
 import { getLocale } from "~/paraglide/runtime";
 import { getAboutPage } from "~/lib/about";
-import { pageMeta, canonicalLink } from "~/lib/seo";
+import { pageMeta, canonicalLink, alternateLinks } from "~/lib/seo";
 
 const fetchAbout = createServerFn().handler(async () => {
   const locale = getLocale();
@@ -21,7 +21,8 @@ export const Route = createFileRoute("/about")({
       locale: loaderData!.locale,
     }),
     links: [
-      canonicalLink("/about"),
+      canonicalLink("/about", loaderData!.locale),
+      ...alternateLinks("/about"),
     ],
   }),
 });
