@@ -30,14 +30,21 @@ Falk Michel is a fullstack TypeScript tech lead based in Munich with over 12 yea
 - LinkedIn: https://www.linkedin.com/in/falk-mich%C3%A9l-b48ba753/
 - GitHub: https://github.com/Falkyouall
 
-## For agents (MCP)
+## For agents
 
-This site exposes a Model Context Protocol (MCP) endpoint over JSON-RPC for AI agents:
+No setup required — these are plain HTTP endpoints any agent can use directly.
 
-- Endpoint: https://falkmichel.com/mcp (Streamable HTTP, POST JSON-RPC 2.0)
-- Tools: `list_services`, `get_service`, `list_blog_posts`, `get_blog_post`, `send_contact_message`
-- Content locales: en (default), de, es
-- Use `send_contact_message` (name, email, message) to reach Falk directly.
+Read content as Markdown (append `.md` to any content URL; prefix /de or /es for language):
+
+- https://falkmichel.com/about.md
+- https://falkmichel.com/services.md (index), https://falkmichel.com/services/<slug>.md
+- https://falkmichel.com/blog.md (index), https://falkmichel.com/blog/<slug>.md
+
+Contact Falk in one request (he replies to the email you provide):
+
+- POST https://falkmichel.com/api/contact
+- JSON body: { "name": string, "email": string, "message": string (min 10 chars) }
+- Response: { "ok": true } on success
 
 ## Technical
 

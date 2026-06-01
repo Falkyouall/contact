@@ -1,6 +1,7 @@
 import { paraglideMiddleware } from './paraglide/server.js'
 import handler from '@tanstack/react-start/server-entry'
-import { handleMcpRequest } from './lib/mcp'
+import { handleContactApiRequest } from './lib/contact-api'
+import { handleMarkdownRequest } from './lib/markdown'
 
 // Content Security Policy.
 // 'unsafe-inline' on script-src is required for the inline theme-init script in
@@ -46,13 +47,17 @@ function localeDetectionUrl(request: Request): string {
 
 export default {
   async fetch(req: Request): Promise<Response> {
-    // MCP endpoint for external agents — locale-agnostic JSON-RPC, served with
-    // its own CORS headers, so it bypasses the localization middleware and the
-    // page security headers (CSP/frame-ancestors would only hinder cross-origin
-    // agent access).
-    if (new URL(req.url).pathname === '/mcp') {
-      return handleMcpRequest(req)
+    // Agent-facing endpoints, served with their own CORS headers so they bypass
+    // the localization middleware and the page security headers (CSP /
+    // frame-ancestors would only hinder cross-origin agent access).
+
+    // Open contact endpoint — one JSON POST, no install, no protocol handshake.
+    if (new URL(req.url).pathname === '/api/contact') {
+      return handleContactApiRequest(req)
     }
+    // Raw Markdown source for content URLs (e.g. /about.md, /services/x.md).
+    const markdown = handleMarkdownRequest(req)
+    if (markdown) return markdown
 
     const res = await paraglideMiddleware(req, () => handler.fetch(req), {
       effectiveRequestUrl: localeDetectionUrl,
