@@ -2,7 +2,7 @@
 title: Fullstack Development (TS)
 subtitle: One person who actually owns the whole thing
 date: 2026-02-21
-description: End-to-end product engineering — UI, API, database, deployment — owned by one person so the pieces actually agree with each other.
+description: End-to-end product engineering (UI, API, database, deployment) owned by one person so the pieces actually agree with each other.
 contactHeading: "Need a fullstack TypeScript project?"
 ---
 
@@ -18,7 +18,7 @@ I take ownership of the whole thing.
 
 ## What you get
 
-- One person responsible for the whole stack — UI, API, database, deployment
+- One person responsible for the whole stack: UI, API, database, deployment
 - Shared types from frontend to backend, so refactors don't silently break things
 - A product that ships and stays maintainable, not a clever architecture nobody else can touch
 
@@ -27,6 +27,14 @@ I take ownership of the whole thing.
 I scope tightly. Most "fullstack" projects fail because they tried to build everything before validating anything. We pick the riskiest piece, prove it, then fan out.
 
 What matters more than the stack is choosing the right *amount* of stack. I'd rather ship a boring monolith that works than impress you with infrastructure you'll have to maintain.
+
+## From real projects
+
+For [Smartlane](https://smartlane.ai/), AI route planning for groupage and regional logistics, I developed the complete frontend application, working closely with the Smartlane team and their customers. Dispatchers use it to plan tours, distribute loads across the day, and stay in control of their drivers on the road, on top of an AI backend calculating the most efficient routes.
+
+## How pricing works
+
+No hourly rates, no price list. We start with a conversation about the problem, and what solving it is worth to your business. You then get a fixed-price proposal in three scopes (lean, full, premium), so you can balance scope and budget yourself.
 
 ---
 

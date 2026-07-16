@@ -2,7 +2,7 @@
 title: Integraciones de Pago
 subtitle: Cobra sin que el checkout te arruine la semana
 date: 2026-05-09
-description: Stripe, LemonSqueezy, PayPal y Shopify integrados como toca — para tiendas online que no pueden permitirse un checkout roto o tres semanas depurando firmas de webhook.
+description: Stripe, LemonSqueezy, PayPal y Shopify integrados como toca, para tiendas online que no pueden permitirse un checkout roto o tres semanas depurando firmas de webhook.
 contactHeading: "¿Pagos que no te arruinen la semana?"
 ---
 
@@ -15,20 +15,24 @@ Yo conecto proveedores de pago con tiendas de forma que los casos límite se atr
 - Tu checkout funciona, pero te da miedo mirar la cola de pagos fallidos
 - Elegiste un proveedor hace meses y ya no estás seguro de si deberías cambiarlo
 - "Es solo una integración con Stripe" se convirtió en tres semanas depurando firmas de webhook e idempotencia
-- Necesitas recurring billing, multi-divisa o impuestos — y la documentación no cubre tu realidad
+- Necesitas recurring billing, multi-divisa o impuestos, y la documentación no cubre tu realidad
 
 ## Qué cambia
 
-- Un flujo de checkout que cubre el 95 % aburrido Y el 5 % doloroso — pagos fallidos, reintentos, refunds parciales, diferencias de divisa
+- Un flujo de checkout que cubre el 95 % aburrido Y el 5 % doloroso: pagos fallidos, reintentos, refunds parciales, diferencias de divisa
 - Webhooks que son de verdad idempotentes, firmados, a prueba de replays, y que no cobran dos veces cuando algo se atasca
 - Suscripciones y recurring billing que sobreviven a cambios de plan, actualizaciones de tarjeta y dunning
-- Una respuesta clara sobre qué proveedor encaja con tu tienda — y una opinión honesta sobre los costes de cambiar si ya te queda pequeño el actual
+- Una respuesta clara sobre qué proveedor encaja con tu tienda, y una opinión honesta sobre los costes de cambiar si ya te queda pequeño el actual
 
 ## Cómo trabajo
 
-Empiezo por el flujo del dinero, no por los docs del proveedor. ¿Dónde se mueve la pasta de verdad? ¿Quién tiene que ver qué estado y cuándo? ¿Qué pasa si un webhook llega dos veces — o no llega? La mayoría de los proyectos de "integración de pagos" fallan porque solo modelaron el camino feliz.
+Empiezo por el flujo del dinero, no por los docs del proveedor. ¿Dónde se mueve la pasta de verdad? ¿Quién tiene que ver qué estado y cuándo? ¿Qué pasa si un webhook llega dos veces, o no llega? La mayoría de los proyectos de "integración de pagos" fallan porque solo modelaron el camino feliz.
 
-Estoy cómodo con los principales proveedores y elijo según tus necesidades reales — no según el que más haya usado.
+Estoy cómodo con los principales proveedores y elijo según tus necesidades reales, no según el que más haya usado.
+
+## Cómo se define el precio
+
+Sin tarifas por hora ni lista de precios. Todo empieza con una conversación sobre el problema, y sobre lo que vale resolverlo para tu negocio. Después recibes una propuesta de precio cerrado en tres alcances (esencial, completo, premium), para que tú mismo equilibres alcance y presupuesto.
 
 ---
 

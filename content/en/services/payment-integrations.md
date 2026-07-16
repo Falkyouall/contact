@@ -2,7 +2,7 @@
 title: Payment Integrations
 subtitle: Get paid without the integration nightmare
 date: 2026-05-09
-description: Stripe, LemonSqueezy, PayPal, and Shopify done right — for online shops that can't afford a broken checkout or a 3-week debug session over webhook signatures.
+description: Stripe, LemonSqueezy, PayPal, and Shopify done right, for online shops that can't afford a broken checkout or a 3-week debug session over webhook signatures.
 contactHeading: "Need payments that don't ruin your week?"
 ---
 
@@ -15,20 +15,24 @@ I plug payment providers into shops so the edge cases get caught before your cus
 - Your checkout works, but you're scared to look at the failed-payment queue
 - You picked a provider months ago and now you're not sure if you should switch
 - "It's just a Stripe integration" turned into a 3-week debugging session about webhook signatures and idempotency
-- You need recurring billing, multi-currency, or tax handling — and the docs don't quite match your reality
+- You need recurring billing, multi-currency, or tax handling, and the docs don't quite match your reality
 
 ## What you get
 
-- A checkout flow that handles the boring 95% AND the painful 5% — failed payments, retries, partial refunds, currency mismatches
+- A checkout flow that handles the boring 95% AND the painful 5%: failed payments, retries, partial refunds, currency mismatches
 - Webhooks that are actually idempotent, signed, replay-safe, and don't double-charge customers when something hiccups
 - Subscriptions and recurring billing that survive plan changes, payment-method updates, and dunning
-- A clear answer on which provider fits your shop — and an honest take on switching costs if you've outgrown the current one
+- A clear answer on which provider fits your shop, and an honest take on switching costs if you've outgrown the current one
 
 ## How I work
 
-I start with your money flow, not the provider docs. Where does the cash actually move? Who needs to see what state, and when? What happens when a webhook arrives twice — or never? Most "payment integration" projects fail because they only modelled the happy path.
+I start with your money flow, not the provider docs. Where does the cash actually move? Who needs to see what state, and when? What happens when a webhook arrives twice, or never? Most "payment integration" projects fail because they only modelled the happy path.
 
 I'm comfortable across the major providers and pick based on your actual needs, not whichever one I've used most.
+
+## How pricing works
+
+No hourly rates, no price list. We start with a conversation about the problem, and what solving it is worth to your business. You then get a fixed-price proposal in three scopes (lean, full, premium), so you can balance scope and budget yourself.
 
 ---
 

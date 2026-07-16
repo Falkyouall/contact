@@ -2,7 +2,16 @@ import { createFileRoute } from '@tanstack/react-router'
 import { createServerFn } from '@tanstack/react-start'
 import { getLocale } from '~/paraglide/runtime'
 import { getServiceBySlug } from '~/lib/services'
-import { siteConfig, pageMeta, canonicalLink, alternateLinks } from '~/lib/seo'
+import * as m from '~/paraglide/messages'
+import {
+  siteConfig,
+  pageMeta,
+  canonicalLink,
+  alternateLinks,
+  localizedUrl,
+  breadcrumbSchema,
+  personId,
+} from '~/lib/seo'
 
 const fetchService = createServerFn()
   .inputValidator((slug: string) => slug)
@@ -32,12 +41,25 @@ export const Route = createFileRoute('/services/$slug')({
             '@type': 'Service',
             name: loaderData!.title,
             description: loaderData!.description,
+            url: localizedUrl(path, loaderData!.locale),
+            inLanguage: loaderData!.locale,
             provider: {
               '@type': 'Person',
+              '@id': personId,
               name: siteConfig.author,
               url: siteConfig.domain,
             },
           },
+        },
+        {
+          'script:ld+json': breadcrumbSchema(
+            [
+              { name: m.nav_home(), path: '/' },
+              { name: m.nav_services(), path: '/services' },
+              { name: loaderData!.title, path },
+            ],
+            loaderData!.locale,
+          ),
         },
       ],
       links: [

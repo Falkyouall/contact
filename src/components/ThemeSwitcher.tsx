@@ -33,7 +33,7 @@ export function ThemeSwitcher() {
     <button
       onClick={toggle}
       aria-label={isDark ? m.theme_light() : m.theme_dark()}
-      className="rounded cursor-pointer px-2 py-1 text-sm font-medium bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 transition-colors"
+      className="min-h-11 min-w-11 rounded cursor-pointer px-2 py-1 text-sm font-medium bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 transition-colors"
       style={{ visibility: mounted ? 'visible' : 'hidden' }}
     >
       {isDark ? '☀️' : '🌚'}

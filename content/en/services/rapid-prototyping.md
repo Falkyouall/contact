@@ -18,15 +18,23 @@ A working prototype changes the conversation overnight.
 
 ## What you get
 
-- A clickable, real prototype in days — built with production tools, not throwaway code
+- A clickable, real prototype in days, built with production tools, not throwaway code
 - Real data integrations where they matter, fakes where they don't
 - A clear yes/no on whether the idea survives contact with users
 
 ## How I work
 
-I scope brutally. A prototype isn't a small product — it's a focused answer to one question. We pick the question first, then build only what's needed to answer it.
+I scope brutally. A prototype isn't a small product; it's a focused answer to one question. We pick the question first, then build only what's needed to answer it.
 
-If the idea works, the prototype keeps growing. If it doesn't, you've spent days, not months.
+If the idea works, [the prototype keeps growing](/services/fullstack-development-ts). If it doesn't, you've spent days, not months.
+
+## From real projects
+
+For [Rapidfacture](https://rapidfacture.com/) I built the initial MVP. It has since grown into an AI-powered ERP for fast quoting and clean manufacturing: the prototype never had to be thrown away.
+
+## How pricing works
+
+No hourly rates, no price list. We start with a conversation about the problem, and what solving it is worth to your business. You then get a fixed-price proposal in three scopes (lean, full, premium), so you can balance scope and budget yourself.
 
 ---
 

@@ -29,3 +29,28 @@ body {
     scroll-behavior: auto !important;
   }
 }
+
+/* Home-page logo conveyor: two-row loop driven entirely by the compositor.
+   Top row travels left to right, then the card jumps to the bottom row and
+   travels back; both wrap points sit outside the overflow-hidden container
+   (x = -buffer and x = belt-l - buffer), so the jumps are never visible.
+   Cards share one keyframe path, phase-shifted via negative animation-delay.
+   Reduced-motion users get static positions set from JS instead. */
+@keyframes logo-belt {
+  0% {
+    transform: translate(calc(-1 * var(--buffer)), 0);
+  }
+  49.9999% {
+    transform: translate(calc(var(--belt-l) - var(--buffer)), 0);
+  }
+  50% {
+    transform: translate(calc(var(--belt-l) - var(--buffer)), var(--belt-y));
+  }
+  100% {
+    transform: translate(calc(-1 * var(--buffer)), var(--belt-y));
+  }
+}
+
+.logo-belt:hover .logo-belt-card {
+  animation-play-state: paused;
+}

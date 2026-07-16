@@ -10,16 +10,16 @@ Ich bin eine Trial-and-Error-Persönlichkeit, bereit Fehler zu akzeptieren, mich
 
 ## Was ich mache
 
-Ich arbeite als TypeScript Tech Lead bei einer internationalen Full-Service-Agentur, in deren Mobility und Professional Services Abteilung. Mein Alltag ist eine Mischung aus aktivem Coden, Architekturentscheidungen, Code Reviews, Mentoring und dem Helfen beim Unternehmenswachstum durch Interviews mit neuen Bewerbern und Wissensaustausch im Team. Ich durfte an tollen Projekten mit einigen der größten Namen aus Automobil und Mobilität arbeiten, sowohl deutsche als auch internationale Hersteller, und darüber hinaus auch mit Banken, Zeitungsverlagen und Unternehmen aus der Immobilienbranche.
+Ich arbeite als [TypeScript Tech Lead](/de/services/fullstack-development-ts) bei einer internationalen Full-Service-Agentur, in deren Mobility und Professional Services Abteilung. Mein Alltag ist eine Mischung aus aktivem Coden, Architekturentscheidungen, Code Reviews, Mentoring und dem Helfen beim Unternehmenswachstum durch Interviews mit neuen Bewerbern und Wissensaustausch im Team. Ich durfte an tollen Projekten mit einigen der größten Namen aus Automobil und Mobilität arbeiten, sowohl deutsche als auch internationale Hersteller, und darüber hinaus auch mit Banken, Zeitungsverlagen und Unternehmen aus der Immobilienbranche.
 
 Ein paar Highlights der letzten Jahre:
 
 - Barrierefreie, WCAG konforme Finanzprodukt Landingpage gebaut mit React, TypeScript und Azure Container Apps
 - Technischen Pitch und Frontend Architektur für einen Fahrzeugkonfigurator geleitet, mit Module Federation und Domain Driven Development
 - Fahrzeugbestandsverwaltung entwickelt, bei der Identifikatoren aus Fotos extrahiert und deren Status in einer Vue.js Web View angezeigt und verarbeitet wurden
-- Eigene Figma-Plugin-Suite gebaut, die Design-Generierung automatisiert, Designs um individuelle Metadaten in einer OAuth-gesicherten Remote-Datenbank erweitert und über ein maßgeschneidertes Versionierungssystem Release-Workflows nach Figma bringt
+- Eigene [Figma-Plugin-Suite](/de/services/figma-plugin-development) gebaut, die Design-Generierung automatisiert, Designs um individuelle Metadaten in einer OAuth-gesicherten Remote-Datenbank erweitert und über ein maßgeschneidertes Versionierungssystem Release-Workflows nach Figma bringt
 
-Davor habe ich die Entwicklung einer kompletten Web App für Logistikplanung in TypeScript und React mit Redux und testgetriebener Entwicklung geleitet. Nebenbei bin ich seit 2016 als Freelancer unterwegs und baue hauptsächlich CMS Websites mit Next.js, Strapi und Netlify CMS.
+Davor habe ich die Entwicklung einer kompletten [Web App für Logistikplanung](/de/services/web-development) in TypeScript und React mit Redux und testgetriebener Entwicklung geleitet. Nebenbei bin ich seit 2016 als Freelancer unterwegs und baue hauptsächlich [CMS Websites](/de/services/cms-websites) mit Next.js, Strapi und Netlify CMS.
 
 ## Technologien
 

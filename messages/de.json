@@ -40,7 +40,12 @@
   "error_title": "Etwas ist schiefgelaufen",
   "error_body": "Ein unerwarteter Fehler ist aufgetreten. Bitte versuchen Sie es erneut.",
   "back_home": "Zurück zur Startseite",
-  "seo_home_title": "Falk Michel — Softwareentwickler",
-  "seo_home_description": "Falk Michel — Frontend-Entwickler und Tech Lead aus München. Moderne Webanwendungen mit TypeScript, React und KI-Integration.",
-  "seo_contact_description": "Kontaktieren Sie Falk Michel für Webentwicklung, KI-Integration oder Freelance-Projekte."
+  "seo_home_title": "Falk Michel, Softwareentwickler",
+  "seo_home_description": "Falk Michel, Frontend-Entwickler und Tech Lead aus München. Moderne Webanwendungen mit TypeScript, React und KI-Integration.",
+  "seo_about_description": "Frontend-Entwickler und Tech Lead aus München mit über 12 Jahren Erfahrung in der Entwicklung moderner Webanwendungen.",
+  "home_intro": "Fullstack TypeScript Tech Lead aus München mit über 12 Jahren Erfahrung im Bau von Webanwendungen für die Mobilitätsbranche. Verfügbar für Freelance-Projekte.",
+  "seo_contact_description": "Kontaktieren Sie Falk Michel für Webentwicklung, KI-Integration oder Freelance-Projekte.",
+  "job_title": "Softwareentwickler",
+  "nav_impressum": "Impressum",
+  "nav_datenschutz": "Datenschutz"
 }

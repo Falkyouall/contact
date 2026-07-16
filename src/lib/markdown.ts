@@ -63,7 +63,7 @@ function servicesIndex(locale: Loc): string {
 function blogIndex(locale: Loc): string {
   const items = getAllPosts(locale).map(
     (p) =>
-      `- [${p.title}](${localizedUrl(`/blog/${p.slug}`, locale)}) — ${p.date}: ${p.description}`,
+      `- [${p.title}](${localizedUrl(`/blog/${p.slug}`, locale)}) (${p.date}): ${p.description}`,
   );
   return `# Blog\n\n${items.join("\n")}\n`;
 }

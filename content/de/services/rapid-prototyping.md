@@ -18,15 +18,23 @@ Ein funktionierender Prototyp verändert das Gespräch über Nacht.
 
 ## Was sich ändert
 
-- Ein klickbarer, echter Prototyp in Tagen — gebaut mit produktionsreifen Tools, kein Wegwerf-Code
+- Ein klickbarer, echter Prototyp in Tagen, gebaut mit produktionsreifen Tools, kein Wegwerf-Code
 - Echte Datenintegrationen, wo es zählt, Fakes, wo nicht
 - Eine klare Ja/Nein-Antwort darauf, ob die Idee dem Kontakt mit Nutzern standhält
 
 ## Wie ich arbeite
 
-Ich kürze brutal. Ein Prototyp ist kein kleines Produkt — er ist eine fokussierte Antwort auf eine Frage. Wir suchen zuerst die Frage, dann bauen wir nur das, was sie beantwortet.
+Ich kürze brutal. Ein Prototyp ist kein kleines Produkt; er ist eine fokussierte Antwort auf eine Frage. Wir suchen zuerst die Frage, dann bauen wir nur das, was sie beantwortet.
 
-Wenn die Idee trägt, wächst der Prototyp weiter. Wenn nicht, hast du Tage investiert, nicht Monate.
+Wenn die Idee trägt, [wächst der Prototyp weiter](/de/services/fullstack-development-ts). Wenn nicht, hast du Tage investiert, nicht Monate.
+
+## Aus der Praxis
+
+Für [Rapidfacture](https://rapidfacture.com/) habe ich das initiale MVP gebaut. Daraus ist heute ein KI-gestütztes ERP für schnelle Angebote und saubere Fertigung geworden. Der Prototyp musste nie weggeworfen werden.
+
+## Wie Preise entstehen
+
+Keine Stundensätze, keine Preisliste. Am Anfang steht ein Gespräch über das Problem, und darüber, was seine Lösung für dein Geschäft wert ist. Danach bekommst du ein Festpreis-Angebot in drei Zuschnitten (schlank, komplett, premium), damit du Umfang und Budget selbst austarieren kannst.
 
 ---
 

@@ -40,7 +40,12 @@
   "error_title": "Algo salió mal",
   "error_body": "Ocurrió un error inesperado. Por favor, inténtalo de nuevo.",
   "back_home": "Volver al inicio",
-  "seo_home_title": "Falk Michel — Desarrollador de Software",
-  "seo_home_description": "Falk Michel — Desarrollador frontend y tech lead en Múnich. Creando aplicaciones web modernas con TypeScript, React e integración de IA.",
-  "seo_contact_description": "Ponte en contacto con Falk Michel para desarrollo web, integración de IA o proyectos freelance."
+  "seo_home_title": "Falk Michel, Desarrollador de Software",
+  "seo_home_description": "Falk Michel, desarrollador frontend y tech lead en Múnich. Creando aplicaciones web modernas con TypeScript, React e integración de IA.",
+  "seo_about_description": "Desarrollador frontend y tech lead en Múnich con más de 12 años de experiencia creando aplicaciones web modernas.",
+  "home_intro": "Tech lead fullstack de TypeScript en Múnich con más de 12 años de experiencia creando aplicaciones web para la industria de la movilidad. Disponible para proyectos freelance.",
+  "seo_contact_description": "Ponte en contacto con Falk Michel para desarrollo web, integración de IA o proyectos freelance.",
+  "job_title": "Desarrollador de Software",
+  "nav_impressum": "Aviso legal",
+  "nav_datenschutz": "Privacidad"
 }

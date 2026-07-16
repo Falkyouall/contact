@@ -2,11 +2,11 @@
 title: Desarrollo Web
 subtitle: Software que se adapta a tu negocio, no al revés
 date: 2026-02-21
-description: Aplicaciones web a medida que resuelven un problema real — configuradores, dashboards, herramientas internas, portales de cliente.
+description: "Aplicaciones web a medida que resuelven un problema real: configuradores, dashboards, herramientas internas, portales de cliente."
 contactHeading: "Construyamos tu aplicación web"
 ---
 
-La mayoría de los pitches de "desarrollo web" se reducen a "sé React". Esto es distinto. Construyo el tipo de aplicaciones que tienen complejidad real detrás — configuradores, dashboards, herramientas internas, portales de cliente — las apps que no encajan del todo en ningún producto enlatado.
+La mayoría de los pitches de "desarrollo web" se reducen a "sé React". Esto es distinto. Construyo el tipo de [aplicaciones que tienen complejidad real detrás](/es/services/fullstack-development-ts) (configuradores, dashboards, herramientas internas, portales de cliente), las apps que no encajan del todo en ningún producto enlatado.
 
 ## ¿Te suena familiar?
 
@@ -18,14 +18,24 @@ La mayoría de los pitches de "desarrollo web" se reducen a "sé React". Esto es
 
 - Una app que resuelve tu problema real, no uno genérico
 - Código que el próximo desarrollador puede leer sin un mapa del tesoro
-- El rendimiento no es una idea de último momento — carga rápida, dispositivos reales, accesibilidad desde el primer día
+- El rendimiento no es una idea de último momento: carga rápida, dispositivos reales, accesibilidad desde el primer día
 
 ## Cómo trabajo
 
-Suelo empezar por el flujo de trabajo, no por la tecnología. Vemos juntos quién usa qué y dónde duele, y construimos lo más pequeño posible que valide la hipótesis central. A partir de ahí, iteramos. Nada de "fase 1" de 6 meses que no entrega nada.
+Suelo empezar por el flujo de trabajo, no por la tecnología. Vemos juntos quién usa qué y dónde duele, y construimos [lo más pequeño posible que valide la hipótesis central](/es/services/rapid-prototyping). A partir de ahí, iteramos. Nada de "fase 1" de 6 meses que no entrega nada.
 
-Trabajo asistido por IA, pero guiado por humanos. Las decisiones que importan — arquitectura, casos límite, qué *no* construir — son mías.
+Trabajo [asistido por IA, pero guiado por humanos](/es/services/ai-integration). Las decisiones que importan (arquitectura, casos límite, qué *no* construir) son mías.
+
+## De proyectos reales
+
+Un ejemplo: una landing page accesible y conforme a WCAG para un producto financiero, construida con React y TypeScript y desplegada en Azure Container Apps.
+
+## Cómo se define el precio
+
+Sin tarifas por hora ni lista de precios. Todo empieza con una conversación sobre el problema, y sobre lo que vale resolverlo para tu negocio. Después recibes una propuesta de precio cerrado en tres alcances (esencial, completo, premium), para que tú mismo equilibres alcance y presupuesto.
 
 ---
 
 *Herramientas a las que suelo recurrir: React, TypeScript, TanStack Start/Router, Node.js, Vite, Docker, GitHub Actions. El stack se adapta al proyecto, no al revés.*
+
+*Servicio relacionado: [Websites con CMS](/es/services/cms-websites)*

@@ -64,6 +64,48 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://falkmichel.com/contact"/>
   </url>
   <url>
+    <loc>https://falkmichel.com/impressum</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://falkmichel.com/impressum"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://falkmichel.com/de/impressum"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://falkmichel.com/es/impressum"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://falkmichel.com/impressum"/>
+  </url>
+  <url>
+    <loc>https://falkmichel.com/de/impressum</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://falkmichel.com/impressum"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://falkmichel.com/de/impressum"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://falkmichel.com/es/impressum"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://falkmichel.com/impressum"/>
+  </url>
+  <url>
+    <loc>https://falkmichel.com/es/impressum</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://falkmichel.com/impressum"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://falkmichel.com/de/impressum"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://falkmichel.com/es/impressum"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://falkmichel.com/impressum"/>
+  </url>
+  <url>
+    <loc>https://falkmichel.com/datenschutz</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://falkmichel.com/datenschutz"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://falkmichel.com/de/datenschutz"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://falkmichel.com/es/datenschutz"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://falkmichel.com/datenschutz"/>
+  </url>
+  <url>
+    <loc>https://falkmichel.com/de/datenschutz</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://falkmichel.com/datenschutz"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://falkmichel.com/de/datenschutz"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://falkmichel.com/es/datenschutz"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://falkmichel.com/datenschutz"/>
+  </url>
+  <url>
+    <loc>https://falkmichel.com/es/datenschutz</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://falkmichel.com/datenschutz"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://falkmichel.com/de/datenschutz"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://falkmichel.com/es/datenschutz"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://falkmichel.com/datenschutz"/>
+  </url>
+  <url>
     <loc>https://falkmichel.com/blog</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://falkmichel.com/blog"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://falkmichel.com/de/blog"/>

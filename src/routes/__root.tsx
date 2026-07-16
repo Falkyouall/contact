@@ -14,7 +14,8 @@ import { getLocale } from "~/paraglide/runtime";
 import { LanguageSwitcher } from "~/components/LanguageSwitcher";
 import { LiquidGlassBox } from "~/components/LiquidGlassBox";
 import { ThemeSwitcher } from "~/components/ThemeSwitcher";
-import { siteConfig } from "~/lib/seo";
+import { siteConfig, websiteSchema } from "~/lib/seo";
+import { getRequestNonce } from "~/lib/nonce";
 import appCss from "../styles/app.css?url";
 
 export const Route = createRootRoute({
@@ -31,6 +32,7 @@ export const Route = createRootRoute({
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: siteConfig.twitter },
       { name: "twitter:creator", content: siteConfig.twitter },
+      { "script:ld+json": websiteSchema() },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
@@ -83,7 +85,13 @@ function RootDocument({ children }: { children: React.ReactNode }) {
           content="#000000"
           media="(prefers-color-scheme: dark)"
         />
+        {/* suppressHydrationWarning: browsers hide nonce attribute values from
+            the DOM, so the client-side render (nonce undefined) can never match
+            the server-rendered attribute. The script has already executed by
+            then; the mismatch is cosmetic. */}
         <script
+          nonce={getRequestNonce()}
+          suppressHydrationWarning
           dangerouslySetInnerHTML={{
             __html: `(function(){try{var t=localStorage.getItem('theme');var d=t==='dark'||(t!=='light'&&window.matchMedia('(prefers-color-scheme:dark)').matches);if(d)document.documentElement.classList.add('dark')}catch(e){}})()`,
           }}
@@ -114,20 +122,28 @@ function RootDocument({ children }: { children: React.ReactNode }) {
             </div>
           </nav>
         </header>
-        <main id="main-content" className="flex flex-1 pt-48">
+        <main id="main-content" className="flex flex-1 pt-36">
           {children}
         </main>
         <footer className="border-t border-gray-200 dark:border-gray-800 py-8 px-6">
-          <div className="mx-auto max-w-2xl flex items-center justify-between text-sm text-gray-500 dark:text-gray-400">
-            <span>&copy; {new Date().getFullYear()} {siteConfig.author}</span>
+          <div className="mx-auto max-w-2xl flex flex-wrap items-center justify-between gap-y-2 text-sm text-gray-500 dark:text-gray-400">
             <div className="flex items-center gap-4">
-              <a href="https://github.com/Falkyouall" target="_blank" rel="noopener noreferrer me" className="hover:text-gray-900 dark:hover:text-gray-100">
+              <span>&copy; {new Date().getFullYear()} {siteConfig.author}</span>
+              <Link to="/impressum" className="px-2 -mx-2 py-3 -my-3 hover:text-gray-900 dark:hover:text-gray-100">
+                {m.nav_impressum()}
+              </Link>
+              <Link to="/datenschutz" className="px-2 -mx-2 py-3 -my-3 hover:text-gray-900 dark:hover:text-gray-100">
+                {m.nav_datenschutz()}
+              </Link>
+            </div>
+            <div className="flex items-center gap-4">
+              <a href="https://github.com/Falkyouall" target="_blank" rel="noopener noreferrer me" className="px-2 -mx-2 py-3 -my-3 hover:text-gray-900 dark:hover:text-gray-100">
                 GitHub<span className="sr-only"> {m.opens_new_tab()}</span>
               </a>
-              <a href="https://www.linkedin.com/in/falk-mich%C3%A9l-b48ba753/" target="_blank" rel="noopener noreferrer me" className="hover:text-gray-900 dark:hover:text-gray-100">
+              <a href="https://www.linkedin.com/in/falk-mich%C3%A9l-b48ba753/" target="_blank" rel="noopener noreferrer me" className="px-2 -mx-2 py-3 -my-3 hover:text-gray-900 dark:hover:text-gray-100">
                 LinkedIn<span className="sr-only"> {m.opens_new_tab()}</span>
               </a>
-              <a href="https://x.com/falk_approves" target="_blank" rel="noopener noreferrer me" className="hover:text-gray-900 dark:hover:text-gray-100">
+              <a href="https://x.com/falk_approves" target="_blank" rel="noopener noreferrer me" className="px-2 -mx-2 py-3 -my-3 hover:text-gray-900 dark:hover:text-gray-100">
                 X<span className="sr-only"> {m.opens_new_tab()}</span>
               </a>
             </div>

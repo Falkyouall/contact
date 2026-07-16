@@ -40,7 +40,12 @@
   "error_title": "Something went wrong",
   "error_body": "An unexpected error occurred. Please try again.",
   "back_home": "Back to home",
-  "seo_home_title": "Falk Michel — Software Developer",
-  "seo_home_description": "Falk Michel — Frontend developer and tech lead based in Munich. Building modern web applications with TypeScript, React, and AI integration.",
-  "seo_contact_description": "Get in touch with Falk Michel for web development, AI integration, or freelance projects."
+  "seo_home_title": "Falk Michel, Software Developer",
+  "seo_home_description": "Falk Michel, frontend developer and tech lead based in Munich. Building modern web applications with TypeScript, React, and AI integration.",
+  "seo_about_description": "Frontend developer and tech lead based in Munich with 12+ years of experience building modern web applications.",
+  "home_intro": "Fullstack TypeScript tech lead based in Munich with 12+ years of experience building web applications for the mobility industry. Available for freelance projects.",
+  "seo_contact_description": "Get in touch with Falk Michel for web development, AI integration, or freelance projects.",
+  "job_title": "Software Developer",
+  "nav_impressum": "Legal Notice",
+  "nav_datenschutz": "Privacy"
 }

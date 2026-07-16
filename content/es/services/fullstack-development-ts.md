@@ -2,7 +2,7 @@
 title: Desarrollo Fullstack (TS)
 subtitle: Una persona que se hace cargo del conjunto entero
 date: 2026-02-21
-description: Ingeniería de producto end-to-end — UI, API, base de datos, despliegue — bajo una sola responsabilidad, para que las piezas encajen de verdad.
+description: Ingeniería de producto end-to-end (UI, API, base de datos, despliegue) bajo una sola responsabilidad, para que las piezas encajen de verdad.
 contactHeading: "¿Necesitas un proyecto fullstack en TypeScript?"
 ---
 
@@ -18,15 +18,23 @@ Yo me hago cargo del conjunto entero.
 
 ## Qué cambia
 
-- Una persona responsable de todo el stack — UI, API, base de datos, despliegue
+- Una persona responsable de todo el stack: UI, API, base de datos, despliegue
 - Tipos compartidos entre frontend y backend, para que los refactors no rompan cosas en silencio
-- Un producto que se entrega y se mantiene — no una arquitectura ingeniosa que nadie más puede tocar
+- Un producto que se entrega y se mantiene, no una arquitectura ingeniosa que nadie más puede tocar
 
 ## Cómo trabajo
 
 Acoto fuerte. La mayoría de los proyectos "fullstack" fracasan porque intentaron construir todo antes de validar nada. Tomamos la pieza más arriesgada, la probamos, y desde ahí ampliamos.
 
 Más importante que el stack es elegir la *cantidad* correcta de stack. Prefiero entregar un monolito aburrido que funciona, antes que impresionarte con infraestructura que tú vas a tener que mantener después.
+
+## De proyectos reales
+
+Para [Smartlane](https://smartlane.ai/) (planificación de rutas con IA para logística regional y de carga fraccionada) desarrollé la aplicación frontend completa, en estrecha colaboración con el equipo de Smartlane y sus clientes. Los operadores planifican rutas, distribuyen la carga a lo largo del día y mantienen el control sobre sus conductores en carretera, sobre un backend de IA que calcula las rutas más eficientes.
+
+## Cómo se define el precio
+
+Sin tarifas por hora ni lista de precios. Todo empieza con una conversación sobre el problema, y sobre lo que vale resolverlo para tu negocio. Después recibes una propuesta de precio cerrado en tres alcances (esencial, completo, premium), para que tú mismo equilibres alcance y presupuesto.
 
 ---
 

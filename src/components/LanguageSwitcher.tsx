@@ -36,7 +36,7 @@ export function LanguageSwitcher() {
         aria-label={ariaLabels[currentLocale]?.() ?? currentLocale}
         aria-haspopup="menu"
         aria-expanded={open}
-        className="relative z-50 rounded cursor-pointer px-2 py-1 text-sm font-medium bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 transition-colors"
+        className="relative z-50 min-h-11 min-w-11 rounded cursor-pointer px-2 py-1 text-sm font-medium bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 transition-colors"
       >
         {labels[currentLocale] ?? currentLocale.toUpperCase()}
       </button>
@@ -60,7 +60,7 @@ export function LanguageSwitcher() {
                   setLocale(locale)
                 }}
                 aria-label={ariaLabels[locale]?.() ?? locale}
-                className="rounded cursor-pointer px-2 py-1 text-sm font-medium hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+                className="min-h-11 min-w-11 rounded cursor-pointer px-2 py-1 text-sm font-medium hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
               >
                 {labels[locale] ?? locale.toUpperCase()}
               </button>

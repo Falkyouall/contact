@@ -5,7 +5,7 @@ description: Komplexe Tickets, schwindende Scham, und warum einen AI nach einer 
 contactHeading: "AI-Workflow deines Teams verbessern?"
 ---
 
-Vor ein paar Monaten habe ich [Die Kunst des Fragens](/blog/the-art-of-asking) geschrieben — darüber, dass die Entwickler die am meisten aus Agents rausholen, keinen Code spezifizieren sondern Intent definieren. Der Post ging darum, wie du mit Agents sprichst wenn du willst dass sie etwas bauen.
+Vor ein paar Monaten habe ich [Die Kunst des Fragens](/de/blog/the-art-of-asking) geschrieben: darüber, dass die Entwickler die am meisten aus Agents rausholen, keinen Code spezifizieren sondern Intent definieren. Der Post ging darum, wie du mit Agents sprichst wenn du willst dass sie etwas bauen.
 
 Dieser geht darum, wie du mit ihnen sprichst wenn du etwas verstehen willst.
 
@@ -17,7 +17,7 @@ Dieser Reflex hat nichts mit Skill zu tun. Er hat mit Scham zu tun.
 
 ## Fragen kostete mal wirklich was
 
-Es gab ein soziales Konto. Zu viele Fragen im Standup und du wirktest junior. Den Senior in DMs zu fragen fühlte sich an als würdest du seine Zeit klauen. In #dev-help posten und warten, und währenddessen so tun als würdest du an was anderem arbeiten während du Slack refreshst. Wenn du es nicht innerhalb des ungeschriebenen Fensters hingekriegt hast — vielleicht ein Tag, vielleicht weniger — warst du jemandem einen Kaffee schuldig.
+Es gab ein soziales Konto. Zu viele Fragen im Standup und du wirktest junior. Den Senior in DMs zu fragen fühlte sich an als würdest du seine Zeit klauen. In #dev-help posten und warten, und währenddessen so tun als würdest du an was anderem arbeiten während du Slack refreshst. Wenn du es nicht innerhalb des ungeschriebenen Fensters hingekriegt hast (vielleicht ein Tag, vielleicht weniger), warst du jemandem einen Kaffee schuldig.
 
 Die meisten von uns haben das internalisiert. Wir haben unterm Tisch gegoogelt, Stack Overflow Antworten von 2014 durchgescrollt, drei Sachen probiert die nicht funktioniert haben bevor wir aufgegeben haben.
 
@@ -25,7 +25,7 @@ Diese Kosten sind weg.
 
 ## Fragen um zu verstehen, nicht um bauen zu lassen
 
-Der ursprüngliche Post ging um eine Verschiebung darin, wie du Agents promptest zu bauen. Von Spezifikation ("schreib mir eine React-Komponente die X macht") zu Lösung ("fix den Login Flow") zu Intent ("hast du Fragen an mich?"). Verschiedene Modi, der gleiche Skill darunter — zu definieren was wichtig ist.
+Der ursprüngliche Post ging um eine Verschiebung darin, wie du Agents promptest zu bauen. Von Spezifikation ("schreib mir eine React-Komponente die X macht") zu Lösung ("fix den Login Flow") zu Intent ("hast du Fragen an mich?"). Verschiedene Modi, der gleiche Skill darunter: zu definieren was wichtig ist.
 
 Die zweite Verschiebung ist subtiler. Es ist, Agents zu bitten dir beim *Denken* zu helfen, nicht nur beim Bauen. Bevor du überhaupt einen Prompt schreibst der nach Code fragt, kannst du zwanzig Minuten damit verbringen nach Klarheit zu fragen.
 
@@ -55,10 +55,10 @@ Der Agent hat das Problem nicht gelöst. Er hat mir geholfen, seine Form zu sehe
 
 ## Die Frage vor der Frage
 
-Das ist für Juniors wichtiger als für Seniors, aber nicht so wie du denken würdest. Juniors verlieren keine Tage mehr an "Ich weiß nicht wo ich anfangen soll" — die versteckte Steuer davon neu zu sein. Seniors bekommen etwas anderes: die Erlaubnis etwas nicht zu wissen. Das unbekannte Framework, der Teil der Codebase den sie zwei Jahre nicht angefasst haben, die Domäne in der sie noch nie gearbeitet haben — sie können fragen ohne junior zu wirken, weil der Agent kein Konto führt.
+Das ist für Juniors wichtiger als für Seniors, aber nicht so wie du denken würdest. Juniors verlieren keine Tage mehr an "Ich weiß nicht wo ich anfangen soll", die versteckte Steuer davon neu zu sein. Seniors bekommen etwas anderes: die Erlaubnis etwas nicht zu wissen. Das unbekannte Framework, der Teil der Codebase den sie zwei Jahre nicht angefasst haben, die Domäne in der sie noch nie gearbeitet haben: Sie können fragen ohne junior zu wirken, weil der Agent kein Konto führt.
 
-Beide Enden der Seniority-Kurve bekommen dasselbe: die Reibung beim Zugeben "das verstehe ich noch nicht" geht auf Null. Das ist kein Produktivitäts-Boost. Es ist ein kultureller Shift. Der Grund warum sich die meisten komplexen Aufgaben lähmend anfühlen ist nicht, dass sie tatsächlich komplex sind — sondern dass die Kosten dumm anzufangen zu hoch sind. Wenn diese Kosten auf Null fallen, fängst du an.
+Beide Enden der Seniority-Kurve bekommen dasselbe: die Reibung beim Zugeben "das verstehe ich noch nicht" geht auf Null. Das ist kein Produktivitäts-Boost. Es ist ein [kultureller Shift](/de/services/ai-integration). Der Grund warum sich die meisten komplexen Aufgaben lähmend anfühlen ist nicht, dass sie tatsächlich komplex sind, sondern dass die Kosten dumm anzufangen zu hoch sind. Wenn diese Kosten auf Null fallen, fängst du an.
 
-Teil 1 hat gesagt, das Schwierige war zu definieren was wichtig ist. Das stimmt noch. Aber bevor du definieren kannst was wichtig ist, musst du oft verstehen was gefragt ist — und historisch trug dieser Schritt soziale Kosten, die die meisten nicht laut bezahlen wollten. Jetzt nicht mehr. Du kannst die dumme Frage so oft stellen wie du brauchst, in jeder Formulierung, ohne Urteil, und iterieren bis du es wirklich verstehst. Dieser Schritt war früher privat, beschämend und langsam. Jetzt ist er schnell und kostenlos.
+Teil 1 hat gesagt, das Schwierige war zu definieren was wichtig ist. Das stimmt noch. Aber bevor du definieren kannst was wichtig ist, musst du oft verstehen was gefragt ist. Und historisch trug dieser Schritt soziale Kosten, die die meisten nicht laut bezahlen wollten. Jetzt nicht mehr. Du kannst die dumme Frage so oft stellen wie du brauchst, in jeder Formulierung, ohne Urteil, und iterieren bis du es wirklich verstehst. Dieser Schritt war früher privat, beschämend und langsam. Jetzt ist er schnell und kostenlos.
 
 Die Antwort war immer 42. Die Frage war immer das Schwierige. Was sich geändert hat: die Frage herauszufinden ist billiger geworden.

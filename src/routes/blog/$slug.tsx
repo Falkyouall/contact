@@ -2,7 +2,16 @@ import { createFileRoute } from "@tanstack/react-router";
 import { createServerFn } from "@tanstack/react-start";
 import { getLocale } from "~/paraglide/runtime";
 import { getPostBySlug } from "~/lib/blog";
-import { siteConfig, pageMeta, canonicalLink, alternateLinks } from "~/lib/seo";
+import * as m from "~/paraglide/messages";
+import {
+  siteConfig,
+  pageMeta,
+  canonicalLink,
+  alternateLinks,
+  localizedUrl,
+  breadcrumbSchema,
+  personId,
+} from "~/lib/seo";
 
 const fetchPost = createServerFn()
   .inputValidator((slug: string) => slug)
@@ -32,13 +41,31 @@ export const Route = createFileRoute("/blog/$slug")({
             headline: loaderData!.title,
             description: loaderData!.description,
             datePublished: loaderData?.date,
+            dateModified: loaderData?.date,
+            url: localizedUrl(path, loaderData!.locale),
+            mainEntityOfPage: {
+              "@type": "WebPage",
+              "@id": localizedUrl(path, loaderData!.locale),
+            },
             author: {
               "@type": "Person",
+              "@id": personId,
               name: siteConfig.author,
               url: siteConfig.domain,
             },
+            publisher: { "@id": personId },
             inLanguage: loaderData!.locale,
           },
+        },
+        {
+          "script:ld+json": breadcrumbSchema(
+            [
+              { name: m.nav_home(), path: "/" },
+              { name: m.nav_blog(), path: "/blog" },
+              { name: loaderData!.title, path },
+            ],
+            loaderData!.locale,
+          ),
         },
       ],
       links: [

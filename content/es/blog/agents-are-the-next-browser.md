@@ -5,7 +5,7 @@ description: En dos años, un tercio del tráfico de comparación vendrá de asi
 contactHeading: "¿Quieres preparar tu web para agentes?"
 ---
 
-Tu próximo cliente quizás nunca visite tu web. No porque no le importe tu producto, sino porque su asistente de IA ya leyó tu página de producto, la comparó con tres competidores, revisó tu política de devoluciones y dio una recomendación — todo antes de que el humano abriera una pestaña del navegador.
+Tu próximo cliente quizás nunca visite tu web. No porque no le importe tu producto, sino porque su asistente de IA ya leyó tu página de producto, la comparó con tres competidores, revisó tu política de devoluciones y dio una recomendación, todo antes de que el humano abriera una pestaña del navegador.
 
 Esto no es una predicción. Ya está pasando, y los números se mueven rápido.
 
@@ -17,7 +17,7 @@ Los datos tempranos respaldan la trayectoria. Las plataformas de IA generaron 1.
 
 Y aquí es donde se pone interesante: el tráfico de búsqueda con IA convierte al 14,2% comparado con el 2,8% de Google, según un estudio. [Semrush](https://www.semrush.com/blog/ai-search-seo-traffic-study/) encontró que los visitantes desde LLMs convierten 4,4 veces mejor que los visitantes de búsqueda orgánica. El volumen de tráfico es todavía menor, pero el valor por visita es dramáticamente mayor.
 
-La fase de comparación e investigación de las decisiones de compra se está moviendo a interfaces de IA. El 73% de los consumidores ya usan IA en su proceso de compra — para ideas de productos (45%), resumir reseñas (37%) y comparar precios (32%).
+La fase de comparación e investigación de las decisiones de compra se está moviendo a interfaces de IA. El 73% de los consumidores ya usan IA en su proceso de compra: para ideas de productos (45%), resumir reseñas (37%) y comparar precios (32%).
 
 ## Zero-click es el nuevo estándar
 
@@ -25,9 +25,9 @@ El cambio no es solo de dónde viene el tráfico. Es si hay un clic en absoluto.
 
 Las búsquedas de Google sin AI Overview ya tienen una tasa zero-click del 34%. Con AI Overview, sube al 43%. En el AI Mode de Google, es del 93%. El usuario obtiene lo que necesita sin salir de la interfaz de búsqueda.
 
-Los agentes de IA van más allá. Cuando alguien pregunta a [ChatGPT](https://chatgpt.com) "cuál es la mejor herramienta de gestión de proyectos para un equipo remoto de 10 personas," el agente no envía al usuario a cinco landing pages. Lee esas páginas él mismo, sintetiza la información y entrega una recomendación. El usuario puede hacer clic para registrarse, pero no está navegando. Ya decidió.
+Los agentes de IA van más allá. Cuando alguien pregunta a [ChatGPT](https://chatgpt.com) "cuál es la mejor herramienta de gestión de proyectos para un equipo remoto de 10 personas," el agente no envía al usuario a cinco landing pages. [Lee esas páginas él mismo](/es/blog/the-agentic-age-will-fix-privacy), sintetiza la información y entrega una recomendación. El usuario puede hacer clic para registrarse, pero no está navegando. Ya decidió.
 
-Para la comparación de productos — investigación, comparación de features, precios, reseñas — el agente se está convirtiendo en el navegador. El humano nunca ve tu copy de marketing. El agente sí.
+Para la comparación de productos (investigación, comparación de features, precios, reseñas), el agente se está convirtiendo en el navegador. El humano nunca ve tu copy de marketing. El agente sí.
 
 ## Qué ven realmente los agentes
 
@@ -41,17 +41,17 @@ El 80% de las URLs citadas por LLMs como ChatGPT, [Perplexity](https://www.perpl
 
 ## Cómo se ve una web preparada para agentes
 
-He estado pensando en esto desde la perspectiva del desarrollador — qué cambiaría si estuviera reconstruyendo el sitio de un cliente con los agentes como audiencia de primera clase?
+He estado pensando en esto desde la perspectiva del desarrollador: qué cambiaría si estuviera reconstruyendo el sitio de un cliente con [los agentes como audiencia de primera clase](/es/services/ai-integration)?
 
 **Server-side rendering.** El contenido tiene que estar en la respuesta HTML, no ensamblado por JavaScript después de la carga. Frameworks como [Next.js](https://nextjs.org), [Nuxt](https://nuxt.com) y [TanStack Start](https://tanstack.com/start) soportan SSR o generación estática de serie. Si la página funciona con JavaScript desactivado, funciona para agentes.
 
-**Datos estructurados con JSON-LD.** El markup de [Schema.org](https://schema.org) le dice a los agentes qué representa una página — un producto, un artículo, una FAQ, un servicio. Una página de producto con JSON-LD correcto le da al agente precio, disponibilidad, valoración y descripción en un formato trivial de parsear. Sin esto, el agente tiene que adivinar desde tu HTML, y a menudo adivina mal.
+**Datos estructurados con JSON-LD.** El markup de [Schema.org](https://schema.org) le dice a los agentes qué representa una página: un producto, un artículo, una FAQ, un servicio. Una página de producto con JSON-LD correcto le da al agente precio, disponibilidad, valoración y descripción en un formato trivial de parsear. Sin esto, el agente tiene que adivinar desde tu HTML, y a menudo adivina mal.
 
-**Un archivo [`llms.txt`](https://llmstxt.org).** Es una convención emergente — un archivo markdown en la raíz de tu dominio que da a los modelos de IA un resumen conciso del contenido importante de tu sitio y cómo encontrarlo. Piensa en `robots.txt` pero para LLMs. En vez de decirle a los crawlers qué evitar, le dices a los agentes qué importa y dónde encontrarlo.
+**Un archivo [`llms.txt`](https://llmstxt.org).** Es una convención emergente: un archivo markdown en la raíz de tu dominio que da a los modelos de IA un resumen conciso del contenido importante de tu sitio y cómo encontrarlo. Piensa en `robots.txt` pero para LLMs. En vez de decirle a los crawlers qué evitar, le dices a los agentes qué importa y dónde encontrarlo.
 
-**HTML limpio y semántico.** Jerarquía correcta de encabezados, textos de enlace descriptivos, estructura de contenido lógica. Esto siempre ha sido buena práctica para accesibilidad y SEO. Ahora afecta directamente a si un agente de IA entiende y recomienda tu contenido.
+**[HTML limpio y semántico](/es/services/web-development).** Jerarquía correcta de encabezados, textos de enlace descriptivos, estructura de contenido lógica. Esto siempre ha sido buena práctica para accesibilidad y SEO. Ahora afecta directamente a si un agente de IA entiende y recomienda tu contenido.
 
-**Endpoints de API accesibles.** Si tu catálogo de productos, precios o datos de disponibilidad se pueden consultar a través de una API simple — aunque sea solo un endpoint JSON público — los agentes pueden obtener datos precisos en tiempo real en vez de scrapear páginas renderizadas.
+**Endpoints de API accesibles.** Si tu catálogo de productos, precios o datos de disponibilidad se pueden consultar a través de [una API simple](/es/blog/the-case-for-clis-in-the-agentic-age), aunque sea solo un endpoint JSON público, los agentes pueden obtener datos precisos en tiempo real en vez de scrapear páginas renderizadas.
 
 ## Un ejemplo concreto
 
@@ -59,13 +59,13 @@ Supongamos que tienes una pequeña herramienta SaaS de seguimiento de tiempo. Ho
 
 En el modelo de agentes, el usuario hace la misma pregunta a su asistente de IA. El agente accede a tu homepage y encuentra una app React renderizada en el cliente con una animación hero y un botón de "Prueba Gratis." Sin datos estructurados, sin lista de features legible por máquinas, sin precios en el HTML. El agente no obtiene casi nada útil.
 
-Ahora imagina el sitio de un competidor. Su página de precios incluye JSON-LD con schema `Product` — nombres de planes, precios, features, disponibilidad de prueba. Su homepage está renderizada en servidor con headings limpios que describen qué hace el producto. Tienen un `llms.txt` que apunta a su página de comparación de features y documentación de API. Su página de FAQ usa schema `FAQPage`.
+Ahora imagina el sitio de un competidor. Su página de precios incluye JSON-LD con schema `Product`: nombres de planes, precios, features, disponibilidad de prueba. Su homepage está renderizada en servidor con headings limpios que describen qué hace el producto. Tienen un `llms.txt` que apunta a su página de comparación de features y documentación de API. Su página de FAQ usa schema `FAQPage`.
 
 El agente recomienda al competidor. No porque el producto sea mejor, sino porque el agente pudo entender lo que ofrece.
 
 ## La parte incómoda
 
-La mayoría de empresas no han empezado a adaptarse. Solo el 22% de los marketers están rastreando activamente la visibilidad y el tráfico de IA. La mayoría de las configuraciones de analytics ni siquiera distinguen el tráfico de referencia de IA de las visitas directas. La atribución es invisible — cuando un agente de IA influye en una compra sin generar un clic, no aparece en ningún dashboard.
+La mayoría de empresas no han empezado a adaptarse. Solo el 22% de los marketers están rastreando activamente la visibilidad y el tráfico de IA. La mayoría de las configuraciones de analytics ni siquiera distinguen el tráfico de referencia de IA de las visitas directas. La atribución es invisible: cuando un agente de IA influye en una compra sin generar un clic, no aparece en ningún dashboard.
 
 La ventana para adaptarse es ahora, mientras el tráfico de IA es todavía un porcentaje pequeño del total pero crece exponencialmente. Las empresas que estructuren sus sitios para legibilidad de agentes hoy acumularán esa ventaja a medida que el cambio de tráfico se acelere.
 
@@ -76,9 +76,9 @@ Si estuviera asesorando a un cliente sobre esto hoy, la checklist sería corta:
 - Audita tu sitio con ChatGPT o Claude. Pregúntale qué entiende sobre tu homepage, tu producto, tus precios. Las lagunas en su respuesta son las lagunas en tu legibilidad para agentes.
 - Añade schema JSON-LD para tu tipo de contenido más importante. Productos, servicios, artículos, FAQs. Valida con el [Rich Results Test](https://search.google.com/test/rich-results) de Google.
 - Asegúrate de que tus páginas clave están renderizadas en servidor. En un framework moderno, esto suele ser un cambio de configuración, no una reescritura.
-- Redacta un archivo `llms.txt`. Mantenlo simple — un resumen del sitio, tus páginas más importantes y qué cubre cada sección.
+- Redacta un archivo `llms.txt`. Mantenlo simple: un resumen del sitio, tus páginas más importantes y qué cubre cada sección.
 - Deja de bloquear tráfico de agentes. Revisa tus reglas de bots. Distingue entre scrapers y bots legítimos de recuperación de IA. Los agentes que bloqueas hoy son los clientes que pierdes mañana.
 
-Nada de esto requiere reconstruir tu web. Es trabajo estructural — el tipo de trabajo que un desarrollador hace en unos días enfocados, no meses. Pero el efecto acumulativo de ser legible por agentes temprano, mientras los competidores no lo son, es significativo.
+Nada de esto requiere reconstruir tu web. Es trabajo estructural: el tipo de trabajo que un desarrollador hace en unos días enfocados, no meses. Pero el efecto acumulativo de ser legible por agentes temprano, mientras los competidores no lo son, es significativo.
 
-El navegador fue la interfaz entre humanos y la web. Los agentes se están convirtiendo en la interfaz entre humanos y todo lo demás. Los sitios que se adapten a esta nueva audiencia — una que lee JSON-LD, parsea HTML semántico y nunca hace scroll más allá de tu hero section — son los que seguirán siendo recomendados.
+El navegador fue la interfaz entre humanos y la web. Los agentes se están convirtiendo en la interfaz entre humanos y todo lo demás. Los sitios que se adapten a esta nueva audiencia (una que lee JSON-LD, parsea HTML semántico y nunca hace scroll más allá de tu hero section) son los que seguirán siendo recomendados.

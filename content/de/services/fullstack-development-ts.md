@@ -2,7 +2,7 @@
 title: Fullstack-Entwicklung (TS)
 subtitle: Eine Person, die wirklich für das Ganze verantwortlich ist
 date: 2026-02-21
-description: End-to-End Produktentwicklung — UI, API, Datenbank, Deployment — aus einer Hand, damit die Teile auch wirklich zusammenpassen.
+description: End-to-End Produktentwicklung (UI, API, Datenbank, Deployment) aus einer Hand, damit die Teile auch wirklich zusammenpassen.
 contactHeading: "Fullstack TypeScript Projekt gesucht?"
 ---
 
@@ -18,15 +18,23 @@ Ich übernehme Verantwortung für das Ganze.
 
 ## Was sich ändert
 
-- Eine Person, die für den gesamten Stack verantwortlich ist — UI, API, Datenbank, Deployment
+- Eine Person, die für den gesamten Stack verantwortlich ist: UI, API, Datenbank, Deployment
 - Geteilte Typen vom Frontend bis ins Backend, damit Refactorings nicht still und heimlich Dinge zerschießen
-- Ein Produkt, das ausgeliefert wird und wartbar bleibt — keine clevere Architektur, die niemand sonst anfassen kann
+- Ein Produkt, das ausgeliefert wird und wartbar bleibt, keine clevere Architektur, die niemand sonst anfassen kann
 
 ## Wie ich arbeite
 
 Ich halte den Scope eng. Die meisten "Fullstack"-Projekte scheitern, weil sie alles bauen wollten, bevor sie irgendetwas validiert hatten. Wir nehmen das riskanteste Stück, beweisen es, fächern dann auf.
 
 Wichtiger als der Stack ist die richtige *Menge* an Stack. Lieber liefere ich einen langweiligen Monolithen aus, der funktioniert, als dich mit Infrastruktur zu beeindrucken, die du danach selbst pflegen musst.
+
+## Aus der Praxis
+
+Für [Smartlane](https://smartlane.ai/) (KI-Tourenplanung für Stückgut- und Regionallogistik) habe ich die komplette Frontend-Anwendung entwickelt, in enger Zusammenarbeit mit dem Smartlane-Team und deren Kunden. Disponenten planen damit Touren, verteilen Ladung über den Tag und behalten die Kontrolle über ihre Fahrer auf der Straße, auf Basis eines KI-Backends, das die effizientesten Routen berechnet.
+
+## Wie Preise entstehen
+
+Keine Stundensätze, keine Preisliste. Am Anfang steht ein Gespräch über das Problem, und darüber, was seine Lösung für dein Geschäft wert ist. Danach bekommst du ein Festpreis-Angebot in drei Zuschnitten (schlank, komplett, premium), damit du Umfang und Budget selbst austarieren kannst.
 
 ---
 

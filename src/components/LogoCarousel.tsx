@@ -51,11 +51,11 @@ export function LogoCarousel() {
   const containerRef = useRef<HTMLDivElement>(null);
   const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
   const edgeRefs = useRef<(HTMLDivElement | null)[]>([]);
-  const progressRef = useRef(0);
-  const pausedRef = useRef(false);
   const [width, setWidth] = useState(0);
 
-  useLayoutEffect(() => {
+  // Post-paint (useEffect): the SVG displacement filter is expensive to
+  // generate and must not block first paint.
+  useEffect(() => {
     if (!supportsBackdropFilterUrl()) return;
 
     const applyGlass = (el: HTMLDivElement | null) => {
@@ -97,6 +97,11 @@ export function LogoCarousel() {
     return () => ro.disconnect();
   }, []);
 
+  // The belt runs as a pure CSS animation (see logo-belt keyframes in
+  // app.css): zero per-frame main-thread work, unlike the previous rAF loop.
+  // Each card plays the same keyframe path, phase-shifted via a negative
+  // animation-delay. For reduced motion, positions are set statically instead
+  // (the global reduced-motion CSS would collapse the animation).
   useEffect(() => {
     if (width === 0) return;
     const n = logos.length;
@@ -104,40 +109,30 @@ export function LogoCarousel() {
     const L = Math.max(width + 2 * BUFFER, minL);
     const P = 2 * L;
     const bottomY = CARD_H + GAP;
-
-    const place = () => {
-      for (let i = 0; i < n; i++) {
-        const el = cardRefs.current[i];
-        if (!el) continue;
-        const p = (progressRef.current + (i / n) * P) % P;
-        if (p < L) {
-          el.style.transform = `translate(${p - BUFFER}px, 0)`;
-        } else {
-          el.style.transform = `translate(${2 * L - p - BUFFER}px, ${bottomY}px)`;
-        }
-      }
-    };
-
-    place();
-
+    const duration = P / SPEED;
     const prefersReduced = window.matchMedia(
       "(prefers-reduced-motion: reduce)",
     ).matches;
-    if (prefersReduced) return;
 
-    let last = performance.now();
-    let raf = 0;
-    const tick = (now: number) => {
-      const dt = (now - last) / 1000;
-      last = now;
-      if (!pausedRef.current) {
-        progressRef.current = (progressRef.current + SPEED * dt) % P;
+    for (let i = 0; i < n; i++) {
+      const el = cardRefs.current[i];
+      if (!el) continue;
+      if (prefersReduced) {
+        el.style.animation = "none";
+        const p = ((i / n) * P) % P;
+        el.style.transform =
+          p < L
+            ? `translate(${p - BUFFER}px, 0)`
+            : `translate(${2 * L - p - BUFFER}px, ${bottomY}px)`;
+      } else {
+        el.style.setProperty("--belt-l", `${L}px`);
+        el.style.setProperty("--belt-y", `${bottomY}px`);
+        el.style.setProperty("--buffer", `${BUFFER}px`);
+        el.style.animation = `logo-belt ${duration}s linear infinite`;
+        el.style.animationDelay = `${-(i / n) * duration}s`;
+        el.style.transform = "";
       }
-      place();
-      raf = requestAnimationFrame(tick);
-    };
-    raf = requestAnimationFrame(tick);
-    return () => cancelAnimationFrame(raf);
+    }
   }, [width]);
 
   return (
@@ -156,14 +151,8 @@ export function LogoCarousel() {
       </ul>
       <div
         ref={containerRef}
-        className="relative"
+        className="relative logo-belt"
         style={{ height: `${2 * CARD_H + GAP}px` }}
-        onMouseEnter={() => {
-          pausedRef.current = true;
-        }}
-        onMouseLeave={() => {
-          pausedRef.current = false;
-        }}
         aria-hidden="true"
       >
         {logos.map((logo, i) => (
@@ -172,7 +161,7 @@ export function LogoCarousel() {
             ref={(el) => {
               cardRefs.current[i] = el;
             }}
-            className="absolute left-0 top-0 flex h-24 w-44 items-center justify-center rounded-xl bg-white p-3 shadow-sm ring-1 ring-black/5 dark:bg-gray-800 dark:ring-white/10 will-change-transform"
+            className="logo-belt-card absolute left-0 top-0 flex h-24 w-44 items-center justify-center rounded-xl bg-white p-3 shadow-sm ring-1 ring-black/5 dark:bg-gray-800 dark:ring-white/10 will-change-transform"
             style={{ transform: "translate(-9999px, 0)" }}
           >
             <span className="text-center text-sm font-semibold leading-tight text-balance text-black dark:text-white">

@@ -10,16 +10,16 @@ I'm a try and error personality, ready to accept failure, adapt and go again.
 
 ## What I do
 
-I work as a TypeScript Tech Lead at an international full-service agency, in their Mobility and Professional Services department. My day to day is a mix of hands on coding, architecture decisions, code reviews, mentoring, and helping the company grow by interviewing new applicants and sharing my knowledge across colleagues. I've worked on great projects with some of the biggest names in automotive and mobility, both German and international manufacturers, and beyond that with banks, newspaper publishers, and real estate companies too.
+I work as a [TypeScript Tech Lead](/services/fullstack-development-ts) at an international full-service agency, in their Mobility and Professional Services department. My day to day is a mix of hands on coding, architecture decisions, code reviews, mentoring, and helping the company grow by interviewing new applicants and sharing my knowledge across colleagues. I've worked on great projects with some of the biggest names in automotive and mobility, both German and international manufacturers, and beyond that with banks, newspaper publishers, and real estate companies too.
 
 Some highlights from recent years:
 
 - Built an accessible, WCAG compliant financial product landing page in React, TypeScript, and Azure Container Apps
 - Led the technical pitch and frontend architecture for a vehicle configurator, using module federation and domain driven development
 - Developed a vehicle inventory management interface that processed identifiers extracted from photos and displayed their status in a Vue.js web view
-- Built a custom Figma plugin suite that automates design generation, enriches designs with bespoke metadata persisted in an OAuth-secured remote database, and brings release workflows to Figma through a tailored version control system
+- Built a custom [Figma plugin suite](/services/figma-plugin-development) that automates design generation, enriches designs with bespoke metadata persisted in an OAuth-secured remote database, and brings release workflows to Figma through a tailored version control system
 
-Before that, I led engineering on a complete logistics planning web app in TypeScript and React with Redux and test driven development. On the side, I've been freelancing since 2016, mostly building CMS websites with Next.js, Strapi, and Netlify CMS.
+Before that, I led engineering on a complete [logistics planning web app](/services/web-development) in TypeScript and React with Redux and test driven development. On the side, I've been freelancing since 2016, mostly building [CMS websites](/services/cms-websites) with Next.js, Strapi, and Netlify CMS.
 
 ## Tech I work with
 

@@ -1,4 +1,4 @@
-import { useLayoutEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import {
   getDisplacementFilter,
   supportsBackdropFilterUrl,
@@ -36,7 +36,11 @@ export function LiquidGlassBox({
   const ref = useRef<HTMLDivElement>(null);
   const cfg = { ...DEFAULTS, ...opts };
 
-  useLayoutEffect(() => {
+  // Post-paint (useEffect, not useLayoutEffect): generating the SVG
+  // displacement filter is expensive and must not block first paint of the
+  // page's LCP text. The box renders un-filtered for one frame, then the
+  // glass effect lands.
+  useEffect(() => {
     if (!supportsBackdropFilterUrl()) return;
     const el = ref.current;
     if (!el) return;

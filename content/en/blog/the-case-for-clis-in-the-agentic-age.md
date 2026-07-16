@@ -21,9 +21,9 @@ Their takeaway was blunt: "Grep is 50 years old and still does exactly what we n
 
 ## The context window tax
 
-Here's where it gets practical. Every tool an agent has access to costs tokens. The tool's description, its parameters, its schema — all of that gets loaded into the context window before the agent has even started working.
+Here's where it gets practical. Every tool an agent has access to costs tokens. The tool's description, its parameters, its schema: all of that gets loaded into the context window before the agent has even started working.
 
-[MCP (Model Context Protocol)](https://modelcontextprotocol.io) servers are a good example of this tradeoff. They provide structured, typed interfaces for agents to interact with external services. That's useful. But it comes at a cost. The [GitHub MCP server](https://github.com/github/github-mcp-server), for instance, consumes tens of thousands of tokens just by being registered. One developer reported going from 34k to 80k tokens in [Claude Code](https://claude.ai/download) just by adding the GitHub MCP. Another analysis found MCP tools alone consuming 16.3% of the available context window — before a single user message.
+[MCP (Model Context Protocol)](https://modelcontextprotocol.io) servers are a good example of this tradeoff. They provide structured, typed interfaces for agents to interact with external services. That's useful. But it comes at a cost. The [GitHub MCP server](https://github.com/github/github-mcp-server), for instance, consumes tens of thousands of tokens just by being registered. One developer reported going from 34k to 80k tokens in [Claude Code](https://claude.ai/download) just by adding the GitHub MCP. Another analysis found MCP tools alone consuming 16.3% of the available context window, before a single user message.
 
 Peter Steinberger put it plainly: "I don't have to pay a price for any tools, unlike MCPs which are a constant cost and garbage in my context. Use GitHub's MCP and see 23k tokens gone. Or use the `gh` cli which has basically the same feature set, models already know how to use it, and pay zero context tax."
 
@@ -33,7 +33,7 @@ The [`gh` CLI](https://cli.github.com) and the GitHub MCP server do roughly the 
 
 Context window tokens aren't free. On API-based pricing, every token in the context window gets charged on every request. A 30k token overhead from tool definitions means 30k extra input tokens on every single message in a conversation. Over a long session with dozens of back-and-forth turns, that adds up.
 
-Token pricing has dropped significantly — roughly 80% since 2023 according to some analyses — but the volume of tokens agents consume has increased dramatically in the same period. Agents make multiple tool calls per task, maintain long conversations, and operate across large codebases. The per-token price dropped, but the total token consumption went up.
+Token pricing has dropped significantly (roughly 80% since 2023 according to some analyses), but the volume of tokens agents consume has increased dramatically in the same period. Agents make multiple tool calls per task, maintain long conversations, and operate across large codebases. The per-token price dropped, but the total token consumption went up.
 
 CLI tools sidestep much of this. The agent already knows how to use `git`, `npm`, `docker`, `curl`, and hundreds of other standard Unix tools from its training data. No tool description needed. No schema definition. No context overhead. The agent just calls the command, reads stdout, and moves on.
 
@@ -41,7 +41,7 @@ CLI tools sidestep much of this. The agent already knows how to use `git`, `npm`
 
 One argument for GUIs and structured APIs is that they provide clean, predictable output formats. But CLIs do this too, just differently. Unix commands pipe text. They output JSON when asked (`gh pr list --json`). They support flags that control verbosity. And agents are remarkably good at parsing their output.
 
-The Unix philosophy — small tools that do one thing, composable through pipes — turns out to be almost perfectly aligned with how agents reason. An agent can chain `ls | grep | head` to narrow down what it's looking at before committing tokens to reading full files. It can run `git log --oneline -5` to understand recent history without loading the entire commit graph.
+The Unix philosophy (small tools that do one thing, composable through pipes) turns out to be almost perfectly aligned with how agents reason. An agent can chain `ls | grep | head` to narrow down what it's looking at before committing tokens to reading full files. It can run `git log --oneline -5` to understand recent history without loading the entire commit graph.
 
 This kind of incremental, lazy context loading is exactly what keeps token usage low. The agent decides what it needs, fetches just that, and moves on. Compare this to an MCP server that front-loads its entire schema into the context window whether or not the agent needs any of it.
 
@@ -57,7 +57,7 @@ Same capabilities. Dramatically different context cost.
 
 ## What this means for tool builders
 
-If you're building developer tools in 2026, the CLI isn't a legacy interface you maintain for backwards compatibility. It's the primary interface for a growing class of users — AI agents.
+If you're [building developer tools](/services/fullstack-development-ts) in 2026, the CLI isn't a legacy interface you maintain for backwards compatibility. It's the primary interface for a growing class of users: AI agents.
 
 A few things follow from this:
 
@@ -66,12 +66,12 @@ A few things follow from this:
 - **JSON output flags are table stakes.** `--json` or `--output json` lets agents get structured data without screen-scraping formatted tables.
 - **Don't require interactive input.** Agents can't navigate prompts or menus. Every operation should be expressible as a single command with flags.
 
-None of this is new advice for CLI design. The Unix philosophy has been saying this for fifty years. What's new is that there's now a massive and growing user base — AI agents — that strongly rewards exactly these properties.
+None of this is new advice for CLI design. The Unix philosophy has been saying this for fifty years. What's new is that there's now a massive and growing user base (AI agents) that strongly rewards exactly these properties.
 
 ## The pendulum swings
 
 We've been through cycles before. Mainframes to PCs, desktop apps to web apps, monoliths to microservices. Each shift changes what interfaces are optimal.
 
-The agentic shift favours text interfaces, composable tools, and lazy context loading. It favours CLIs. Not because GUIs are going away — humans still need to see things — but because the fastest-growing consumer of developer tools doesn't have eyes.
+The agentic shift favours text interfaces, composable tools, and lazy context loading. It favours CLIs. Not because GUIs are going away (humans still need to see things), but because the fastest-growing consumer of developer tools doesn't have eyes.
 
 The tools that win in the agentic age will be the ones that are easy to talk to. And the easiest thing to talk to, it turns out, is a well-designed command-line interface that speaks Unix.

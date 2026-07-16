@@ -5,7 +5,7 @@ export const siteConfig = {
   siteName: 'Falk Michel',
   author: 'Falk Michel',
   defaultDescription:
-    'Falk Michel — Frontend developer and tech lead based in Munich. Building modern web applications with TypeScript, React, and AI integration.',
+    'Falk Michel, frontend developer and tech lead based in Munich. Building modern web applications with TypeScript, React, and AI integration.',
   twitter: '@falk_approves',
   linkedin: 'https://www.linkedin.com/in/falk-mich%C3%A9l-b48ba753/',
   github: 'https://github.com/Falkyouall',
@@ -95,6 +95,52 @@ export function pageMeta({
   }
 
   return meta
+}
+
+// Stable node id for Falk's Person entity, shared across all JSON-LD blocks so
+// crawlers consolidate author/publisher/provider references into one graph node.
+export const personId = `${siteConfig.domain}/#person`
+
+export function personSchema(jobTitle: string) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    '@id': personId,
+    name: siteConfig.author,
+    url: siteConfig.domain,
+    jobTitle,
+    sameAs: ['https://x.com/falk_approves', siteConfig.linkedin, siteConfig.github],
+  }
+}
+
+export function websiteSchema() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    '@id': `${siteConfig.domain}/#website`,
+    url: `${siteConfig.domain}/`,
+    name: siteConfig.siteName,
+    description: siteConfig.defaultDescription,
+    inLanguage: [...locales],
+    publisher: { '@id': personId },
+  }
+}
+
+// items are (label, de-localized path) pairs from the root down to the current page.
+export function breadcrumbSchema(
+  items: Array<{ name: string; path: string }>,
+  locale: string,
+) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: items.map((item, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name: item.name,
+      item: localizedUrl(item.path, locale || baseLocale),
+    })),
+  }
 }
 
 // Self-referencing canonical for the current locale's URL.

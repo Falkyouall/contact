@@ -2,7 +2,7 @@
 title: CMS-Websites
 subtitle: Eine Website, die euer Redaktionsteam wirklich selbst pflegen kann
 date: 2026-05-09
-description: Websites, bei denen Marketing und Redaktion Inhalte selbst pflegen — schnell, barrierefrei, SEO-stabil. Headless CMS, modernes Frontend, vernünftiges Content-Modell.
+description: "Websites, bei denen Marketing und Redaktion Inhalte selbst pflegen: schnell, barrierefrei, SEO-stabil. Headless CMS, modernes Frontend, vernünftiges Content-Modell."
 contactHeading: "Eine Website, die dein Team wirklich selbst pflegt?"
 ---
 
@@ -19,16 +19,26 @@ Ich baue Websites, die das Redaktionsteam tatsächlich selbst in der Hand hat.
 ## Was sich ändert
 
 - Eine Website, die eure Redaktion selbst aktualisiert, ohne Layout zu zerschießen oder die Entwicklung zu blockieren
-- Schnelle Ladezeiten und stabiles SEO — Headless CMS heißt nicht langsam
+- Schnelle Ladezeiten und stabiles SEO: Headless CMS heißt nicht langsam
 - Ein Content-Modell, das zu *euren* Inhalten passt, nicht zu dem, was sich ein Template darunter vorstellt
 - Mehrsprachigkeit, die nicht zusammenbricht, sobald die vierte Sprache dazukommt
 
 ## Wie ich arbeite
 
-Ich starte beim Content-Team, nicht beim Design-Team. Wir kartieren die Inhaltstypen, die ihr tatsächlich ausliefert — Landingpages, Beiträge, Produkte, Case Studies — und entwerfen eine Struktur, die leicht zu befüllen, leicht zu erweitern ist und die nächste Kampagne ohne Umbau übersteht.
+Ich starte beim Content-Team, nicht beim Design-Team. Wir kartieren die Inhaltstypen, die ihr tatsächlich ausliefert (Landingpages, Beiträge, Produkte, Case Studies), und entwerfen eine Struktur, die leicht zu befüllen, leicht zu erweitern ist und die nächste Kampagne ohne Umbau übersteht.
 
 Das Frontend baue ich so, dass Designer, Entwickler und Redaktion alle genau wissen, wo ihre Arbeit lebt.
+
+## Aus der Praxis
+
+Seit 2016 baue ich als Freelancer CMS-Websites, unter anderem für den Künstler [Camill von Egloffstein](https://www.camillvonegloffstein.de/), das Restaurierungsatelier [Schittler Restaurierung](https://www.schittler-restaurierung.de/) und [Wohnmobile Kraus](https://www.wohnmobilekraus.de/), einen eigentümergeführten Wohnmobilvermieter aus München, alle auf Strapi. Dazu Content-Management-Verbesserungen für [hiutungching.com](https://www.hiutungching.com/). Der gemeinsame Nenner: Die Betreiber pflegen ihre Inhalte selbst, ohne für jede Änderung einen Entwickler zu brauchen.
+
+## Wie Preise entstehen
+
+Keine Stundensätze, keine Preisliste. Am Anfang steht ein Gespräch über das Problem, und darüber, was seine Lösung für dein Geschäft wert ist. Danach bekommst du ein Festpreis-Angebot in drei Zuschnitten (schlank, komplett, premium), damit du Umfang und Budget selbst austarieren kannst.
 
 ---
 
 *Tools, zu denen ich gerne greife: Strapi, DatoCMS, Sanity oder Netlify CMS auf der CMS-Seite. Next.js, TanStack Start oder Astro im Frontend. Welche Wahl die richtige ist, hängt davon ab, wer redigiert und wer deployt.*
+
+*Verwandte Leistung: [Payment-Integrationen](/de/services/payment-integrations), für Shops, deren Checkout funktionieren muss.*

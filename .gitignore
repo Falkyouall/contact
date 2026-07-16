@@ -9,3 +9,6 @@ CV-Falk-Michel.pdf
 bergzeit-cli/
 .tanstack/
 .DS_Store
+
+# Personal sales material, not for the public repo
+*.docx

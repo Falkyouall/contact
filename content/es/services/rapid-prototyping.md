@@ -18,15 +18,23 @@ Un prototipo que funciona cambia la conversación de un día para otro.
 
 ## Qué cambia
 
-- Un prototipo clicable y real en días — construido con herramientas de producción, no con código desechable
+- Un prototipo clicable y real en días, construido con herramientas de producción, no con código desechable
 - Integraciones reales de datos donde importan, fakes donde no
 - Un sí/no claro sobre si la idea sobrevive al contacto con usuarios reales
 
 ## Cómo trabajo
 
-Acoto sin piedad. Un prototipo no es un producto pequeño — es una respuesta enfocada a una sola pregunta. Primero buscamos la pregunta, después construimos solo lo necesario para responderla.
+Acoto sin piedad. Un prototipo no es un producto pequeño: es una respuesta enfocada a una sola pregunta. Primero buscamos la pregunta, después construimos solo lo necesario para responderla.
 
-Si la idea funciona, el prototipo sigue creciendo. Si no, has invertido días, no meses.
+Si la idea funciona, [el prototipo sigue creciendo](/es/services/fullstack-development-ts). Si no, has invertido días, no meses.
+
+## De proyectos reales
+
+Para [Rapidfacture](https://rapidfacture.com/) construí el MVP inicial. Desde entonces se ha convertido en un ERP potenciado por IA para presupuestos rápidos y fabricación ordenada. El prototipo nunca tuvo que tirarse a la basura.
+
+## Cómo se define el precio
+
+Sin tarifas por hora ni lista de precios. Todo empieza con una conversación sobre el problema, y sobre lo que vale resolverlo para tu negocio. Después recibes una propuesta de precio cerrado en tres alcances (esencial, completo, premium), para que tú mismo equilibres alcance y presupuesto.
 
 ---
 
