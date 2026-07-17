@@ -26,8 +26,14 @@ export function buildUrl(path: string): string {
 
 // Absolute, locale-prefixed URL for a canonical (de-localized) path.
 // e.g. localizedUrl('/about', 'de') -> 'https://falkmichel.com/de/about'
+type Locale = (typeof locales)[number]
+
+// Paraglide types locale params as the "en" | "de" | "es" union; these SEO
+// helpers accept a plain string (from route loaders and params) and narrow to
+// that union at the paraglide boundary. Upstream callers always resolve via
+// `|| baseLocale`, so the value is a real locale by the time it reaches here.
 export function localizedUrl(path: string, locale: string): string {
-  return buildUrl(localizeHref(path, { locale }))
+  return buildUrl(localizeHref(path, { locale: locale as Locale }))
 }
 
 export function pageMeta({
@@ -42,7 +48,7 @@ export function pageMeta({
   title: string
   description: string
   path: string
-  locale: string
+  locale?: string
   type?: 'website' | 'article'
   publishedTime?: string
   image?: string
@@ -129,7 +135,7 @@ export function websiteSchema() {
 // items are (label, de-localized path) pairs from the root down to the current page.
 export function breadcrumbSchema(
   items: Array<{ name: string; path: string }>,
-  locale: string,
+  locale?: string,
 ) {
   return {
     '@context': 'https://schema.org',
@@ -144,7 +150,7 @@ export function breadcrumbSchema(
 }
 
 // Self-referencing canonical for the current locale's URL.
-export function canonicalLink(path: string, locale: string) {
+export function canonicalLink(path: string, locale?: string) {
   return { rel: 'canonical', href: localizedUrl(path, locale || baseLocale) }
 }
 
@@ -155,11 +161,12 @@ export function alternateLinks(path: string) {
   // lowercase `hreflang`; HTML attribute names are case-insensitive, so the SSR
   // string (`hrefLang`) is parsed identically by crawlers. Using lowercase here
   // instead triggers React's "Invalid DOM property" warning on the client.
-  const links = locales.map((loc) => ({
-    rel: 'alternate',
-    hrefLang: loc,
-    href: localizedUrl(path, loc),
-  }))
+  const links: Array<{ rel: string; hrefLang: string; href: string }> =
+    locales.map((loc) => ({
+      rel: 'alternate',
+      hrefLang: loc,
+      href: localizedUrl(path, loc),
+    }))
   links.push({
     rel: 'alternate',
     hrefLang: 'x-default',

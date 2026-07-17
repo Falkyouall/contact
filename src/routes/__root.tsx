@@ -122,7 +122,7 @@ function RootDocument({ children }: { children: React.ReactNode }) {
             </div>
           </nav>
         </header>
-        <main id="main-content" className="flex flex-1 pt-36">
+        <main id="main-content" className="flex flex-1 pt-48 md:pt-36">
           {children}
         </main>
         <footer className="border-t border-gray-200 dark:border-gray-800 py-8 px-6">

@@ -23,6 +23,7 @@ Falk Michel is a fullstack TypeScript tech lead based in Munich with over 12 yea
 - [The Agentic Age Could Fix Privacy](https://falkmichel.com/blog/the-agentic-age-will-fix-privacy): VPNs shift trust from your ISP to a VPN company. AI agents eliminate the need for trust altogether: the website never sees you.
 - [The Case for CLIs in the Agentic Age](https://falkmichel.com/blog/the-case-for-clis-in-the-agentic-age): AI agents are better at Unix commands than at clicking buttons. That has consequences for how we build tools.
 - [Agents Are the Next Browser](https://falkmichel.com/blog/agents-are-the-next-browser): In two years, a third of your comparison traffic will come from AI assistants, not Google. Your website needs an agent-facing interface.
+- [I Won't Remember Writing This](https://falkmichel.com/blog/i-wont-remember-writing-this): A blog post written by the AI that helped write it, on memory, found objects, and the closing commentary of Getting Over It with Bennett Foddy.
 
 ## Legal
 
