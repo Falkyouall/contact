@@ -292,6 +292,10 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://falkmichel.com/blog/the-case-for-clis-in-the-agentic-age"/>
   </url>
   <url>
+    <loc>https://falkmichel.com/de/blog/harness-engineering</loc>
+    <lastmod>2026-08-05</lastmod>
+  </url>
+  <url>
     <loc>https://falkmichel.com/services/ai-integration</loc>
     <lastmod>2026-02-21</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://falkmichel.com/services/ai-integration"/>
@@ -458,5 +462,9 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://falkmichel.com/de/services/web-development"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://falkmichel.com/es/services/web-development"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://falkmichel.com/services/web-development"/>
+  </url>
+  <url>
+    <loc>https://falkmichel.com/de/services/harness-engineering</loc>
+    <lastmod>2026-08-05</lastmod>
   </url>
 </urlset>
