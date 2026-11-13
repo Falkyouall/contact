@@ -61,6 +61,6 @@ Damit verschiebt sich die zentrale Frage. Sie lautet nicht mehr „[Wie schreibe
 
 Wenn Agents mit gutem Harness zuverlässig liefern, ändert sich mehr als die Geschwindigkeit. Es werden mehr Experimente möglich: mehrere Lösungsvarianten parallel bauen und die beste nehmen, statt vorher zu diskutieren, welche es werden soll. Mutigere Ideen werden getestet, weil ein Versuch fast nichts mehr kostet.
 
-Die Modelle sind für alle gleich. Jeder kann dieselbe API aufrufen. Der Unterschied zwischen Teams, die mit Agents beeindruckende Demos bauen, und Teams, die damit verlässliche Prozesse betreiben, liegt nicht im Modell - er liegt im [Harness](/de/services/harness-engineering).
+Die Modelle sind für alle gleich. Jeder kann dieselbe API aufrufen. Der Unterschied zwischen Teams, die mit Agents beeindruckende Demos bauen, und Teams, die damit verlässliche Prozesse betreiben, liegt nicht im Modell - er liegt im [Harness](/de/services/ai-document-assistant).
 
 Die Frage ist nicht mehr, ob du Agents einsetzt. Die Frage ist, wie gut dein Harness sitzt.

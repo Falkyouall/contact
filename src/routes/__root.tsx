@@ -143,9 +143,6 @@ function RootDocument({ children }: { children: React.ReactNode }) {
               <a href="https://www.linkedin.com/in/falk-mich%C3%A9l-b48ba753/" target="_blank" rel="noopener noreferrer me" className="px-2 -mx-2 py-3 -my-3 hover:text-gray-900 dark:hover:text-gray-100">
                 LinkedIn<span className="sr-only"> {m.opens_new_tab()}</span>
               </a>
-              <a href="https://x.com/falk_approves" target="_blank" rel="noopener noreferrer me" className="px-2 -mx-2 py-3 -my-3 hover:text-gray-900 dark:hover:text-gray-100">
-                X<span className="sr-only"> {m.opens_new_tab()}</span>
-              </a>
             </div>
           </div>
         </footer>

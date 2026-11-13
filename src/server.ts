@@ -62,6 +62,11 @@ function normalizePath(path: string): string | null {
     p = p.slice(0, -1)
   }
   if (p === '/de' || p === '/es') p = `${p}/`
+  // Retired slugs that moved to a new page.
+  p = p.replace(
+    /^((?:\/de|\/es)?\/services)\/harness-engineering$/,
+    '$1/ai-document-assistant',
+  )
   return p === path ? null : p
 }
 

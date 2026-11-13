@@ -272,6 +272,30 @@
     <lastmod>2026-08-05</lastmod>
   </url>
   <url>
+    <loc>https://falkmichel.com/services/ai-document-assistant</loc>
+    <lastmod>2026-11-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://falkmichel.com/services/ai-document-assistant"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://falkmichel.com/de/services/ai-document-assistant"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://falkmichel.com/es/services/ai-document-assistant"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://falkmichel.com/services/ai-document-assistant"/>
+  </url>
+  <url>
+    <loc>https://falkmichel.com/de/services/ai-document-assistant</loc>
+    <lastmod>2026-11-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://falkmichel.com/services/ai-document-assistant"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://falkmichel.com/de/services/ai-document-assistant"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://falkmichel.com/es/services/ai-document-assistant"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://falkmichel.com/services/ai-document-assistant"/>
+  </url>
+  <url>
+    <loc>https://falkmichel.com/es/services/ai-document-assistant</loc>
+    <lastmod>2026-11-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://falkmichel.com/services/ai-document-assistant"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://falkmichel.com/de/services/ai-document-assistant"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://falkmichel.com/es/services/ai-document-assistant"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://falkmichel.com/services/ai-document-assistant"/>
+  </url>
+  <url>
     <loc>https://falkmichel.com/services/ai-integration</loc>
     <lastmod>2026-02-21</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://falkmichel.com/services/ai-integration"/>
@@ -438,9 +462,5 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://falkmichel.com/de/services/web-development"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://falkmichel.com/es/services/web-development"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://falkmichel.com/services/web-development"/>
-  </url>
-  <url>
-    <loc>https://falkmichel.com/de/services/harness-engineering</loc>
-    <lastmod>2026-08-05</lastmod>
   </url>
 </urlset>
